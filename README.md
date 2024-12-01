@@ -42,7 +42,7 @@ This Jellyfin theme inspired from JellySeer improves the overall look and experi
 
 <b>Paste the following in Custom CSS code box:</b>
 
-	@import url("https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/ElegantFin-jellyfin-theme-build-latest-minified.css");
+	@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/ElegantFin-jellyfin-theme-build-latest-minified.css");
 
 <details>
   <summary><i>Detailed steps for server-side implementation</i></summary>
