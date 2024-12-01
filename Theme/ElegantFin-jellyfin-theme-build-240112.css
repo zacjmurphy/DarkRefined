@@ -631,3 +631,7 @@ html {
     border: solid 1px var(--borderColor);
     overflow: hidden;
 }
+
+.listItem-border {
+    border-color: transparent !important;
+}
