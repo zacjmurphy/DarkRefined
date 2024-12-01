@@ -1,5 +1,5 @@
 # ElegantFin Theme
-This Jellyfin theme inspired from JellySeer improves the overall look and experience with hundreds of little fixes to the UI.
+This Jellyfin theme inspired from JellySeerr improves the overall look and experience with hundreds of little fixes to the UI.
 
 
 #### **Author:** [lscambo13](https://github.com/lscambo13)
