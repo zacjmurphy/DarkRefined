@@ -16,7 +16,7 @@ This Jellyfin theme inspired from JellySeer improves the overall look and experi
 <hr>
 
 ### ▶️ Demo
-<a href="https://github.com/lscambo13/ElegantFin/raw/f9ca0717161868bbf3dad33f599800275d5baf07/Previews/0.%20Video%20Demo.mp4"><img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/0.%20Video%20Demo-thumb.png" style="width:480px;height:480px;object-fit:cover;"></img></a>
+<a href="https://github.com/lscambo13/ElegantFin/raw/f9ca0717161868bbf3dad33f599800275d5baf07/Previews/0.%20Video%20Demo.mp4"><img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/0.%20Video%20Demo-thumb.png" style="width:480px;height:auto;"></img></a>
 <hr>
 
 ### 🖼️ Previews
