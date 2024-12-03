@@ -231,12 +231,6 @@ html {
     max-height: 2em;
 }
 
-.detailsGroupItem,
-.trackSelections .selectContainer {
-    /*flex-direction: column;*/
-    align-items: center;
-}
-
 .layout-mobile .mainDetailButtons {
     margin-top: 2em;
 }
@@ -249,15 +243,6 @@ html {
     border: var(--lighterBorderColor) solid 1px;
     border-radius: .5em;
     padding: .5em !important;
-}
-
-.trackSelections .selectContainer .detailTrackSelect {
-    /* padding: inherit; */
-}
-
-.selectArrowContainer {
-    top: .5em;
-    opacity: .5;
 }
 
 .btnPlay {
@@ -619,7 +604,18 @@ html {
 
 .detailsGroupItem,
 .trackSelections .selectContainer {
+    /*flex-direction: column;*/
     max-width: unset !important;
+    align-items: center;
+}
+
+.trackSelectionFieldContainer>.selectArrowContainer {
+    top: .5em;
+}
+
+.selectArrowContainer {
+    /* top: .5em; */
+    opacity: .5;
 }
 
 .detailSectionContent {
