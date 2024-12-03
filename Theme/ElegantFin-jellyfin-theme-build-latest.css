@@ -21,7 +21,11 @@ html {
 
 .itemsContainer,
 .vertical-list {
-    gap: .75em;
+    /* gap: .75em; */
+}
+
+.card {
+    margin: .375em;
 }
 
 [dir=ltr] .itemsContainer>.card>.cardBox {
