@@ -572,6 +572,14 @@ div[data-role=controlgroup] a.ui-btn-active {
     /* backdrop-filter: blur(5px); */
 }
 
+.paperList {
+    padding: .4em;
+}
+
+.serverInfo {
+    padding: 1em;
+}
+
 .listItemIcon:not(.listItemIcon-transparent) {
     background-color: var(--lighterGradientPoint) !important;
 }
