@@ -545,7 +545,8 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: #fff !important;
 }
 
-#btnDeleteImage {
+#btnDeleteImage,
+.button-delete {
     background: rgb(169, 29, 29);
     border: solid rgb(217, 84, 84) 1px;
 }
