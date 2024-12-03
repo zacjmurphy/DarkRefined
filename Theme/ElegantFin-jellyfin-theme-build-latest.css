@@ -665,3 +665,33 @@ div[data-role=controlgroup] a.ui-btn-active {
 .listItem-border {
     border-color: transparent !important;
 }
+
+.alphaPickerButton {
+    font-family: monospace;
+    margin: .15em;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.alphaPickerButton-selected {
+    color: rgba(255, 255, 255, 1);
+}
+
+.alphaPicker-vertical {
+    height: 70%;
+}
+
+.alphaPicker {
+    justify-content: center;
+}
+
+[dir=ltr] .padded-left.vertical-wrap {
+    padding-left: 5% !important;
+}
+
+[dir=ltr] .padded-right.vertical-wrap {
+    padding-right: 5% !important;
+}
+
+.paging {
+    padding-inline-start: 1em;
+}
