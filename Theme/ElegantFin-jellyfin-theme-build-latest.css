@@ -530,6 +530,16 @@ html {
     filter: brightness(1.2) !important;
 }
 
+.localnav>.emby-button {
+    background: var(--lighterGradientPoint) !important;
+    color: #fff;
+}
+
+div[data-role=controlgroup] a.ui-btn-active {
+    background: var(--selectorBackgroundColor) !important;
+    color: #fff !important;
+}
+
 #btnDeleteImage {
     background: rgb(169, 29, 29);
     border: solid rgb(217, 84, 84) 1px;
