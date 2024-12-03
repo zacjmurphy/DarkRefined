@@ -505,13 +505,29 @@ html {
 
 .emby-button.block,
 .button-alt,
+.raised,
 #btnDeleteImage,
-.fab,
 .dashboardActionsContainer>.emby-button {
     color: #fff;
     border-radius: .5em;
     background: var(--lighterGradientPoint);
     border: solid var(--borderColor) 1px;
+}
+
+.fab {
+    color: #fff;
+    background: var(--lighterGradientPoint);
+    border: solid var(--borderColor) 1px;
+}
+
+.raised:focus {
+    background: var(--lighterGradientPoint);
+    filter: brightness(1.25);
+}
+
+.raised:hover,
+.emby-button:hover {
+    filter: brightness(1.2) !important;
 }
 
 #btnDeleteImage {
