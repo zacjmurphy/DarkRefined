@@ -595,9 +595,13 @@ div[data-role=controlgroup] a.ui-btn-active {
     /* padding: 1.25em 0.25em 0.25em 1.5em !important; */
 }
 
-[dir=ltr] .listItem {
+[dir=ltr] .listItem:not(.actionSheetMenuItem) {
     /* padding: .75em 1em !important; */
     padding: 0.25em 0.25em 0.25em 1.5em !important;
+}
+
+.actionSheetContent {
+    padding: .4em !important;
 }
 
 .navMenuOption {
