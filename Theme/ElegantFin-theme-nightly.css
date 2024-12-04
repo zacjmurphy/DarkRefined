@@ -738,11 +738,18 @@ div[data-role=controlgroup] a.ui-btn-active {
     width: 47%;
 }
 
-.headerUserButton,
-.MuiAvatar-circular {
-    width: 1.75em;
-    height: 1.75em;
+.headerUserButton {
+    width: 2em;
+    height: 2em;
     margin-inline-end: 1em;
+    border: solid var(--borderColor) 1px;
+}
+
+.MuiAvatar-circular {
+    width: 1.5em;
+    height: 1.5em;
+    /* margin-inline-end: .5em; */
+    border: solid var(--borderColor) 1px;
 }
 
 .dashboardDocument .content-primary {
