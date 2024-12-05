@@ -745,7 +745,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .paging {
-    padding-inline-start: 1em;
+    padding-inline: 1em;
 }
 
 .smallBackdropCard,
