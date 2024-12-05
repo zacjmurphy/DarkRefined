@@ -697,6 +697,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     max-width: unset !important;
 }
 
+.detailPageContent {
+    gap: 1em;
+}
+
 .trackSelections {
     order: 2;
     max-width: unset !important;
