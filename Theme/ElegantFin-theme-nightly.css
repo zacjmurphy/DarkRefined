@@ -584,6 +584,7 @@ html {
 .localnav>.emby-button {
     background: var(--lighterGradientPoint) !important;
     color: #fff;
+    padding: .8em .8em;
 }
 
 div[data-role=controlgroup] a.ui-btn-active {
@@ -624,6 +625,11 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .serverInfo {
     padding: 1em;
+}
+
+.serverInfo>:nth-child(2n) {
+    -webkit-flex: 1 0 60%;
+    flex: 1 0 60%;
 }
 
 .listItemIcon:not(.listItemIcon-transparent) {
@@ -803,5 +809,5 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .backdropCard,
 .bannerCard {
-    width: 47%;
+    width: 46%;
 }
