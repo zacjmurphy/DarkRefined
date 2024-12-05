@@ -464,6 +464,10 @@ html {
     backdrop-filter: blur(10px);
 }
 
+.selectionCommandsPanel>h1 {
+    font-size: large;
+}
+
 .itemSelectionPanel {
     border: unset;
     background-color: transparent;
