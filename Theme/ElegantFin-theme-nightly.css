@@ -170,7 +170,7 @@ h1 {
 
 /* hide search button when not on home screen */
 .skinHeader:not(.noHomeButtonHeader) .headerSearchButton {
-    display: none;
+    /* display: none; */
 }
 
 .pageTitle {
