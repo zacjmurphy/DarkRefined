@@ -2,8 +2,8 @@
 
 @import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/round.css");
 
-* {
-    outline: 0px dotted red !important;
+:root {
+    /* outline: 0px dotted red !important; */
     --darkerGradientPoint: rgb(17, 24, 39);
     --lighterGradientPoint: rgb(30, 40, 54);
     --borderColor: rgba(75, 85, 99, 0.9);
