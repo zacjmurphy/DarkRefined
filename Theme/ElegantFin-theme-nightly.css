@@ -791,3 +791,12 @@ div[data-role=controlgroup] a.ui-btn-active {
 .metadataSidebarIcon {
     color: #6c7bab;
 }
+
+.material-icons.chevron_right:before {
+    border: solid 1px;
+    border-radius: 1em;
+    font-size: .7em;
+    line-height: 1.75em;
+    font-weight: 600;
+    margin-inline-start: .5em;
+}
