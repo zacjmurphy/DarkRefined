@@ -800,3 +800,8 @@ div[data-role=controlgroup] a.ui-btn-active {
     font-weight: 600;
     margin-inline-start: .5em;
 }
+
+.backdropCard,
+.bannerCard {
+    width: 47%;
+}
