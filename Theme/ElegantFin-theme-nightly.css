@@ -218,10 +218,18 @@ h2 {
     margin-bottom: 0;
 }
 
-.backgroundContainer,
 .nowPlayingPlaylist,
 .nowPlayingContextMenu,
 html {
+    background: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint));
+}
+
+.backgroundContainer:not(.withBackdrop) {
+    background: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint));
+}
+
+.backgroundContainer.withBackdrop {
+    opacity: .9375;
     background: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint));
 }
 
