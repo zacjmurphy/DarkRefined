@@ -14,7 +14,8 @@
     --btnSubmitColor: rgb(61, 54, 178);
     --btnSubmitBorderColor: rgb(117 111 226);
     --checkboxCheckedBgColor: rgb(79, 70, 229);
-    --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 66%, var(--lighterGradientPoint));
+    --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
+    --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
     --hoverGradient: linear-gradient(130deg, rgb(255 255 255 / 20%) 20%, rgb(255 255 255 / 10%) 40%);
 }
 
@@ -544,8 +545,9 @@ html {
     border-radius: 100em;
 }
 
-.defaultCardBackground {
-    background: var(--lighterGradientPoint) !important;
+.defaultCardBackground,
+.cardScalable {
+    background: var(--cardBackgroundGradient) !important;
 }
 
 .listItemImage {
