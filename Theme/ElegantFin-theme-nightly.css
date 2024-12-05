@@ -442,6 +442,10 @@ html {
     opacity: .66;
 }
 
+.actionSheetContent>h1 {
+    font-size: unset;
+}
+
 .collapseContent {
     background-color: unset !important;
     backdrop-filter: unset !important;
