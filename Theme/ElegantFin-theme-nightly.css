@@ -83,6 +83,7 @@ html {
 }
 
 .cardBox:not(.visualCardBox) .cardPadder {
+    background-color: var(--lighterGradientPoint);
     border-radius: 1em;
 }
 
