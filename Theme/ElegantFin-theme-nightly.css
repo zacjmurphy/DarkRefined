@@ -165,7 +165,7 @@ h1 {
 
 /* display sync button when not on home screen */
 .skinHeader:not(.noHomeButtonHeader) .headerSyncButton {
-    display: block;
+    /* display: block; */
 }
 
 /* hide search button when not on home screen */
