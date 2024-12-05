@@ -775,3 +775,12 @@ div[data-role=controlgroup] a.ui-btn-active {
 .dashboardDocument .content-primary {
     padding-top: 4.25rem;
 }
+
+.editorNode {
+    display: flex;
+    align-items: center;
+}
+
+.metadataSidebarIcon {
+    color: #6c7bab;
+}
