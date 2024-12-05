@@ -428,15 +428,18 @@ html {
 
 
 .dialogContainer {
-    /* backdrop-filter: blur(5px);
-    background-color: rgb(0 0 0 / 60%); */
+    margin: .33em;
 }
 
 .dialog {
     backdrop-filter: blur(5px);
     background-color: var(--drawerColor);
-    border-radius: .75em !important;
+    border-radius: 1em !important;
     border: solid var(--borderColor) 1px;
+}
+
+.dialogBackdropOpened {
+    opacity: .66;
 }
 
 .collapseContent {
