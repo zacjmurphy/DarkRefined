@@ -819,3 +819,10 @@ div[data-role=controlgroup] a.ui-btn-active {
 .bannerCard {
     width: 46%;
 }
+
+.toast {
+    background: var(--headerColor);
+    border: solid 1px var(--borderColor);
+    border-radius: .5em;
+    backdrop-filter: blur(1em);
+}
