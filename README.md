@@ -95,7 +95,7 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 <details>
   <summary>3️⃣ - <i>Why do I still notice visual bugs and inconsistencies?</i></summary>
 
-- Are you using Jellyfin Media Player? That is why. JMP seems to be using a different or probably an older version of web engine. I am working on adding workarounds, but the progress is slow.
+- Are you using Jellyfin Media Player? If yes, JMP seems to be using a different or probably an older version of web engine. I am working on adding workarounds, but the progress is slow.
 - Are you not using JMP and still facing issues? See the 4th point below.
 </details>
 
@@ -103,7 +103,7 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
   <summary>4️⃣ - <i>How do I report bugs/issues?</i></summary>
 
 - First check [here](https://github.com/lscambo13/ElegantFin/issues?q=) whether a similar issue has been reported already. If it exists, upvote and comment there to let me know. 
-- Alternatively, create a new issue [here](https://github.com/lscambo13/ElegantFin/issues/new)
+- Alternatively, create a new issue [here](https://github.com/lscambo13/ElegantFin/issues/new/choose).
 
 
 </details>
