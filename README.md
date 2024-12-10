@@ -74,5 +74,50 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 
 <hr>
 
+### 🛠️ Troubleshooting 
+<details>
+  <summary>1️⃣ - <i>How do I check if I am using the latest version on ElegantFin?</i></summary>
+
+- To make sure that you are using the latest version of ElegantFin, check the version number at the bottom in the Dashboard screen. 
+- I should be something like ElegantFin v24.12.XX
+</details>
+
+<details>
+  <summary>2️⃣ - <i>I see that a newer version is available, but I have not received it yet. Why?</i></summary>
+
+- If Dashboard footer shows an old version, it means that your app is still using an old cache.
+- Once that cache is updated, the new version will be loaded. 
+- To get the latest version, you will need to clear cache. There are multiple ways to do it.
+- On web version, force a hard refresh of the page using CTRL + F5.
+- On apps, try signing out and back in again. OR in case of Jellyfin Media Player on windows, you might need to delete the cache folder. That should definitely pull the latest version.
+</details>
+
+<details>
+  <summary>3️⃣ - <i>Why do I notice many visual bugs and inconsistencies where other users seem to have no problem?</i></summary>
+
+- Are you using Jellyfin Media Player? That is why. JMP seems to be using a different or probably an older version of web engine. I am working on adding workarounds, but the progress is slow.
+- Are you not using JMP and still facing issues? See the 4th point below.
+</details>
+
+<details>
+  <summary>4️⃣ - <i>How do I report bugs/issues?</i></summary>
+
+First check [here](https://github.com/lscambo13/ElegantFin/issues?q=) whether a similar issue has been reported already. If it exists, upvote and comment there to let me know. Alternatively, create a new issue [here](https://github.com/lscambo13/ElegantFin/issues/new) and include the following information: 
+- [A] Problem description, 
+- [B] ElegantFin version, 
+- [C] Jellyfin client's platform and version, 
+- [D] Client's resolution, and 
+- [E] any accompanying screenshot.
+
+
+</details>
+<details>
+  <summary>5️⃣ - <i>When can I expect another update?</i></summary>
+
+- 🤷
+</details>
+
+<hr>
+
 
 ## 🙏 FEEDBACK APPRECIATED
