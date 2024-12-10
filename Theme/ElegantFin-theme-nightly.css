@@ -806,11 +806,20 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: #6c7bab;
 }
 
-.material-icons.chevron_right:before {
+.sectionTitleTextButton {
+    padding-inline: .5em;
+}
+
+.sectionTitleTextButton>* {
+    padding: .3em 0 !important;
+    margin: 0 0 !important;
+}
+
+.sectionTitleTextButton>.material-icons::before {
     border: solid 1px;
     border-radius: 1em;
     font-size: .7em;
-    line-height: 1.75em;
+    line-height: 1.4em;
     font-weight: 600;
     margin-inline-start: .5em;
 }
