@@ -79,7 +79,7 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
   <summary>1️⃣ - <i>How do I check if I am using the latest version on ElegantFin?</i></summary>
 
 - To make sure that you are using the latest version of ElegantFin, check the version number at the bottom in the Dashboard screen. 
-- I should be something like ElegantFin v24.12.XX
+- It should be something like ElegantFin v24.12.XX
 </details>
 
 <details>
@@ -93,7 +93,7 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 </details>
 
 <details>
-  <summary>3️⃣ - <i>Why do I notice many visual bugs and inconsistencies where other users seem to have no problem?</i></summary>
+  <summary>3️⃣ - <i>Why do I still notice visual bugs and inconsistencies?</i></summary>
 
 - Are you using Jellyfin Media Player? That is why. JMP seems to be using a different or probably an older version of web engine. I am working on adding workarounds, but the progress is slow.
 - Are you not using JMP and still facing issues? See the 4th point below.
@@ -102,12 +102,8 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 <details>
   <summary>4️⃣ - <i>How do I report bugs/issues?</i></summary>
 
-First check [here](https://github.com/lscambo13/ElegantFin/issues?q=) whether a similar issue has been reported already. If it exists, upvote and comment there to let me know. Alternatively, create a new issue [here](https://github.com/lscambo13/ElegantFin/issues/new) and include the following information: 
-- [A] Problem description, 
-- [B] ElegantFin version, 
-- [C] Jellyfin client's platform and version, 
-- [D] Client's resolution, and 
-- [E] any accompanying screenshot.
+- First check [here](https://github.com/lscambo13/ElegantFin/issues?q=) whether a similar issue has been reported already. If it exists, upvote and comment there to let me know. 
+- Alternatively, create a new issue [here](https://github.com/lscambo13/ElegantFin/issues/new)
 
 
 </details>
