@@ -26,15 +26,15 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 <details>
   <summary><i>Click here to reveal</i></summary>
   
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/1.%20Homepage.png" style="width:480px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/2.%20Movies%20Library.png" style="width:480px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/3.%20Sidebar.png" style="width:480px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/4.%20Movie%20Page.png" style="width:480px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/5.%20Extra%20Dialog.png" style="width:480px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/6.%20Settings%20Page.png" style="width:480px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/7.%20Metadata%20Menu.png" style="width:480px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/8.%20Dashboard%20Settings.png" style="width:480px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/9.%20Web%20Player.png" style="width:480px;height:auto;"></img>
+<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/1.%20Homepage.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/2.%20Movies%20Library.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/3.%20Sidebar.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/4.%20Movie%20Page.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/5.%20Extra%20Dialog.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/6.%20Settings%20Page.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/7.%20Metadata%20Menu.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/8.%20Dashboard%20Settings.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/9.%20Web%20Player.png" style="width:360px;height:auto;"></img>
 
 </details>
 
