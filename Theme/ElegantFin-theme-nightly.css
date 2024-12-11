@@ -852,3 +852,8 @@ div[data-role=controlgroup] a.ui-btn-active {
     border-radius: .5em;
     backdrop-filter: blur(1em);
 }
+
+.activeSession {
+    width: 98% !important;
+    max-width: 27rem !important;
+}
