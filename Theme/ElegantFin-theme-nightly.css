@@ -377,7 +377,10 @@ html {
 }
 
 .itemDetailsGroup {
-    border: solid var(--borderColor) 1px;
+    outline: 1px solid var(--borderColor);
+    outline-offset: -1px;
+    overflow: hidden;
+    /* border: solid var(--borderColor) 1px; */
     margin-top: 1.5em;
     border-radius: .5em;
     /* margin: .5em 1em; */
