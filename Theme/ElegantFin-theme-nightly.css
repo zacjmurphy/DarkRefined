@@ -44,6 +44,16 @@ html {
     margin-right: auto;
 }
 
+/* .pageTabContent .vertical-wrap {
+    justify-content: space-evenly !important;
+}
+
+.vertical-wrap,
+.sectionTitleContainer~.vertical-wrap,
+.sectionTitle~.vertical-wrap {
+    justify-content: flex-start !important;
+} */
+
 .vertical-wrap {
     justify-content: flex-start !important;
 }
@@ -153,7 +163,7 @@ h1 {
 .portraitCard {
     min-width: 5em;
     width: 30%;
-    max-width: 15em;
+    max-width: 12.9em;
 }
 
 .headerHomeButton,
@@ -771,8 +781,11 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .smallBackdropCard,
-.squareCard {
-    width: 47%;
+.squareCard,
+.backdropCard,
+.bannerCard {
+    width: 46%;
+    max-width: 18em;
 }
 
 .layout-mobile #myPreferencesMenuPage {
@@ -822,11 +835,6 @@ div[data-role=controlgroup] a.ui-btn-active {
     line-height: 1.4em;
     font-weight: 600;
     margin-inline-start: .5em;
-}
-
-.backdropCard,
-.bannerCard {
-    width: 46%;
 }
 
 .toast {
