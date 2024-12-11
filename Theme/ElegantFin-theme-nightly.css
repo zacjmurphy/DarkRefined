@@ -828,11 +828,17 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin: 0 0 !important;
 }
 
+.dashboardSection .sectionTitleTextButton>.material-icons,
+.sectionTitleTextButton>.material-icons,
+.dashboardSection .sectionTitleTextButton>.material-icons.material-icons {
+    font-size: unset;
+}
+
 .sectionTitleTextButton>.material-icons::before {
     border: solid 1px;
     border-radius: 1em;
-    font-size: .7em;
-    line-height: 1.4em;
+    font-size: .85em;
+    line-height: unset;
     font-weight: 600;
     margin-inline-start: .5em;
 }
