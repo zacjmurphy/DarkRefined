@@ -204,6 +204,10 @@ h1 {
     margin-top: -40vh;
 }
 
+.itemBackdrop {
+    height: 50vh;
+}
+
 @media (orientation: portrait) and (max-width: 40em) {
     .layout-mobile .itemBackdrop {
         height: 40vh;
@@ -211,9 +215,17 @@ h1 {
     }
 }
 
-.itemBackdrop {
-    height: 45vh;
+@media (max-height: 31.25em) {
+    .itemBackdrop {
+        height: 62vh;
+    }
 }
+
+/* @media (max-width: 62.5em) {
+    .layout-desktop .itemBackdrop {
+        height: 5vh;
+    }
+} */
 
 h2 {
     font-size: 1.25em;
