@@ -79,7 +79,7 @@ border-radius: 1.25em !important;
     justify-content: flex-start !important;
 } */
 
-.vertical-wrap {
+.vertical-wrap:not(.centered) {
     justify-content: flex-start !important;
 }
 
