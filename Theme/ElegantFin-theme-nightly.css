@@ -59,9 +59,9 @@ border-radius: 1.25em !important;
 
 .emby-tabs .emby-button.show-focus:focus {
     outline: .05em rgb(255 255 255) solid !important;
-    outline-offset: -.75em;
+    outline-offset: -1em;
     color: #fff;
-    border-radius: 1em;
+    border-radius: 1.25em;
 }
 
 [dir=ltr] .itemsContainer>.card>.cardBox {
