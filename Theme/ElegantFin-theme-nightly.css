@@ -39,6 +39,31 @@ html {
     padding: .375em;
 }
 
+.card:focus .cardBox:not(.visualCardBox) .cardScalable {
+border-radius: 1.25em !important;
+    border: solid rgba(0, 0, 0, 1) .1em !important;
+    outline: .1em rgba(255, 255, 255, 1) solid;
+    transition: border .1s;
+    filter: brightness(1.125);
+}
+
+.emby-button.show-focus:focus {
+    background: #2f3a53;
+    border-radius: .5em;
+    /* border: solid white .1em; */
+    outline: .1em rgb(255 255 255) solid !important;
+    outline-offset: -.1em;
+    color: #fff;
+    transition: outline 0s, border 0s;
+}
+
+.emby-tabs .emby-button.show-focus:focus {
+    outline: .05em rgb(255 255 255) solid !important;
+    outline-offset: -.75em;
+    color: #fff;
+    border-radius: 1em;
+}
+
 [dir=ltr] .itemsContainer>.card>.cardBox {
     margin-left: auto;
     margin-right: auto;
