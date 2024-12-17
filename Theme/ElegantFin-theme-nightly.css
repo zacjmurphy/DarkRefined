@@ -1,7 +1,7 @@
 /* ElegantFin Theme for Jellyfin by lscambo13 */
 
 @import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/round.css");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
     /* outline: 0px dotted red !important; */
@@ -25,7 +25,10 @@
 } */
 
 html {
-    font-family: "Inter";
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 425;
+    font-style: normal;
 }
 
 .dashboardFooter::after {
