@@ -959,3 +959,11 @@ div[data-role=controlgroup] a.ui-btn-active {
 .emby-textarea:focus {
     border-color: #c1c1c1 !important;
 }
+
+.layout-mobile [dir=ltr] .infoWrapper {
+    padding-left: 35.5%;
+}
+
+[dir=ltr] .mediaInfoItem {
+    margin: 0 .9em 0 0;
+}
