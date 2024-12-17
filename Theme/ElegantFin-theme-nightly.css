@@ -431,8 +431,11 @@ html {
 .mediaInfoOfficialRating {
     border-radius: .5em;
     font-size: 66%;
-    margin: 0em 1em .25em 0em !important;
-    padding: 0em 0.5em;
+    line-height: 1em;
+    margin: 0em 0.5em .15em 0em !important;
+    padding-inline: .5em;
+    padding-block-start: .4em;
+    font-weight: 600;
     background: transparent !important;
     border: solid 1px var(--borderColor);
 }
