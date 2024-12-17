@@ -251,6 +251,10 @@ h1 {
     }
 }
 
+.layout-mobile .itemBackdrop {
+    margin-top: 3.5rem;
+}
+
 /* @media (max-width: 62.5em) {
     .layout-desktop .itemBackdrop {
         height: 5vh;
