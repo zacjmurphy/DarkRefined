@@ -45,7 +45,7 @@ html {
 }
 
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
-border-radius: 1.25em !important;
+    border-radius: 1.25em !important;
     border: solid rgba(0, 0, 0, 1) .1em !important;
     outline: .1em rgba(255, 255, 255, 1) solid;
     transition: border .1s;
@@ -903,4 +903,27 @@ div[data-role=controlgroup] a.ui-btn-active {
 .layout-tv .itemBackdrop {
     display: block;
     height: 13vh;
+}
+
+.emby-tab-button:hover {
+    color: #c1c1c1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .paper-icon-button-light:hover:not(:disabled) {
+        color: #fff;
+        background-color: rgb(255 255 255 / 5%);
+    }
+}
+
+.inputLabelFocused,
+.selectLabelFocused,
+.textareaLabelFocused {
+    color: #fff;
+}
+
+.emby-select-withcolor:focus,
+.emby-input:focus,
+.emby-textarea:focus {
+    border-color: #c1c1c1 !important;
 }
