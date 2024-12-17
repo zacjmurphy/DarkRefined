@@ -335,25 +335,52 @@ html {
     padding: .5em !important;
 }
 
-.searchfields-txtSearch {
-    border-radius: 4em;
-}
-
 .btnPlay {
     background-color: rgba(255, 255, 255, 0.05);
     /* border-radius: .5em 0em 0em .5em; */
     border: solid var(--lighterBorderColor) 1px;
 }
 
+.inputContainer .emby-input-iconbutton {
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: -2.5em;
+    background-color: transparent !important;
+}
+
+.searchfields-txtSearch {
+    padding: .75em 1.5em !important;
+    border-radius: 4em;
+}
+
 .searchfields-icon {
-    padding: .125em;
+    padding: .25em;
     /* margin: 0 !important; */
-    margin-right: .25em;
+    margin-left: -1.75em;
     margin-bottom: 0;
     border-radius: 1em;
-    background-color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.05); */
     /* border-radius: .5em 0em 0em .5em; */
-    border: solid var(--lighterBorderColor) 1px;
+    /* border: solid var(--lighterBorderColor) 1px;*/
+}
+
+.searchfields-icon:hover,
+.searchfields-icon:active,
+.inputContainer .emby-input-iconbutton:hover,
+.inputContainer .emby-input-iconbutton:active {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.searchFields>.searchFieldsInner {
+    flex-direction: row-reverse;
+}
+
+.button-link {
+    color: rgb(200, 200, 200);
+}
+
+.button-link:hover {
+    text-decoration: none;
 }
 
 .btnPlay>.detailButton-content {
