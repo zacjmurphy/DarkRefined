@@ -916,6 +916,11 @@ div[data-role=controlgroup] a.ui-btn-active {
     }
 }
 
+.paper-icon-button-light:active:not(:disabled) {
+    color: #fff;
+    background-color: rgb(255 255 255 / 5%);
+}
+
 .inputLabelFocused,
 .selectLabelFocused,
 .textareaLabelFocused {
