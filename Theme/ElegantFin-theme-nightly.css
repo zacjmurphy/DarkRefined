@@ -965,9 +965,11 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .layout-mobile [dir=ltr] .infoWrapper {
-    padding-left: 35.5%;
+    padding-left: 34%;
 }
 
 [dir=ltr] .mediaInfoItem {
-    margin: 0 .9em 0 0;
+    transform: scale(.85);
+    /* scale: .85; */
+    margin: 0 .4em 0 0;
 }
