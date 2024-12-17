@@ -768,13 +768,13 @@ div[data-role=controlgroup] a.ui-btn-active {
     align-items: center;
 }
 
-.trackSelectionFieldContainer>.selectArrowContainer {
-    top: .5em;
+.selectArrowContainer {
+    top: 0em;
+    opacity: .5;
 }
 
-.selectArrowContainer {
-    /* top: .5em; */
-    opacity: .5;
+.trackSelectionFieldContainer>.selectArrowContainer {
+    top: .5em;
 }
 
 .detailSectionContent {
