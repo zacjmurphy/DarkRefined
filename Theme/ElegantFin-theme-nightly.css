@@ -404,6 +404,7 @@ html {
 
 .btnPlay>.detailButton-content::after {
     padding-left: .25em;
+    margin-top: .1em;
     content: "Play";
 }
 
