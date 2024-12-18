@@ -607,9 +607,13 @@ html {
     border: solid var(--borderColor) var(--borderWidth);
 }
 
-.fab:focus,
-.raised:focus {
+.fab:focus {
     background: var(--lighterGradientPoint) !important;
+    filter: brightness(1.35);
+}
+
+.raised:focus {
+    background: inherit;
     filter: brightness(1.35);
 }
 
