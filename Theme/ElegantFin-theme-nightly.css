@@ -22,6 +22,7 @@
     --largeRadius: 1em;
     --smallRadius: .5em;
     --smallerRadius: .375em;
+    --borderWidth: 0.1em;
 }
 
 html {
@@ -43,8 +44,8 @@ html {
 
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
     border-radius: var(--largerRadius) !important;
-    border: solid rgba(0, 0, 0, 1) .1em !important;
-    outline: .1em rgba(255, 255, 255, 1) solid;
+    border: solid rgba(0, 0, 0, 1) var(--borderWidth) !important;
+    outline: var(--borderWidth) rgba(255, 255, 255, 1) solid;
     transition: border .1s;
     filter: brightness(1.125);
 }
@@ -52,7 +53,7 @@ html {
 .emby-button.show-focus:focus {
     background: #2f3a53;
     border-radius: var(--smallRadius);
-    outline: .1em rgb(255 255 255) solid !important;
+    outline: var(--borderWidth) rgb(255 255 255) solid !important;
     outline-offset: -.1em;
     color: #fff;
     transition: outline 0s, border 0s;
@@ -78,17 +79,17 @@ html {
 .fullSyncIndicator,
 .mediaSourceIndicator {
     background: rgb(31, 80, 189);
-    border: var(--lighterBorderColor) solid 1px;
+    border: var(--lighterBorderColor) solid var(--borderWidth);
 }
 
 .playedIndicator {
     background: rgb(34, 197, 94);
-    border: var(--lighterBorderColor) solid 1px;
+    border: var(--lighterBorderColor) solid var(--borderWidth);
 }
 
 .cardScalable {
     border-radius: var(--largeRadius);
-    border: var(--borderColor) solid 1px !important;
+    border: var(--borderColor) solid var(--borderWidth) !important;
     overflow: hidden !important;
     transition: 125ms transform;
 }
@@ -99,7 +100,7 @@ html {
 
 .cardOverlayContainer {
     border-radius: var(--largeRadius) !important;
-    border: solid rgb(255 255 255 / 65%) .1em;
+    border: solid rgb(255 255 255 / 65%) var(--borderWidth);
     mix-blend-mode: plus-lighter;
     background: var(--hoverGradient);
 }
@@ -213,7 +214,7 @@ h1 {
     padding-block-start: .4em;
     font-weight: 600;
     background: transparent !important;
-    border: solid 1px var(--borderColor);
+    border: solid var(--borderWidth) var(--borderColor);
 }
 
 @media (orientation: portrait) and (max-width: 40em) {
@@ -281,7 +282,7 @@ html {
 
 .skinHeader:not(.osdHeader) {
     border-style: solid;
-    border-width: 0 0 1px 0;
+    border-width: 0 0 var(--borderWidth) 0;
     border-color: var(--borderColor);
     transition: all .375s ease-in-out;
 }
@@ -311,14 +312,14 @@ html {
 .emby-input,
 .emby-textarea {
     background-color: var(--selectorBackgroundColor);
-    border: var(--lighterBorderColor) solid 1px;
+    border: var(--lighterBorderColor) solid var(--borderWidth);
     border-radius: var(--smallRadius);
     padding: .5em !important;
 }
 
 .btnPlay {
     background-color: rgba(255, 255, 255, 0.05);
-    border: solid var(--lighterBorderColor) 1px;
+    border: solid var(--lighterBorderColor) var(--borderWidth);
 }
 
 .inputContainer .emby-input-iconbutton {
@@ -381,13 +382,13 @@ html {
 .mainDrawer,
 .drawer-open {
     background-color: var(--drawerColor);
-    border-right: solid var(--borderColor) 1px;
+    border-right: solid var(--borderColor) var(--borderWidth);
     backdrop-filter: blur(8px);
 }
 
 .detailButton {
     border-radius: var(--smallRadius);
-    border: solid var(--lighterBorderColor) 1px;
+    border: solid var(--lighterBorderColor) var(--borderWidth);
     padding: .5em .5em !important;
     margin: 0.125em !important;
 }
@@ -402,17 +403,17 @@ html {
 }
 
 .itemDetailsGroup {
-    outline: 1px solid var(--borderColor);
-    outline-offset: -1px;
+    outline: var(--borderWidth) solid var(--borderColor);
+    outline-offset: -var(--borderWidth);
     overflow: hidden;
-    /* border: solid var(--borderColor) 1px; */
+    /* border: solid var(--borderColor) var(--borderWidth); */
     margin-top: 1.5em;
     border-radius: var(--smallRadius);
     /* margin: .5em 1em; */
 }
 
 .itemDetailsGroup>div:not(:last-child) {
-    border-bottom: solid var(--borderColor) 1px;
+    border-bottom: solid var(--borderColor) var(--borderWidth);
 }
 
 .detailsGroupItem {
@@ -455,7 +456,7 @@ html {
 .chapterThumbTextContainer {
     background: transparent;
     font-weight: 500;
-    text-shadow: 1px 1px 0px black;
+    text-shadow: .1em .1em 0px black;
     padding: 1em;
     width: auto;
 }
@@ -472,7 +473,7 @@ html {
     backdrop-filter: blur(5px);
     background-color: var(--drawerColor);
     border-radius: var(--largeRadius) !important;
-    border: solid var(--borderColor) 1px;
+    border: solid var(--borderColor) var(--borderWidth);
 }
 
 .dialogBackdropOpened {
@@ -490,7 +491,7 @@ html {
 
 .selectionCommandsPanel {
     background: var(--lighterGradientPoint);
-    border-bottom: solid var(--borderColor) 1px;
+    border-bottom: solid var(--borderColor) var(--borderWidth);
     backdrop-filter: blur(10px);
 }
 
@@ -564,7 +565,7 @@ html {
 }
 
 .indicator {
-    border: solid rgb(124 124 124 / 50%) 1px;
+    border: solid rgb(124 124 124 / 50%) var(--borderWidth);
     border-radius: 100em;
 }
 
@@ -585,13 +586,13 @@ html {
     color: #fff;
     border-radius: var(--smallRadius);
     background: var(--lighterGradientPoint);
-    border: solid var(--borderColor) 1px;
+    border: solid var(--borderColor) var(--borderWidth);
 }
 
 .fab {
     color: #fff;
     background: var(--lighterGradientPoint);
-    border: solid var(--borderColor) 1px;
+    border: solid var(--borderColor) var(--borderWidth);
 }
 
 .raised:focus {
@@ -618,12 +619,12 @@ div[data-role=controlgroup] a.ui-btn-active {
 #btnDeleteImage,
 .button-delete {
     background: rgb(169, 29, 29);
-    border: solid rgb(217, 84, 84) 1px;
+    border: solid rgb(217, 84, 84) var(--borderWidth);
 }
 
 .button-submit {
     background: var(--btnSubmitColor) !important;
-    border: solid var(--btnSubmitBorderColor) 1px !important;
+    border: solid var(--btnSubmitBorderColor) var(--borderWidth) !important;
 }
 
 .collapseContent,
@@ -637,7 +638,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 .paperList {
     background-color: var(--headerColor) !important;
     border-radius: var(--largeRadius) !important;
-    border: solid var(--borderColor) 1px !important;
+    border: solid var(--borderColor) var(--borderWidth) !important;
     box-shadow: unset !important;
 }
 
@@ -665,13 +666,13 @@ div[data-role=controlgroup] a.ui-btn-active {
 .MuiAppBar-root {
     background: var(--headerColor);
     backdrop-filter: blur(5px);
-    border-bottom: solid var(--borderColor) 1px;
+    border-bottom: solid var(--borderColor) var(--borderWidth);
 }
 
 .MuiDrawer-paper {
     background: var(--drawerColor);
     backdrop-filter: blur(5px);
-    border-right: solid var(--borderColor) 1px;
+    border-right: solid var(--borderColor) var(--borderWidth);
 }
 
 [dir=ltr] .navMenuOption {
@@ -699,7 +700,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .navMenuOption-selected {
     background-color: var(--activeColor) !important;
-    border: solid var(--lighterBorderColor) 1px;
+    border: solid var(--lighterBorderColor) var(--borderWidth);
 }
 
 .noBackdropTransparency .detailPageSecondaryContainer {
@@ -747,7 +748,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .sliderBubble {
     border-radius: var(--largeRadius);
-    border: solid 1px var(--borderColor);
+    border: solid var(--borderWidth) var(--borderColor);
     overflow: hidden;
 }
 
@@ -801,13 +802,13 @@ div[data-role=controlgroup] a.ui-btn-active {
     width: 2em;
     height: 2em;
     margin-inline-end: 1em;
-    border: solid var(--borderColor) 1px;
+    border: solid var(--borderColor) var(--borderWidth);
 }
 
 .MuiAvatar-circular {
     width: 1.5em;
     height: 1.5em;
-    border: solid var(--borderColor) 1px;
+    border: solid var(--borderColor) var(--borderWidth);
 }
 
 .dashboardDocument .content-primary {
@@ -839,7 +840,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .sectionTitleTextButton>.material-icons::before {
-    border: solid 1px;
+    border: solid var(--borderWidth);
     border-radius: var(--largeRadius);
     font-size: .85em;
     line-height: unset;
@@ -849,7 +850,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .toast {
     background: var(--headerColor);
-    border: solid 1px var(--borderColor);
+    border: solid var(--borderWidth) var(--borderColor);
     border-radius: var(--smallRadius);
     backdrop-filter: blur(1em);
 }
