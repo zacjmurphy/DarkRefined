@@ -42,7 +42,7 @@ html {
 }
 
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
-    border-radius: 1.25em !important;
+    border-radius: var(--largerRadius) !important;
     border: solid rgba(0, 0, 0, 1) .1em !important;
     outline: .1em rgba(255, 255, 255, 1) solid;
     transition: border .1s;
@@ -51,7 +51,7 @@ html {
 
 .emby-button.show-focus:focus {
     background: #2f3a53;
-    border-radius: .5em;
+    border-radius: var(--smallRadius);
     outline: .1em rgb(255 255 255) solid !important;
     outline-offset: -.1em;
     color: #fff;
@@ -62,7 +62,7 @@ html {
     outline: .05em rgb(255 255 255) solid !important;
     outline-offset: -1em;
     color: #fff;
-    border-radius: 1.25em;
+    border-radius: var(--largerRadius);
 }
 
 [dir=ltr] .itemsContainer>.card>.cardBox {
@@ -87,18 +87,18 @@ html {
 }
 
 .cardScalable {
-    border-radius: 1em;
+    border-radius: var(--largeRadius);
     border: var(--borderColor) solid 1px !important;
     overflow: hidden !important;
     transition: 125ms transform;
 }
 
 .cardImageContainer {
-    border-radius: 1em !important
+    border-radius: var(--largeRadius) !important
 }
 
 .cardOverlayContainer {
-    border-radius: 1em !important;
+    border-radius: var(--largeRadius) !important;
     border: solid rgb(255 255 255 / 65%) .1em;
     mix-blend-mode: plus-lighter;
     background: var(--hoverGradient);
@@ -106,7 +106,7 @@ html {
 
 .cardBox:not(.visualCardBox) .cardPadder {
     background-color: var(--lighterGradientPoint);
-    border-radius: 1em;
+    border-radius: var(--largeRadius);
 }
 
 .cardOverlayContainer>.cardOverlayFab-primary {
@@ -205,7 +205,7 @@ h1 {
 }
 
 .mediaInfoOfficialRating {
-    border-radius: .5em;
+    border-radius: var(--smallRadius);
     font-size: 66%;
     line-height: 1em;
     margin: 0em 0.5em .15em 0em !important;
@@ -290,11 +290,11 @@ html {
     background-color: rgb(123 123 123 / 30%) !important;
     height: .2em;
     overflow: hidden;
-    border-radius: 1em;
+    border-radius: var(--largeRadius);
 }
 
 .itemProgressBarForeground {
-    border-radius: 1em;
+    border-radius: var(--largeRadius);
     background-color: rgb(214 144 255 / 65%)
 }
 
@@ -312,7 +312,7 @@ html {
 .emby-textarea {
     background-color: var(--selectorBackgroundColor);
     border: var(--lighterBorderColor) solid 1px;
-    border-radius: .5em;
+    border-radius: var(--smallRadius);
     padding: .5em !important;
 }
 
@@ -336,7 +336,7 @@ html {
     padding: .25em;
     margin-left: -1.75em;
     margin-bottom: 0;
-    border-radius: 1em;
+    border-radius: var(--largeRadius);
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -386,7 +386,7 @@ html {
 }
 
 .detailButton {
-    border-radius: .5em;
+    border-radius: var(--smallRadius);
     border: solid var(--lighterBorderColor) 1px;
     padding: .5em .5em !important;
     margin: 0.125em !important;
@@ -407,7 +407,7 @@ html {
     overflow: hidden;
     /* border: solid var(--borderColor) 1px; */
     margin-top: 1.5em;
-    border-radius: .5em;
+    border-radius: var(--smallRadius);
     /* margin: .5em 1em; */
 }
 
@@ -471,7 +471,7 @@ html {
 .dialog {
     backdrop-filter: blur(5px);
     background-color: var(--drawerColor);
-    border-radius: 1em !important;
+    border-radius: var(--largeRadius) !important;
     border: solid var(--borderColor) 1px;
 }
 
@@ -504,7 +504,7 @@ html {
 }
 
 .emby-checkbox:checked+span+.checkboxOutline {
-    border-radius: .375em !important;
+    border-radius: var(--smallerRadius) !important;
     box-shadow: inset 0em 7em 10em 20px rgba(0, 0, 0, 0.8);
     background: transparent;
     border-color: white;
@@ -516,7 +516,7 @@ html {
     top: unset;
     height: 1.3em;
     width: 1.3em;
-    border-radius: .375em;
+    border-radius: var(--smallerRadius);
 }
 
 
@@ -531,11 +531,11 @@ html {
 }
 
 .cardText-first+.itemSelectionPanel>.checkboxContainer>.emby-checkbox:checked+span+.checkboxOutline {
-    border-radius: 1em !important;
+    border-radius: var(--largeRadius) !important;
 }
 
 .cardText-secondary+.itemSelectionPanel>.checkboxContainer>.emby-checkbox:checked+span+.checkboxOutline {
-    border-radius: 1em !important;
+    border-radius: var(--largeRadius) !important;
 }
 
 .cardText-secondary+.itemSelectionPanel>.checkboxContainer {
@@ -543,7 +543,7 @@ html {
 }
 
 .cardScalable+.itemSelectionPanel>.checkboxContainer>.emby-checkbox:checked+span+.checkboxOutline {
-    border-radius: 1em !important;
+    border-radius: var(--largeRadius) !important;
 }
 
 .cardScalable+.itemSelectionPanel>.checkboxContainer {
@@ -551,7 +551,7 @@ html {
 }
 
 .checkboxOutline.multiSelectCheckboxOutline {
-    border-radius: 1em;
+    border-radius: var(--largeRadius);
     border-width: 0;
     width: 100%;
     height: 100%;
@@ -574,7 +574,7 @@ html {
 }
 
 .listItemImage {
-    border-radius: .5em;
+    border-radius: var(--smallRadius);
 }
 
 .emby-button.block,
@@ -583,7 +583,7 @@ html {
 #btnDeleteImage,
 .dashboardActionsContainer>.emby-button {
     color: #fff;
-    border-radius: .5em;
+    border-radius: var(--smallRadius);
     background: var(--lighterGradientPoint);
     border: solid var(--borderColor) 1px;
 }
@@ -636,7 +636,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 .visualCardBox,
 .paperList {
     background-color: var(--headerColor) !important;
-    border-radius: 1em !important;
+    border-radius: var(--largeRadius) !important;
     border: solid var(--borderColor) 1px !important;
     box-shadow: unset !important;
 }
@@ -687,19 +687,19 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .navMenuOption {
-    border-radius: .5em !important;
+    border-radius: var(--smallRadius) !important;
     margin: .5em 1em !important;
 }
 
 .listItem:hover,
 .navMenuOption:hover {
     background: rgba(255, 255, 255, 0.125);
-    border-radius: .8em;
+    border-radius: var(--smallRadius);
 }
 
 .navMenuOption-selected {
     background-color: var(--activeColor) !important;
-    border: solid rgb(255 255 255 / 20%) 1px;
+    border: solid var(--lighterBorderColor) 1px;
 }
 
 .noBackdropTransparency .detailPageSecondaryContainer {
@@ -746,7 +746,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .sliderBubble {
-    border-radius: 1em;
+    border-radius: var(--largeRadius);
     border: solid 1px var(--borderColor);
     overflow: hidden;
 }
@@ -840,7 +840,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .sectionTitleTextButton>.material-icons::before {
     border: solid 1px;
-    border-radius: 1em;
+    border-radius: var(--largeRadius);
     font-size: .85em;
     line-height: unset;
     font-weight: 600;
@@ -850,7 +850,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 .toast {
     background: var(--headerColor);
     border: solid 1px var(--borderColor);
-    border-radius: .5em;
+    border-radius: var(--smallRadius);
     backdrop-filter: blur(1em);
 }
 
