@@ -488,6 +488,10 @@ html {
     font-size: unset;
 }
 
+.formDialogHeader>h1 {
+    margin-inline: 0 !important;
+}
+
 .collapseContent {
     background-color: unset !important;
     backdrop-filter: unset !important;
