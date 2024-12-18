@@ -588,6 +588,10 @@ html {
     border: solid var(--borderColor) var(--borderWidth);
 }
 
+.btnBrowse>.folder {
+    margin-inline-end: .5em;
+}
+
 .fab {
     color: #fff;
     background: var(--lighterGradientPoint);
