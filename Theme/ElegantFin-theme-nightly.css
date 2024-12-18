@@ -242,10 +242,28 @@ h1 {
     height: 50vh;
 }
 
+.mediaInfoOfficialRating {
+    border-radius: .5em;
+    font-size: 66%;
+    line-height: 1em;
+    margin: 0em 0.5em .15em 0em !important;
+    padding-inline: .5em;
+    padding-block-start: .4em;
+    font-weight: 600;
+    background: transparent !important;
+    border: solid 1px var(--borderColor);
+}
+
 @media (orientation: portrait) and (max-width: 40em) {
     .layout-mobile .itemBackdrop {
         height: 40vh;
         opacity: .35;
+    }
+
+    .mediaInfoOfficialRating {
+        padding-inline-start: .5em;
+        padding-inline-end: .475em;
+        padding-block-start: 0.470em;
     }
 }
 
@@ -427,18 +445,6 @@ html {
     background-color: var(--drawerColor);
     border-right: solid var(--borderColor) 1px;
     backdrop-filter: blur(8px);
-}
-
-.mediaInfoOfficialRating {
-    border-radius: .5em;
-    font-size: 66%;
-    line-height: 1em;
-    margin: 0em 0.5em .15em 0em !important;
-    padding-inline: .5em;
-    padding-block-start: .4em;
-    font-weight: 600;
-    background: transparent !important;
-    border: solid 1px var(--borderColor);
 }
 
 .detailButton {
