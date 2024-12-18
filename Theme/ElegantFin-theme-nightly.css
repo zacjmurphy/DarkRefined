@@ -479,6 +479,11 @@ html {
     opacity: .66;
 }
 
+.subtitleEditor-dropZone,
+.imageEditor-dropZone {
+    border-radius: var(--largeRadius);
+}
+
 .actionSheetContent>h1 {
     font-size: unset;
 }
