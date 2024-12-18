@@ -17,6 +17,11 @@
     --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
     --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
     --hoverGradient: linear-gradient(130deg, rgb(255 255 255 / 20%) 20%, rgb(255 255 255 / 10%) 40%);
+    --activeColor: rgb(201 143 255 / 40%);
+    --largerRadius: 1.25em;
+    --largeRadius: 1em;
+    --smallRadius: .5em;
+    --smallerRadius: .375em;
 }
 
 html {
@@ -693,7 +698,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .navMenuOption-selected {
-    background-color: rgb(201 143 255 / 42%) !important;
+    background-color: var(--activeColor) !important;
     border: solid rgb(255 255 255 / 20%) 1px;
 }
 
@@ -894,4 +899,8 @@ div[data-role=controlgroup] a.ui-btn-active {
 [dir=ltr] .mediaInfoItem {
     transform: scale(.85);
     margin: 0 .4em 0 0;
+}
+
+.programCell-active {
+    background-color: var(--activeColor) !important;
 }
