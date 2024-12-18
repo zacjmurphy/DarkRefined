@@ -607,12 +607,14 @@ html {
     border: solid var(--borderColor) var(--borderWidth);
 }
 
+.fab:focus,
 .raised:focus {
-    background: var(--lighterGradientPoint);
-    filter: brightness(1.25);
+    background: var(--lighterGradientPoint) !important;
+    filter: brightness(1.35);
 }
 
 .raised:hover,
+.fab:hover,
 .emby-button:hover {
     filter: brightness(1.2) !important;
 }
