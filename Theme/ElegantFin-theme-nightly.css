@@ -927,3 +927,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     /* border: solid var(--borderColor) var(--borderWidth); */
     /* padding-block: .5em !important; */
 }
+
+.emby-select-iconbutton {
+    background-color: var(--selectorBackgroundColor);
+    border: var(--lighterBorderColor) solid var(--borderWidth);
+    border-radius: var(--smallRadius);
+    margin-inline-start: 1em;
+}
