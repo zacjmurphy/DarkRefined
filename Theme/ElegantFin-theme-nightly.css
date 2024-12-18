@@ -296,7 +296,7 @@ html {
 
 .itemProgressBarForeground {
     border-radius: var(--largeRadius);
-    background-color: rgb(214 144 255 / 65%)
+    background-color: var(--activeColor);
 }
 
 .selectLabel {
