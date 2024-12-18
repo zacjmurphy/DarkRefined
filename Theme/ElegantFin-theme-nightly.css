@@ -903,4 +903,13 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .programCell-active {
     background-color: var(--activeColor) !important;
+    border-radius: .5em;
+    margin-block: .5em !important;
+}
+
+.programContainer>div {
+    /* background-color: #7883b66e; */
+    /* border-radius: .5em; */
+    /* border: solid var(--borderColor) var(--borderWidth); */
+    /* padding-block: .5em !important; */
 }
