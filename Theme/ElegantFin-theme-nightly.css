@@ -760,7 +760,8 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: rgba(255, 255, 255, 0.25);
 }
 
-.alphaPickerButton-selected {
+.alphaPickerButton-selected,
+.alphaPickerButton:hover {
     color: rgba(255, 255, 255, 1);
 }
 
