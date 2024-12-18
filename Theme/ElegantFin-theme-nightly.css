@@ -7,7 +7,8 @@
     /* outline: 0px dotted red !important; */
     --darkerGradientPoint: #111827;
     --lighterGradientPoint: #1d2635;
-    --borderColor: rgba(75, 85, 99, 0.9);
+    /* --borderColor: rgba(75, 85, 99, 0.9); */
+    --borderColor: rgb(71, 80, 92);
     --headerColor: rgba(30, 40, 54, 0.8);
     --drawerColor: rgba(30, 40, 54, 0.9);
     --lighterBorderColor: rgb(255 255 255 / 20%);
