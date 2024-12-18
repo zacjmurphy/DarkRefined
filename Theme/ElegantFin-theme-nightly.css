@@ -22,7 +22,7 @@
     --largeRadius: 1em;
     --smallRadius: .5em;
     --smallerRadius: .375em;
-    --borderWidth: 0.1em;
+    --borderWidth: 0.075em;
 }
 
 html {
@@ -54,7 +54,7 @@ html {
     background: #2f3a53;
     border-radius: var(--smallRadius);
     outline: var(--borderWidth) rgb(255 255 255) solid !important;
-    outline-offset: -.1em;
+    outline-offset: calc(-1*var(--borderWidth));
     color: #fff;
     transition: outline 0s, border 0s;
 }
@@ -404,12 +404,10 @@ html {
 
 .itemDetailsGroup {
     outline: var(--borderWidth) solid var(--borderColor);
-    outline-offset: -var(--borderWidth);
+    outline-offset: calc(-1*var(--borderWidth));
     overflow: hidden;
-    /* border: solid var(--borderColor) var(--borderWidth); */
     margin-top: 1.5em;
     border-radius: var(--smallRadius);
-    /* margin: .5em 1em; */
 }
 
 .itemDetailsGroup>div:not(:last-child) {
