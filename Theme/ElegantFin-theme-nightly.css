@@ -689,6 +689,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     border-right: solid var(--borderColor) var(--borderWidth);
 }
 
+.MuiDrawer-paper:first-child {
+    margin-block-start: .25em;
+}
+
 [dir=ltr] .navMenuOption {
     padding: .75em 1em !important;
 }
@@ -709,12 +713,26 @@ div[data-role=controlgroup] a.ui-btn-active {
 .listItem:hover,
 .navMenuOption:hover {
     background: rgba(255, 255, 255, 0.125);
-    border-radius: var(--smallRadius);
+    border-radius: .7em;
 }
 
 .navMenuOption-selected {
     background-color: var(--activeColor) !important;
     border: solid var(--lighterBorderColor) var(--borderWidth);
+}
+
+.MuiListItem-root>a,
+.MuiList-root>a,
+.MuiListItem-root>div {
+    border: solid transparent var(--borderWidth);
+    border-radius: .7em;
+    margin-inline: .5em !important;
+    margin-block: .25em !important;
+}
+
+.Mui-selected {
+    background-color: var(--activeColor) !important;
+    border: solid var(--lighterBorderColor) var(--borderWidth) !important;
 }
 
 .noBackdropTransparency .detailPageSecondaryContainer {
