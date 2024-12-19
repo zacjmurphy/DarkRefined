@@ -92,6 +92,7 @@ html {
     border: var(--borderColor) solid var(--borderWidth) !important;
     overflow: hidden !important;
     transition: 125ms transform;
+    /* box-shadow: 0 .0725em .29em 0 rgba(0, 0, 0, .37); */
 }
 
 .cardImageContainer {
@@ -169,7 +170,7 @@ h1 {
 
 .portraitCard {
     min-width: 5em;
-    width: 30%;
+    width: 29.5%;
     max-width: 12.9em;
 }
 
