@@ -32,10 +32,15 @@ html {
     font-style: normal;
 }
 
+.dashboardFooter {
+    font-family: Noto Sans;
+    transition: transform 50ms;
+}
+
 .dashboardFooter::after {
     content: "ElegantFin Nightly";
-    font-size: .6em;
-    opacity: .5;
+    font-size: .8em;
+    color: #4e4e60;
 }
 
 .card {
