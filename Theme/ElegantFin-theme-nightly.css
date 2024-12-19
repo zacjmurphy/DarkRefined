@@ -191,6 +191,11 @@ h1 {
     font-size: 1.25em;
 }
 
+.emby-scrollbuttons-button.paper-icon-button-light > .material-icons {
+    font-size: 1.5em;
+    place-content: center;
+}
+
 .detailRibbon {
     background-color: transparent;
 }
