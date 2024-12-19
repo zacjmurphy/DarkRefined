@@ -202,12 +202,6 @@ h1 {
     background-color: transparent;
 }
 
-.detailPageWrapperContainer {
-    /* padding-top: 30vh; */
-    background: linear-gradient(0deg, var(--darkerGradientPoint) 85%, transparent);
-    /* margin-top: -40vh; */
-}
-
 .itemBackdrop {
     height: 13em;
 }
@@ -236,6 +230,7 @@ h1 {
 .detailPageWrapperContainer {
     padding-top: unset;
     margin-top: unset;
+    background: linear-gradient(0deg, var(--darkerGradientPoint) 85%, transparent);
 }
 
 @media (max-width: 62.5em) {
@@ -976,13 +971,6 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: var(--activeColor) !important;
     border-radius: .5em;
     margin-block: .5em !important;
-}
-
-.programContainer>div {
-    /* background-color: #7883b66e; */
-    /* border-radius: .5em; */
-    /* border: solid var(--borderColor) var(--borderWidth); */
-    /* padding-block: .5em !important; */
 }
 
 .emby-select-iconbutton {
