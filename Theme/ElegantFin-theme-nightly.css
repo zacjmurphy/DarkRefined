@@ -197,13 +197,13 @@ h1 {
 }
 
 .detailPageWrapperContainer {
-    padding-top: 30vh;
+    /* padding-top: 30vh; */
     background: linear-gradient(0deg, var(--darkerGradientPoint) 85%, transparent);
-    margin-top: -40vh;
+    /* margin-top: -40vh; */
 }
 
 .itemBackdrop {
-    height: 50vh;
+    height: 13em;
 }
 
 .mediaInfoOfficialRating {
@@ -218,6 +218,26 @@ h1 {
     border: solid var(--borderWidth) var(--borderColor);
 }
 
+.layout-desktop .detailRibbon {
+    height: auto !important;
+    margin-top: unset !important;
+}
+
+.layout-desktop .detailImageContainer .card {
+    top: unset !important;
+}
+
+.detailPageWrapperContainer {
+    padding-top: unset;
+    margin-top: unset;
+}
+
+@media (max-width: 62.5em) {
+    .layout-desktop .itemBackdrop {
+        height: 7em !important;
+    }
+}
+
 @media (orientation: portrait) and (max-width: 40em) {
     .layout-mobile .itemBackdrop {
         height: 40vh;
@@ -228,6 +248,11 @@ h1 {
         padding-inline-start: .5em;
         padding-inline-end: .475em;
         padding-block-start: 0.470em;
+    }
+
+    .detailPageWrapperContainer {
+        padding-top: 35vh;
+        margin-top: -45vh;
     }
 }
 
