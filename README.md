@@ -93,9 +93,9 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 </details>
 
 <details>
-  <summary>3️⃣ - <i>Why do I still notice visual bugs and inconsistencies?</i></summary>
+  <summary>3️⃣ - <i>Why do I notice visual bugs and inconsistencies on Jellyfin Media Player?</i></summary>
 
-- Are you using Jellyfin Media Player? If yes, JMP seems to be using a different or probably an older version of web engine. I am working on adding workarounds, but the progress is slow.
+- Currently JMP uses Qt 5.x which uses an outdated web engine, so many new CSS features do not work. Once they release a new version based on Qt 6.x, most issues should automatically be resolved. Until then, I advise using the web app instead.
 - Are you not using JMP and still facing issues? See the 4th point below.
 </details>
 
