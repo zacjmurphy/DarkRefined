@@ -997,6 +997,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     position: relative;
     width: auto;
   }
+
+    .libraryPage:not(.noSecondaryNavPage) {
+        padding-top: 4.8em !important;
+    }
 }
 
 .emby-select-withcolor > option {
