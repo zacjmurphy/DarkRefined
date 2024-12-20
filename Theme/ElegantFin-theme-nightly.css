@@ -198,6 +198,11 @@ h1 {
     font-size: 1.25em;
 }
 
+.emby-scrollbuttons-button.paper-icon-button-light>.material-icons {
+    font-size: 1.5em;
+    place-content: center;
+}
+
 .detailRibbon {
     background-color: transparent;
 }
@@ -978,4 +983,27 @@ div[data-role=controlgroup] a.ui-btn-active {
     border: var(--lighterBorderColor) solid var(--borderWidth);
     border-radius: var(--smallRadius);
     margin-inline-start: 1em;
+}
+
+@media (min-width: 62em) {
+    .sectionTabs:not(.layout-tv .sectionTabs) {
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-align-self: center;
+        align-self: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        margin-top: -4.3em;
+        position: relative;
+        width: auto;
+    }
+
+    .libraryPage:not(.noSecondaryNavPage) {
+        padding-top: 4.8em !important;
+    }
+}
+
+.emby-select-withcolor>option {
+    color: inherit;
+    background-color: var(--selectorBackgroundColor);
 }
