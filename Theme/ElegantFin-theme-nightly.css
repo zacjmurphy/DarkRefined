@@ -247,7 +247,7 @@ h1 {
 @media (orientation: portrait) and (max-width: 40em) {
     .layout-mobile .itemBackdrop {
         height: 40vh;
-        opacity: .35;
+        /* opacity: .35; */
     }
 
     .mediaInfoOfficialRating {
@@ -262,14 +262,21 @@ h1 {
     }
 }
 
-@media (max-height: 31.25em) {
-    .itemBackdrop {
+@media (orientation: landscape) and (max-height: 40em) {
+    /* .itemBackdrop {
         height: 62vh;
+    } */
+
+    .portraitCard {
+        min-width: 2em;
+        width: 8.5%;
+        max-width: 6.5em;
     }
 }
 
 .layout-mobile .itemBackdrop {
     margin-top: 3.5em;
+    opacity: .35;
 }
 
 h2 {
