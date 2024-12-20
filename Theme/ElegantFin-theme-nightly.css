@@ -998,3 +998,8 @@ div[data-role=controlgroup] a.ui-btn-active {
     width: auto;
   }
 }
+
+.emby-select-withcolor > option {
+  color: inherit;
+  background-color: var(--selectorBackgroundColor);
+}
