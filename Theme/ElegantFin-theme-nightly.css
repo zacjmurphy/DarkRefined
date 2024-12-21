@@ -1005,7 +1005,7 @@ div[data-role=controlgroup] a.ui-btn-active {
         width: auto;
     }
 
-    .libraryPage:not(.noSecondaryNavPage) {
+    .libraryPage:not(.noSecondaryNavPage):not(.layout-tv .libraryPage) {
         padding-top: 4.8em !important;
     }
 }
