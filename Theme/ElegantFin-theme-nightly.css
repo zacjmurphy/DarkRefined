@@ -1054,6 +1054,6 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: var(--selectorBackgroundColor);
 }
 
-.headerLeft, .skinHeader {
-overflow: unset;
+.layout-tv .headerLeft {
+    overflow: unset;
 }
