@@ -431,6 +431,7 @@ html {
     border: solid var(--lighterBorderColor) var(--borderWidth);
     padding: .5em .5em !important;
     margin: 0.125em !important;
+    backdrop-filter: blur(.1em);
 }
 
 .button-flat:hover {
