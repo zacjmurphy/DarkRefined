@@ -5,6 +5,7 @@
 
 :root {
     --darkerGradientPoint: #111827;
+    --darkerGradientPointAlpha: rgba(17, 24, 39, 0.85);
     --lighterGradientPoint: #1d2635;
     --borderColor: rgb(71, 80, 92);
     --headerColor: rgba(30, 40, 54, 0.8);
@@ -167,11 +168,45 @@ h1 {
     font-size: 3em;
 }
 
+.detailPageWrapperContainer {
+    padding-top: unset;
+    margin-top: unset;
+}
+
+.layout-mobile .detailPageWrapperContainer {
+    background: var(--darkerGradientPointAlpha);
+}
+
+.layout-desktop .detailPageWrapperContainer {
+    background: linear-gradient(0deg, var(--darkerGradientPoint) 80%, transparent);
+    min-height: calc(100vh - 13em);
+}
+
 .detailPagePrimaryContainer {
     align-content: space-between;
     align-items: stretch;
     justify-content: end;
     flex-direction: column;
+}
+
+.layout-mobile .detailPagePrimaryContainer{
+    background: linear-gradient(0deg, var(--darkerGradientPoint) 70%, transparent);
+}
+
+.layout-desktop .detailPagePrimaryContainer{
+    background: transparent;
+}
+
+.layout-mobile .detailPageSecondaryContainer {
+    background-color: var(--darkerGradientPoint);
+}
+
+.layout-desktop .detailPageSecondaryContainer {
+    background-color: transparent;
+}
+
+.noBackdropTransparency .detailPageSecondaryContainer {
+    /* background-color: transparent; */
 }
 
 .portraitCard {
@@ -232,22 +267,30 @@ h1 {
     top: unset !important;
 }
 
-.detailPageWrapperContainer {
-    padding-top: unset;
-    margin-top: unset;
-    background: linear-gradient(0deg, var(--darkerGradientPoint) 85%, transparent);
-}
-
 @media (max-width: 62.5em) {
     .layout-desktop .itemBackdrop {
         height: 7em !important;
+    }
+    .layout-desktop .detailPageWrapperContainer {
+    min-height: calc(100vh - 7em);
+}
+}
+
+@media (orientation: landscape) and (min-width: 40em) {
+    .layout-mobile .itemBackdrop {
+        height: 40vh;
+        opacity: .10;
+    }
+
+    .layout-mobile .detailPageWrapperContainer {
+        padding-top: 35vh;
+        margin-top: -47vh;
     }
 }
 
 @media (orientation: portrait) and (max-width: 40em) {
     .layout-mobile .itemBackdrop {
         height: 40vh;
-        /* opacity: .35; */
     }
 
     .mediaInfoOfficialRating {
@@ -256,9 +299,9 @@ h1 {
         padding-block-start: 0.470em;
     }
 
-    .detailPageWrapperContainer {
+    .layout-mobile .detailPageWrapperContainer {
         padding-top: 35vh;
-        margin-top: -45vh;
+        margin-top: -47vh;
     }
 }
 
@@ -276,7 +319,11 @@ h1 {
 
 .layout-mobile .itemBackdrop {
     margin-top: 3.5em;
-    opacity: .35;
+}
+
+.layout-tv .itemBackdrop {
+    display: block;
+    height: 13vh;
 }
 
 h2 {
@@ -780,10 +827,6 @@ div[data-role=controlgroup] a.ui-btn-active {
     border: solid var(--lighterBorderColor) var(--borderWidth) !important;
 }
 
-.noBackdropTransparency .detailPageSecondaryContainer {
-    background-color: transparent;
-}
-
 .detailSection {
     display: flex;
     flex-direction: column;
@@ -936,11 +979,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 .activeSession {
     width: 98% !important;
     max-width: 27rem !important;
-}
-
-.layout-tv .itemBackdrop {
-    display: block;
-    height: 13vh;
 }
 
 .emby-tab-button:hover {
