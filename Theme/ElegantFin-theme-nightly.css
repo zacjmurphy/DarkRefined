@@ -1014,3 +1014,7 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: inherit;
     background-color: var(--selectorBackgroundColor);
 }
+
+.headerLeft, .skinHeader {
+overflow: unset;
+}
