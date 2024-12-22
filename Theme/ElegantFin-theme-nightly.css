@@ -193,6 +193,10 @@ h1 {
     flex-direction: column;
 }
 
+[dir=ltr] .detailPagePrimaryContent {
+    padding-right: 0;
+}
+
 .layout-mobile .detailPagePrimaryContainer{
     background: linear-gradient(0deg, var(--darkerGradientPoint) 70%, transparent);
 }
@@ -822,7 +826,7 @@ div[data-role=controlgroup] a.ui-btn-active {
     padding: .75em 1em !important;
 }
 
-[dir=ltr] .listItem:not(.actionSheetMenuItem) {
+[dir=ltr] .listItem:not(.actionSheetMenuItem, .childrenItemsContainer .listItem, .activityLogListWidget .listItem) {
     padding: 0.25em 0.25em 0.25em 1.5em !important;
 }
 
