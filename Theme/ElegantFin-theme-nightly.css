@@ -12,6 +12,8 @@
     --drawerColor: rgba(30, 40, 54, 0.9);
     --lighterBorderColor: rgb(255 255 255 / 20%);
     --selectorBackgroundColor: rgb(55, 65, 81);
+    --btnDeleteColor: rgb(169, 29, 29);
+    --btnDeleteBorderColor: rgb(217, 84, 84);
     --btnSubmitColor: rgb(61, 54, 178);
     --btnSubmitBorderColor: rgb(117 111 226);
     --checkboxCheckedBgColor: rgb(79, 70, 229);
@@ -738,8 +740,8 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 #btnDeleteImage,
 .button-delete {
-    background: rgb(169, 29, 29);
-    border: solid rgb(217, 84, 84) var(--borderWidth);
+    background: var(--btnDeleteColor);
+    border: solid var(--btnDeleteBorderColor) var(--borderWidth);
 }
 
 .button-submit {
@@ -778,6 +780,17 @@ div[data-role=controlgroup] a.ui-btn-active {
 .listItemIcon:not(.listItemIcon-transparent) {
     background-color: var(--lighterGradientPoint) !important;
 }
+
+.listItemIcon.notification_important{
+    background-color: var(--btnDeleteColor) !important;
+    border: solid var(--btnDeleteBorderColor) var(--borderWidth);
+}
+
+.listItemIcon.notifications{
+    background-color: rgb(41, 49, 83) !important;
+    border: solid var(--borderColor) var(--borderWidth);
+}
+
 
 .readOnlyContent {
     flex-direction: column !important;
