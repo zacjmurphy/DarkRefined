@@ -1094,3 +1094,8 @@ div[data-role=controlgroup] a.ui-btn-active {
 .layout-tv .headerLeft {
     overflow: unset;
 }
+
+.mdl-spinner__circle {
+    border-color: var(--dimTextColor);
+    border-style: inset;
+}
