@@ -593,7 +593,13 @@ html {
 }
 
 .formDialogHeader>h1 {
+    /* margin-inline: 0 !important; */
+}
+
+.formDialogHeaderTitle{
     margin-inline: 0 !important;
+    text-align: center;
+    padding: 0 0.5em !important;
 }
 
 .collapseContent {
