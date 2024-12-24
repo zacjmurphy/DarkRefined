@@ -28,6 +28,7 @@
     --smallRadius: .5em;
     --smallerRadius: .375em;
     --borderWidth: 0.075em;
+    --tableBodyColor: rgb(31 41 55 / 1);
 }
 
 html {
@@ -472,7 +473,8 @@ html {
 
 .btnPlay>.detailButton-content::after {
     padding-left: .25em;
-    margin-top: .1em;
+    padding-right: 1em;
+    place-content: center;
     content: "Play";
 }
 
@@ -1098,4 +1100,69 @@ div[data-role=controlgroup] a.ui-btn-active {
 .mdl-spinner__circle {
     border-color: var(--dimTextColor);
     border-style: inset;
+}
+
+.subtitleappearance-preview {
+    border-radius: var(--smallRadius);
+}
+
+.infoBanner {
+    display: flex;
+    place-content: center;
+    background-color: var(--headerColor) !important;
+    border-radius: var(--largeRadius) !important;
+    border: solid var(--borderColor) var(--borderWidth) !important;
+}
+
+.sliderBubbleText {
+    font-size: 1.5em;
+}
+
+.checkboxOutline:not(.multiSelectCheckboxOutline) .checkboxIcon {
+    font-size: 1em;
+}
+
+.checkboxOutline:not(.multiSelectCheckboxOutline) {
+    border-width: var(--borderWidth);
+}
+
+.emby-checkbox:checked + span + .checkboxOutline:not(.multiSelectCheckboxOutline) {
+    box-shadow: none;
+    background: var(--selectorBackgroundColor);
+    border: var(--lighterBorderColor) solid var(--borderWidth);
+}
+
+fieldset {
+    border-radius: var(--smallRadius);
+    border-color: var(--borderColor) solid var(--borderWidth);
+}
+
+.sectionTitleTextButton > .material-icons::before {
+    font-size: 1em;
+}
+
+.sectionTitleTextButton:hover {
+    background: transparent !important;
+    color: white !important;
+}
+
+#serverActivityPage .MuiPaper-elevation2 {
+    border: solid var(--borderColor) var(--borderWidth) !important;
+    box-shadow: unset !important;
+    background-color: var(--tableBodyColor);
+}
+
+#serverActivityPage .MuiPaper-elevation2 > .MuiBox-root,
+#serverActivityPage .MuiTableRow-root.MuiTableRow-head,
+#serverActivityPage .MuiTableRow-root {
+    background-color: var(--tableBodyColor) !important;
+}
+
+.MuiList-root.MuiMenu-list {
+    background-color: var(--drawerColor);
+}
+
+ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
+    /* ! Don't change these units. They are rem because that is standard for MUI */
+    gap: 0.5rem;
 }
