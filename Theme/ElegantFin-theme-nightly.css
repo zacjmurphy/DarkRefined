@@ -387,15 +387,17 @@ html {
 }
 
 .itemProgressBar {
+    backdrop-filter: blur(.1em);
     background-color: rgb(123 123 123 / 30%) !important;
-    height: .2em;
+    height: .3em;
+    box-shadow: 0px 0px 0.01em .01em black;
     overflow: hidden;
     border-radius: var(--largeRadius);
 }
 
 .itemProgressBarForeground {
     border-radius: var(--largeRadius);
-    background-color: var(--activeColor);
+    background-color: var(--dimTextColor);
 }
 
 .selectLabel {
