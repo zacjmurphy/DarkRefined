@@ -17,9 +17,11 @@
     --btnSubmitColor: rgb(61, 54, 178);
     --btnSubmitBorderColor: rgb(117 111 226);
     --checkboxCheckedBgColor: rgb(79, 70, 229);
+    --checkboxUncheckedFocusedBorderColor: rgb(37, 99, 235);
     --textColor: rgb(209, 213, 219);
     --dimTextColor: rgb(156, 163, 175);
     --activeColor: rgb(201 143 255 / 40%);
+    --tableBodyColor: rgb(31 41 55 / 1);
     --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
     --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
     --hoverGradient: linear-gradient(130deg, rgb(255 255 255 / 20%) 20%, rgb(255 255 255 / 10%) 40%);
@@ -28,7 +30,6 @@
     --smallRadius: .5em;
     --smallerRadius: .375em;
     --borderWidth: 0.075em;
-    --tableBodyColor: rgb(31 41 55 / 1);
 }
 
 html {
@@ -683,6 +684,33 @@ html {
     height: 100%;
 }
 
+.checkboxOutline:not(.multiSelectCheckboxOutline) .checkboxIcon {
+    font-size: .9em;
+    font-weight: 900;
+}
+
+.checkboxOutline:not(.multiSelectCheckboxOutline) {
+    border: solid gray var(--borderWidth);
+    background-color: white;
+}
+
+.emby-checkbox:checked+span+.checkboxOutline:not(.multiSelectCheckboxOutline) {
+    box-shadow: none;
+    background: var(--checkboxCheckedBgColor);
+    border: var(--lighterBorderColor) solid var(--borderWidth);
+}
+
+.emby-checkbox:focus:not(:checked)+span+.checkboxOutline {
+    border-color: var(--checkboxUncheckedFocusedBorderColor) !important;
+    outline: var(--borderWidth) solid gray;
+    outline-offset: calc(-2.5*var(--borderWidth));
+}
+
+.emby-checkbox:focus+span+.checkboxOutline {
+    border-color: white !important;
+    outline: var(--borderWidth) solid var(--checkboxUncheckedFocusedBorderColor);
+}
+
 .cardIndicators {
     -webkit-align-items: center;
     align-items: center;
@@ -989,6 +1017,11 @@ div[data-role=controlgroup] a.ui-btn-active {
     padding-inline: .5em;
 }
 
+.sectionTitleTextButton:hover {
+    background: transparent !important;
+    color: white !important;
+}
+
 .sectionTitleTextButton>* {
     padding: .3em 0 !important;
     margin: 0 0 !important;
@@ -1003,7 +1036,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 .sectionTitleTextButton>.material-icons::before {
     border: solid var(--borderWidth);
     border-radius: var(--largeRadius);
-    font-size: .85em;
+    font-size: 1em;
     line-height: unset;
     font-weight: 600;
     margin-inline-start: .5em;
@@ -1119,32 +1152,9 @@ div[data-role=controlgroup] a.ui-btn-active {
     font-size: 1.5em;
 }
 
-.checkboxOutline:not(.multiSelectCheckboxOutline) .checkboxIcon {
-    font-size: 1em;
-}
-
-.checkboxOutline:not(.multiSelectCheckboxOutline) {
-    border-width: var(--borderWidth);
-}
-
-.emby-checkbox:checked+span+.checkboxOutline:not(.multiSelectCheckboxOutline) {
-    box-shadow: none;
-    background: var(--selectorBackgroundColor);
-    border: var(--lighterBorderColor) solid var(--borderWidth);
-}
-
 fieldset {
     border-radius: var(--smallRadius);
     border-color: var(--borderColor) solid var(--borderWidth);
-}
-
-.sectionTitleTextButton>.material-icons::before {
-    font-size: 1em;
-}
-
-.sectionTitleTextButton:hover {
-    background: transparent !important;
-    color: white !important;
 }
 
 #serverActivityPage .MuiPaper-elevation2 {
