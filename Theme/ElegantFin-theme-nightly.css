@@ -198,11 +198,11 @@ h1 {
     padding-right: 0;
 }
 
-.layout-mobile .detailPagePrimaryContainer{
+.layout-mobile .detailPagePrimaryContainer {
     background: linear-gradient(0deg, var(--darkerGradientPoint) 70%, transparent);
 }
 
-.layout-desktop .detailPagePrimaryContainer{
+.layout-desktop .detailPagePrimaryContainer {
     background: transparent;
 }
 
@@ -280,9 +280,10 @@ h1 {
     .layout-desktop .itemBackdrop {
         height: 7em !important;
     }
+
     .layout-desktop .detailPageWrapperContainer {
-    min-height: calc(100vh - 7em);
-}
+        min-height: calc(100vh - 7em);
+    }
 }
 
 @media (orientation: landscape) and (min-width: 40em) {
@@ -541,7 +542,7 @@ html {
 }
 
 .itemExternalLinks {
-        color: var(--textColor);
+    color: var(--textColor);
 }
 
 .itemTags,
@@ -602,7 +603,7 @@ html {
     /* margin-inline: 0 !important; */
 }
 
-.formDialogHeaderTitle{
+.formDialogHeaderTitle {
     margin-inline: 0 !important;
     text-align: center;
     padding: 0 0.5em !important;
@@ -793,12 +794,12 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: var(--lighterGradientPoint) !important;
 }
 
-.listItemIcon.notification_important{
+.listItemIcon.notification_important {
     background-color: var(--btnDeleteColor) !important;
     border: solid var(--btnDeleteBorderColor) var(--borderWidth);
 }
 
-.listItemIcon.notifications{
+.listItemIcon.notifications {
     background-color: rgb(41, 49, 83) !important;
     border: solid var(--borderColor) var(--borderWidth);
 }
@@ -1126,7 +1127,7 @@ div[data-role=controlgroup] a.ui-btn-active {
     border-width: var(--borderWidth);
 }
 
-.emby-checkbox:checked + span + .checkboxOutline:not(.multiSelectCheckboxOutline) {
+.emby-checkbox:checked+span+.checkboxOutline:not(.multiSelectCheckboxOutline) {
     box-shadow: none;
     background: var(--selectorBackgroundColor);
     border: var(--lighterBorderColor) solid var(--borderWidth);
@@ -1137,7 +1138,7 @@ fieldset {
     border-color: var(--borderColor) solid var(--borderWidth);
 }
 
-.sectionTitleTextButton > .material-icons::before {
+.sectionTitleTextButton>.material-icons::before {
     font-size: 1em;
 }
 
@@ -1152,7 +1153,7 @@ fieldset {
     background-color: var(--tableBodyColor);
 }
 
-#serverActivityPage .MuiPaper-elevation2 > .MuiBox-root,
+#serverActivityPage .MuiPaper-elevation2>.MuiBox-root,
 #serverActivityPage .MuiTableRow-root.MuiTableRow-head,
 #serverActivityPage .MuiTableRow-root {
     background-color: var(--tableBodyColor) !important;
@@ -1162,7 +1163,7 @@ fieldset {
     background-color: var(--drawerColor);
 }
 
-ul.MuiList-root.MuiMenu-list.MuiList-dense > div:first-child {
+ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     /* ! Don't change these units. They are rem because that is standard for MUI */
     gap: 0.5rem;
 }
