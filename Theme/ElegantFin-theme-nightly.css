@@ -390,7 +390,7 @@ html {
     backdrop-filter: blur(.1em);
     background-color: rgb(123 123 123 / 30%) !important;
     height: .3em;
-    box-shadow: 0px 0px 0.01em .01em black;
+    box-shadow: inset 0px 0px 0.01em .01em #969696;
     overflow: hidden;
     border-radius: var(--largeRadius);
 }
@@ -1178,4 +1178,8 @@ fieldset {
 ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     /* ! Don't change these units. They are rem because that is standard for MUI */
     gap: 0.5rem;
+}
+
+.playerStats {
+    border-radius: var(--largeRadius);
 }
