@@ -451,16 +451,6 @@ html {
     margin-top: 2em;
 }
 
-.emby-select-withcolor,
-.emby-select,
-.emby-input,
-.emby-textarea {
-    background-color: var(--selectorBackgroundColor);
-    border: var(--lighterBorderColor) solid var(--borderWidth);
-    border-radius: var(--smallRadius);
-    padding: .5em !important;
-}
-
 .btnPlay {
     background-color: rgba(255, 255, 255, 0.05);
     border: solid var(--lighterBorderColor) var(--borderWidth);
@@ -720,6 +710,11 @@ html {
 
 .cardScalable+.itemSelectionPanel>.checkboxContainer {
     height: calc(100% - 0em);
+}
+
+.checkboxContainer:hover .checkboxOutline:not(.multiSelectCheckboxOutline) {
+    border-color: var(--checkboxCheckedBgColor);
+    border-width: calc(2 * var(--borderWidth));
 }
 
 .checkboxOutline.multiSelectCheckboxOutline {
@@ -1115,6 +1110,16 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: rgb(255 255 255 / 5%);
 }
 
+.emby-select-withcolor,
+.emby-select,
+.emby-input,
+.emby-textarea {
+    background-color: var(--selectorBackgroundColor);
+    border: var(--lighterBorderColor) solid var(--borderWidth);
+    border-radius: var(--smallRadius);
+    padding: .5em !important;
+}
+
 .inputLabelFocused,
 .selectLabelFocused,
 .textareaLabelFocused {
@@ -1125,6 +1130,17 @@ div[data-role=controlgroup] a.ui-btn-active {
 .emby-input:focus,
 .emby-textarea:focus {
     border-color: #c1c1c1 !important;
+}
+
+.emby-select-withcolor:hover,
+.emby-input:hover,
+.emby-textarea:hover {
+    border-color: var(--dimTextColor) !important;
+}
+
+.emby-select-withcolor>option {
+    color: inherit;
+    background-color: var(--selectorBackgroundColor);
 }
 
 .layout-mobile [dir=ltr] .infoWrapper {
@@ -1165,11 +1181,6 @@ div[data-role=controlgroup] a.ui-btn-active {
     .libraryPage:not(.noSecondaryNavPage):not(.layout-tv .libraryPage) {
         padding-top: 4.8em !important;
     }
-}
-
-.emby-select-withcolor>option {
-    color: inherit;
-    background-color: var(--selectorBackgroundColor);
 }
 
 .layout-tv .headerLeft {
@@ -1225,4 +1236,8 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 
 .playerStats {
     border-radius: var(--largeRadius);
+}
+
+#scenesContent .cardScalable:hover {
+    border-color: var(--dimTextColor) !important;
 }
