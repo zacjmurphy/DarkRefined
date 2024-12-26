@@ -153,8 +153,12 @@ html {
     background-color: rgba(0, 0, 0, 0.75) !important;
 }
 
-.portraitCard .cardOverlayButton-br,
-.backdropCard .cardOverlayButton-br {
+.layout-desktop .cardOverlayButton-br {
+    display: none;
+}
+
+.layout-mobile .portraitCard .cardOverlayButton-br,
+.layout-mobile .backdropCard .cardOverlayButton-br {
     display: none;
 }
 
