@@ -24,7 +24,7 @@
     --tableBodyColor: rgb(31 41 55 / 1);
     --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
     --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
-    --hoverGradient: linear-gradient(130deg, rgb(255 255 255 / 20%) 20%, rgb(255 255 255 / 10%) 40%);
+    --hoverGradient: linear-gradient(130deg, rgb(255 255 255 / 30%) 20%, rgb(255 255 255 / 10%) 40%);
     --largerRadius: 1.25em;
     --largeRadius: 1em;
     --smallRadius: .5em;
