@@ -113,6 +113,7 @@ html {
 }
 
 .cardOverlayContainer {
+    transition: .25s;
     border-radius: var(--largeRadius) !important;
     border: solid rgb(255 255 255 / 65%) var(--borderWidth);
     /* mix-blend-mode: plus-lighter; */
@@ -125,9 +126,48 @@ html {
 }
 
 .cardOverlayContainer>.cardOverlayFab-primary {
+    /* display: none; */
+}
+
+.cardOverlayContainer>.cardOverlayFab-primary {
+    left: unset;
+    margin-left: unset;
+    margin-top: unset;
+    top: unset;
+    right: 1em;
+    bottom: 1em;
+}
+
+.cardOverlayContainer>.cardOverlayFab-primary,
+.listItemImageButton {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--textColor);
+    border: solid var(--borderColor) var(--borderWidth);
+    font-size: 100%;
+}
+
+.cardOverlayContainer>.cardOverlayFab-primary:hover,
+.listItemImageButton:hover {
+    /* display: none; */
+    /* transition: .125s; */
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.portraitCard .cardOverlayButton-br,
+.backdropCard .cardOverlayButton-br {
     display: none;
 }
 
+.cardOverlayContainer:has(.cardOverlayButton:hover) {
+    /* opacity: 1; */
+    backdrop-filter: blur(.25em);
+}
+
+.listViewUserDataButtons {
+    flex-direction: column;
+    padding-inline-end: .75em;
+    padding-inline-start: 1em;
+}
 
 @media (min-width: 31.25em) {
 
@@ -225,8 +265,7 @@ h1 {
     max-width: 12.9em;
 }
 
-.headerHomeButton,
-.cardOverlayButton {
+.headerHomeButton {
     display: none;
 }
 
