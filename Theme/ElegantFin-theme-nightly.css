@@ -173,6 +173,14 @@ html {
     padding-inline-start: 1em;
 }
 
+.smallBackdropCard,
+.squareCard,
+.backdropCard,
+.bannerCard {
+    width: 46%;
+    max-width: 18em;
+}
+
 @media (min-width: 31.25em) {
 
     .portraitCard,
@@ -368,6 +376,10 @@ h1 {
         min-width: 2em;
         width: 8.5%;
         max-width: 6.5em;
+    }
+
+    .backdropCard {
+        width: 23%;
     }
 }
 
@@ -1013,14 +1025,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .paging {
     padding-inline: 1em;
-}
-
-.smallBackdropCard,
-.squareCard,
-.backdropCard,
-.bannerCard {
-    width: 46%;
-    max-width: 18em;
 }
 
 .layout-mobile #myPreferencesMenuPage {
