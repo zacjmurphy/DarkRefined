@@ -115,7 +115,7 @@ html {
 .cardOverlayContainer {
     border-radius: var(--largeRadius) !important;
     border: solid rgb(255 255 255 / 65%) var(--borderWidth);
-    mix-blend-mode: plus-lighter;
+    /* mix-blend-mode: plus-lighter; */
     background: var(--hoverGradient);
 }
 
