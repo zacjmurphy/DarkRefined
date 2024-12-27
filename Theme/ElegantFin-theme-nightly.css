@@ -906,7 +906,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 [dir="ltr"] .listItem:not(.actionSheetMenuItem)[data-type="Episode"] {
-  padding: .5em 0.25em 0.5em 0.5em !important;
+    padding: .5em 0.25em 0.5em 0.5em !important;
 }
 
 .actionSheetContent {
@@ -1244,16 +1244,17 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 
 progress::-moz-progress-bar,
 progress::-webkit-progress-value {
-  background: var(--btnSubmitBorderColor) !important;
-  border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
+    background: var(--btnSubmitBorderColor) !important;
+    border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
 }
 
 progress {
-  background: var(--hoverGradient) !important;
-  border: solid var(--lighterBorderColor) var(--borderWidth) !important;
-  border-radius: var(--smallRadius);
+    background: var(--hoverGradient) !important;
+    border: solid var(--lighterBorderColor) var(--borderWidth) !important;
+    border-radius: var(--smallRadius);
+    overflow: hidden;
 }
 
-progress + span {
-  color: var(--btnSubmitBorderColor) !important;
+progress+span {
+    color: var(--btnSubmitBorderColor) !important;
 }
