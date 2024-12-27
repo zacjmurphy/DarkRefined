@@ -905,6 +905,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     padding: 0.25em 0.25em 0.25em 1.5em !important;
 }
 
+[dir="ltr"] .listItem:not(.actionSheetMenuItem)[data-type="Episode"] {
+  padding: .5em 0.25em 0.5em 0.5em !important;
+}
+
 .actionSheetContent {
     padding: .4em !important;
 }
@@ -1236,4 +1240,20 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 
 #scenesContent .cardScalable:hover {
     border-color: var(--dimTextColor) !important;
+}
+
+progress::-moz-progress-bar,
+progress::-webkit-progress-value {
+  background: var(--btnSubmitBorderColor) !important;
+  border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
+}
+
+progress {
+  background: var(--hoverGradient) !important;
+  border: solid var(--lighterBorderColor) var(--borderWidth) !important;
+  border-radius: var(--smallRadius);
+}
+
+progress + span {
+  color: var(--btnSubmitBorderColor) !important;
 }
