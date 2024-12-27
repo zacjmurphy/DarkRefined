@@ -116,7 +116,6 @@ html {
     transition: .25s;
     border-radius: var(--largeRadius) !important;
     border: solid rgb(255 255 255 / 65%) var(--borderWidth);
-    /* mix-blend-mode: plus-lighter; */
     background: var(--hoverGradient);
 }
 
@@ -126,16 +125,12 @@ html {
 }
 
 .cardOverlayContainer>.cardOverlayFab-primary {
-    /* display: none; */
-}
-
-.cardOverlayContainer>.cardOverlayFab-primary {
     left: unset;
     margin-left: unset;
     margin-top: unset;
     top: unset;
-    right: 1em;
-    bottom: 1em;
+    right: 1.25em;
+    bottom: 1.25em;
 }
 
 .cardOverlayContainer>.cardOverlayFab-primary,
@@ -143,13 +138,11 @@ html {
     background-color: rgba(0, 0, 0, 0.9);
     color: var(--textColor);
     border: solid var(--borderColor) var(--borderWidth);
-    font-size: 100%;
+    font-size: 75%;
 }
 
 .cardOverlayContainer>.cardOverlayFab-primary:hover,
 .listItemImageButton:hover {
-    /* display: none; */
-    /* transition: .125s; */
     background-color: rgba(0, 0, 0, 0.75) !important;
 }
 
@@ -163,7 +156,6 @@ html {
 }
 
 .cardOverlayContainer:has(.cardOverlayButton:hover) {
-    /* opacity: 1; */
     backdrop-filter: blur(.25em);
 }
 
