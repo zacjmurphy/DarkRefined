@@ -433,7 +433,7 @@ html {
     transition: all .375s ease-in-out;
 }
 
-.itemProgressBar {
+.itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
     backdrop-filter: blur(.1em);
     background-color: rgb(123 123 123 / 30%) !important;
     height: .3em;
