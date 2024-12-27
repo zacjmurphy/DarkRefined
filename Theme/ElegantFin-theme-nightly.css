@@ -1128,7 +1128,7 @@ div[data-role=controlgroup] a.ui-btn-active {
     border-color: #c1c1c1 !important;
 }
 
-.emby-select-withcolor:hover,
+.emby-select-withcolor:hover:not(.emby-select[disabled]),
 .emby-input:hover,
 .emby-textarea:hover {
     border-color: var(--dimTextColor) !important;
