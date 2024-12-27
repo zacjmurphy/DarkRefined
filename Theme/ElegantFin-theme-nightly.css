@@ -1243,12 +1243,13 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 progress::-moz-progress-bar,
-progress::-webkit-progress-value {
+::-webkit-progress-value {
     background: var(--btnSubmitBorderColor) !important;
     border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
 }
 
-progress {
+progress,
+::-webkit-progress-bar {
     background: var(--hoverGradient) !important;
     border: solid var(--lighterBorderColor) var(--borderWidth) !important;
     border-radius: var(--smallRadius);
