@@ -447,6 +447,36 @@ html {
     background-color: var(--dimTextColor);
 }
 
+.backgroundProgress>div {
+    background-color: var(--darkerGradientPoint);
+}
+
+.playbackProgress>div {
+    background-color: var(--btnSubmitBorderColor);
+}
+
+::-moz-progress-bar {
+    background: var(--btnSubmitBorderColor) !important;
+    border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
+}
+
+::-webkit-progress-value {
+    background: var(--btnSubmitBorderColor) !important;
+    border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
+}
+
+progress,
+::-webkit-progress-bar {
+    background: var(--darkerGradientPoint) !important;
+    border: solid var(--borderColor) var(--borderWidth) !important;
+    border-radius: var(--smallRadius);
+    overflow: hidden;
+}
+
+progress+span {
+    color: var(--btnSubmitBorderColor) !important;
+}
+
 .selectLabel {
     max-height: 2em;
 }
@@ -1244,26 +1274,4 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 
 #scenesContent .cardScalable:hover {
     border-color: var(--dimTextColor) !important;
-}
-
-::-moz-progress-bar {
-    background: var(--btnSubmitBorderColor) !important;
-    border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
-}
-
-::-webkit-progress-value {
-    background: var(--btnSubmitBorderColor) !important;
-    border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
-}
-
-progress,
-::-webkit-progress-bar {
-    background: var(--darkerGradientPoint) !important;
-    border: solid var(--borderColor) var(--borderWidth) !important;
-    border-radius: var(--smallRadius);
-    overflow: hidden;
-}
-
-progress+span {
-    color: var(--btnSubmitBorderColor) !important;
 }
