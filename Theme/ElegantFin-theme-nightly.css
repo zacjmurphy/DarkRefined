@@ -623,7 +623,7 @@ html {
     background-color: var(--drawerColor);
     border-radius: var(--largeRadius) !important;
     border: solid var(--borderColor) var(--borderWidth);
-    min-width: 15em;
+    min-width: 12em;
 }
 
 .dialogBackdropOpened {
