@@ -1182,6 +1182,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 [dir=ltr] .mediaInfoItem {
+    transform-origin: left;
     transform: scale(.85);
     margin: 0 .4em 0 0;
 }
