@@ -623,11 +623,15 @@ html {
     background-color: var(--drawerColor);
     border-radius: var(--largeRadius) !important;
     border: solid var(--borderColor) var(--borderWidth);
-    min-width: 12em;
+    min-width: 11em;
 }
 
 .dialogBackdropOpened {
     opacity: .66;
+}
+
+[dir=ltr] .actionsheetMenuItemIcon.check {
+    margin: 0 .45em 0 .45em !important;
 }
 
 .subtitleEditor-dropZone,
