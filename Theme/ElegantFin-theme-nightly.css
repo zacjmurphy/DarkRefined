@@ -1242,7 +1242,11 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     border-color: var(--dimTextColor) !important;
 }
 
-progress::-moz-progress-bar,
+::-moz-progress-bar {
+    background: var(--btnSubmitBorderColor) !important;
+    border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
+}
+
 ::-webkit-progress-value {
     background: var(--btnSubmitBorderColor) !important;
     border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
@@ -1250,8 +1254,8 @@ progress::-moz-progress-bar,
 
 progress,
 ::-webkit-progress-bar {
-    background: var(--hoverGradient) !important;
-    border: solid var(--lighterBorderColor) var(--borderWidth) !important;
+    background: var(--darkerGradientPoint) !important;
+    border: solid var(--borderColor) var(--borderWidth) !important;
     border-radius: var(--smallRadius);
     overflow: hidden;
 }
