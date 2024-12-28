@@ -66,7 +66,6 @@ html {
 .emby-button.show-focus:focus,
 .paper-icon-button-light.show-focus:focus {
     background: #2f3a53;
-    /* border-radius: var(--smallRadius); */
     outline: var(--borderWidth) rgb(255 255 255) solid !important;
     outline-offset: calc(-1*var(--borderWidth));
     color: #fff;
@@ -106,7 +105,6 @@ html {
     border: var(--borderColor) solid var(--borderWidth) !important;
     overflow: hidden !important;
     transition: 125ms transform;
-    /* box-shadow: 0 .0725em .29em 0 rgba(0, 0, 0, .37); */
 }
 
 .cardImageContainer {
@@ -260,10 +258,6 @@ h1 {
     background-color: transparent;
 }
 
-.noBackdropTransparency .detailPageSecondaryContainer {
-    /* background-color: transparent; */
-}
-
 .portraitCard {
     min-width: 5em;
     width: 29.5%;
@@ -361,9 +355,6 @@ h1 {
 }
 
 @media (orientation: landscape) and (max-height: 40em) {
-    /* .itemBackdrop {
-        height: 62vh;
-    } */
 
     .portraitCard {
         min-width: 2em;
@@ -672,10 +663,6 @@ progress+span {
 
 .actionSheetContent>h1 {
     font-size: unset;
-}
-
-.formDialogHeader>h1 {
-    /* margin-inline: 0 !important; */
 }
 
 .formDialogHeaderTitle {
