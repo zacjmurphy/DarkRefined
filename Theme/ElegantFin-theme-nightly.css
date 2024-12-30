@@ -548,6 +548,10 @@ progress+span {
     backdrop-filter: blur(8px);
 }
 
+.mainDrawer-scrollContainer {
+    padding-bottom: 5vh;
+}
+
 .detailButton {
     border-radius: var(--smallRadius);
     border: solid var(--lighterBorderColor) var(--borderWidth);
