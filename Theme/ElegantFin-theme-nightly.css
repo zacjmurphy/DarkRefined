@@ -1144,9 +1144,27 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .toast {
-    background: var(--headerColor);
-    border: solid var(--borderWidth) var(--borderColor);
     border-radius: var(--smallRadius);
+}
+
+.upNextContainer {
+    border-radius: var(--largeRadius);
+    color: var(--textColor);
+}
+
+.upNextContainer .btnStartNow {
+    background-color: var(--btnSubmitColor);
+    border-color: var(--btnSubmitBorderColor);
+}
+
+.upNextContainer .upNextDialog-countdownText {
+    color: white;
+}
+
+.toast,
+.upNextContainer {
+    background: var(--headerColor) !important;
+    border: solid var(--borderWidth) var(--borderColor) !important;
     backdrop-filter: blur(1em);
 }
 
