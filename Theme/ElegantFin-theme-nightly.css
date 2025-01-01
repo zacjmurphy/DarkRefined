@@ -25,7 +25,8 @@
     --tableBodyColor: rgb(31 41 55 / 1);
     --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
     --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
-    --hoverGradient: linear-gradient(130deg, rgb(255 255 255 / 30%) 20%, rgb(255 255 255 / 10%) 40%);
+    --hoverGradientA: linear-gradient(130deg, rgb(255 255 255 / 35%) 20%, rgb(255 255 255 / 15%) 40%);
+    --hoverGradientB: radial-gradient(100% 250% at 90% 190%, rgba(255, 255, 255, 0.15) 85%, rgba(255, 255, 255, 0.33) 100%);
     --largerRadius: 1.25em;
     --largeRadius: 1em;
     --smallRadius: .5em;
@@ -102,25 +103,44 @@ html {
 
 .cardScalable {
     border-radius: var(--largeRadius);
-    border: var(--borderColor) solid var(--borderWidth) !important;
+    border: var(--borderColor) solid calc(2 * var(--borderWidth)) !important;
     overflow: hidden !important;
     transition: 125ms transform;
 }
 
+.layout-mobile .cardScalable {
+    border: var(--borderColor) solid var(--borderWidth) !important;
+}
+
 .cardImageContainer {
-    border-radius: var(--largeRadius) !important
+    transition: transform .375s;
+}
+
+.card.card-hoverable:hover .cardScalable {
+    border-color: var(--textColor) !important;
+}
+
+.card.card-hoverable:hover .cardImageContainer {
+    transform: scale(1.025);
+}
+
+.card.card-hoverable:hover .itemSelectionPanel {
+    transform: scale(1.025);
 }
 
 .cardOverlayContainer {
     transition: .25s;
-    border-radius: var(--largeRadius) !important;
-    border: solid rgb(255 255 255 / 65%) var(--borderWidth);
-    background: var(--hoverGradient);
+    background: var(--hoverGradientA);
+    background-size: 200%;
+    background-position-x: 100%;
+}
+
+.layout-desktop .card.card-hoverable:hover .cardOverlayContainer {
+    background-position-x: 0%;
 }
 
 .cardBox:not(.visualCardBox) .cardPadder {
     background-color: var(--lighterGradientPoint);
-    border-radius: var(--largeRadius);
 }
 
 .cardOverlayContainer>.cardOverlayFab-primary {
@@ -156,6 +176,14 @@ html {
 
 .cardOverlayContainer:has(.cardOverlayButton:hover) {
     backdrop-filter: blur(.25em);
+}
+
+.cardScalable:has(.cardOverlayContainer .cardOverlayButton:hover)>.cardImageContainer {
+    transform: scale(1);
+}
+
+.card.card-hoverable:hover .cardScalable {
+    transform: scale(1.02);
 }
 
 .listViewUserDataButtons {
@@ -199,7 +227,7 @@ html {
 
 @media (min-width: 25em) {
     .backdropCard {
-        width: 49%;
+        width: 46%;
     }
 }
 
@@ -781,8 +809,18 @@ progress+span {
 .cardIndicators {
     -webkit-align-items: center;
     align-items: center;
-    top: .2em;
+    top: .5em;
 }
+
+[dir=ltr] .cardIndicators {
+    right: .5em;
+}
+
+.layout-mobile .cardIndicators {
+    top: .2em;
+    right: .2em;
+}
+
 
 .indicator {
     border: solid rgb(124 124 124 / 50%) var(--borderWidth);
