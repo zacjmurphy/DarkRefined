@@ -722,20 +722,17 @@ progress+span {
     height: calc(100% - 1.75em);
 }
 
-.cardText-first+.itemSelectionPanel>.checkboxContainer>.emby-checkbox:checked+span+.checkboxOutline {
+.checkboxContainer .emby-checkbox:checked+span+.checkboxOutline.multiSelectCheckboxOutline {
     border-radius: var(--largeRadius) !important;
 }
 
-.cardText-secondary+.itemSelectionPanel>.checkboxContainer>.emby-checkbox:checked+span+.checkboxOutline {
-    border-radius: var(--largeRadius) !important;
-}
-
-.cardText-secondary+.itemSelectionPanel>.checkboxContainer {
+.cardText-secondary+.itemSelectionPanel>.checkboxContainer,
+.cardText.cardTextCentered:not(.cardText-secondary, .cardText-first)+.itemSelectionPanel>.checkboxContainer {
     height: calc(100% - 3.125em);
 }
 
-.cardScalable+.itemSelectionPanel>.checkboxContainer>.emby-checkbox:checked+span+.checkboxOutline {
-    border-radius: var(--largeRadius) !important;
+.cardFooter+.itemSelectionPanel>.checkboxContainer {
+    height: calc(100% - 3.75em);
 }
 
 .cardScalable+.itemSelectionPanel>.checkboxContainer {
