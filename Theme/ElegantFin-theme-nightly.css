@@ -353,6 +353,16 @@ h1 {
     }
 }
 
+@media (max-width: 50em) {
+    .homeLibraryButton {
+        width: 45% !important;
+    }
+}
+
+.homeLibraryButton {
+    min-width: 15%;
+}
+
 @media (orientation: landscape) and (min-width: 40em) {
     .layout-mobile .itemBackdrop {
         height: 40vh;
