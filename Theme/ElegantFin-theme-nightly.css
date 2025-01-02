@@ -474,7 +474,7 @@ html {
 
 .itemProgressBarForeground {
     border-radius: var(--largeRadius);
-    background-color: var(--dimTextColor);
+    background-color: var(--btnSubmitBorderColor);
 }
 
 .backgroundProgress>div {
@@ -599,9 +599,9 @@ progress+span {
 }
 
 .btnHeaderSave.button-flat {
-  color: var(--btnSubmitBorderColor) !important;
-  gap: 0.3em;
-  border-radius: var(--smallRadius);
+    color: var(--btnSubmitBorderColor) !important;
+    gap: 0.3em;
+    border-radius: var(--smallRadius);
 }
 
 .button-flat:hover {
@@ -1162,7 +1162,8 @@ div[data-role=controlgroup] a.ui-btn-active {
     height: 1.5rem;
     width: 1.5rem;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23D1D5DB' aria-hidden='true'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
-    background-size: contain; /* Stops miscalculating the size on hover effect */
+    background-size: contain;
+    /* Stops miscalculating the size on hover effect */
 }
 
 .toast {
@@ -1345,5 +1346,5 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 .progressring-spiner {
-  border-color: var(--btnSubmitBorderColor);
+    border-color: var(--btnSubmitBorderColor);
 }
