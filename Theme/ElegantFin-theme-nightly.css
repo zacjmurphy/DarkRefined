@@ -474,7 +474,7 @@ html {
 
 .itemProgressBarForeground {
     border-radius: var(--largeRadius);
-    background-color: var(--btnSubmitBorderColor);
+    background-color: var(--dimTextColor);
 }
 
 .backgroundProgress>div {
