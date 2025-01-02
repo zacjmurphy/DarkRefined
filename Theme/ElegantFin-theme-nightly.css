@@ -309,6 +309,10 @@ h1 {
     font-size: 1.25em;
 }
 
+.verticalSection.emby-scroller-container>h2.sectionTitle.sectionTitle-cards {
+    padding-top: 1.25em !important;
+}
+
 .emby-scrollbuttons-button.paper-icon-button-light>.material-icons {
     font-size: 1.5em;
     place-content: center;
