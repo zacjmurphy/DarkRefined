@@ -948,10 +948,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     border: solid var(--btnDeleteBorderColor) var(--borderWidth);
 }
 
-.listItemIcon.notifications,
-.listItemIcon.schedule,
-.listItemIcon.person,
-.listItemIcon.live_tv {
+.listItemIcon.notifications:not(.listItemIcon-transparent),
+.listItemIcon.schedule:not(.listItemIcon-transparent),
+.listItemIcon.person:not(.listItemIcon-transparent),
+.listItemIcon.live_tv:not(.listItemIcon-transparent) {
     background-color: rgb(41, 49, 83) !important;
     border: solid var(--borderColor) var(--borderWidth);
 }
