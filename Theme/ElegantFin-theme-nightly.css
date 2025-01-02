@@ -17,7 +17,7 @@
     --btnSubmitColor: rgb(61, 54, 178);
     --btnSubmitBorderColor: rgb(117 111 226);
     --checkboxCheckedBgColor: rgb(79, 70, 229);
-    --checkboxUncheckedFocusedBorderColor: rgb(37, 99, 235);
+    --highlightOutlineColor: rgb(37, 99, 235);
     --textColor: rgb(209, 213, 219);
     --dimTextColor: rgb(156, 163, 175);
     --activeColorAlpha: rgb(201 143 255 / 40%);
@@ -812,14 +812,14 @@ progress+span {
 }
 
 .emby-checkbox:focus:not(:checked)+span+.checkboxOutline {
-    border-color: var(--checkboxUncheckedFocusedBorderColor) !important;
+    border-color: var(--highlightOutlineColor) !important;
     outline: var(--borderWidth) solid gray;
     outline-offset: calc(-2.5*var(--borderWidth));
 }
 
 .emby-checkbox:focus+span+.checkboxOutline {
     border-color: white !important;
-    outline: var(--borderWidth) solid var(--checkboxUncheckedFocusedBorderColor);
+    outline: var(--borderWidth) solid var(--highlightOutlineColor);
 }
 
 .cardIndicators {
@@ -1231,12 +1231,13 @@ div[data-role=controlgroup] a.ui-btn-active {
 .emby-select-withcolor:focus,
 .emby-input:focus,
 .emby-textarea:focus {
-    border-color: #c1c1c1 !important;
+    border-color: var(--highlightOutlineColor) !important;
+    outline: thin solid var(--highlightOutlineColor) !important;
 }
 
-.emby-select-withcolor:hover:not(.emby-select[disabled]),
-.emby-input:hover,
-.emby-textarea:hover {
+.emby-select-withcolor:hover:not(.emby-select[disabled], :focus),
+.emby-input:hover:not(:focus),
+.emby-textarea:hover:not(:focus) {
     border-color: var(--dimTextColor) !important;
 }
 
