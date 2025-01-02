@@ -474,7 +474,7 @@ html {
 
 .itemProgressBarForeground {
     border-radius: var(--largeRadius);
-    background-color: var(--dimTextColor);
+    background-color: var(--btnSubmitBorderColor);
 }
 
 .backgroundProgress>div {
@@ -596,6 +596,12 @@ progress+span {
     padding: .5em .5em !important;
     margin: 0.125em !important;
     backdrop-filter: blur(.1em);
+}
+
+.btnHeaderSave.button-flat {
+  color: var(--btnSubmitBorderColor) !important;
+  gap: 0.3em;
+  border-radius: var(--smallRadius);
 }
 
 .button-flat:hover {
@@ -942,7 +948,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     border: solid var(--btnDeleteBorderColor) var(--borderWidth);
 }
 
-.listItemIcon.notifications {
+.listItemIcon.notifications,
+.listItemIcon.schedule,
+.listItemIcon.person,
+.listItemIcon.live_tv {
     background-color: rgb(41, 49, 83) !important;
     border: solid var(--borderColor) var(--borderWidth);
 }
@@ -1330,4 +1339,8 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 
 #scenesContent .cardScalable:hover {
     border-color: var(--dimTextColor) !important;
+}
+
+.progressring-spiner {
+  border-color: var(--btnSubmitBorderColor);
 }
