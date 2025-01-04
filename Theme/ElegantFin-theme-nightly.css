@@ -105,7 +105,7 @@ html {
     border-radius: var(--largeRadius);
     border: var(--borderColor) solid calc(2 * var(--borderWidth)) !important;
     overflow: hidden !important;
-    transition: 125ms transform;
+    transition: transform 125ms;
 }
 
 .layout-mobile .cardScalable {
@@ -124,8 +124,22 @@ html {
     transform: scale(1.025);
 }
 
+.card.card-hoverable .itemSelectionPanel {
+    transition: transform .125s;
+}
+
+.card.card-hoverable:hover .cardScalable,
 .card.card-hoverable:hover .itemSelectionPanel {
-    transform: scale(1.025);
+    transform: scale(1.02);
+}
+
+.card.card-hoverable .cardScalable:active {
+    transition: transform .075s;
+    transform: scale(1);
+}
+
+.cardScalable:has(.cardOverlayContainer .cardOverlayButton:hover)>.cardImageContainer {
+    transform: scale(1);
 }
 
 .cardOverlayContainer {
@@ -176,14 +190,6 @@ html {
 
 .cardOverlayContainer:has(.cardOverlayButton:hover) {
     backdrop-filter: blur(.25em);
-}
-
-.cardScalable:has(.cardOverlayContainer .cardOverlayButton:hover)>.cardImageContainer {
-    transform: scale(1);
-}
-
-.card.card-hoverable:hover .cardScalable {
-    transform: scale(1.02);
 }
 
 .listViewUserDataButtons {
