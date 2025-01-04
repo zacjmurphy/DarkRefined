@@ -754,8 +754,9 @@ progress+span {
     box-shadow: inset 0em 7em 10em 20px rgba(0, 0, 0, 0.8);
     background: transparent;
     border-color: white;
-    border-style: groove;
-    border-width: 2px;
+    border-style: solid;
+    border-width: calc(2 * var(--borderWidth));
+    outline: solid var(--borderWidth) white;
 }
 
 .checkboxOutline {
@@ -782,7 +783,7 @@ progress+span {
 
 .cardText-secondary+.itemSelectionPanel>.checkboxContainer,
 .cardText.cardTextCentered:not(.cardText-secondary, .cardText-first)+.itemSelectionPanel>.checkboxContainer {
-    height: calc(100% - 3.125em);
+    height: calc(100% - 3em);
 }
 
 .cardFooter+.itemSelectionPanel>.checkboxContainer {
