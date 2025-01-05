@@ -1465,3 +1465,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 .visualLoginForm {
     position: relative;
 }
+
+#txtLoginDisclaimer{
+    resize: none;
+}
