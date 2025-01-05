@@ -185,8 +185,17 @@ html {
     display: none;
 }
 
+.layout-mobile .cardOverlayButton{
+        padding: .425em;
+}
+
+.layout-mobile .cardOverlayButton-br>.cardOverlayButtonIcon {
+    border: solid var(--borderColor) var(--borderWidth); 
+}
+
 .layout-mobile .portraitCard .cardOverlayButton-br,
-.layout-mobile .backdropCard .cardOverlayButton-br {
+.layout-mobile .backdropCard .cardOverlayButton-br,
+.layout-mobile .cardOverlayButton-br[data-action="menu"]{
     display: none;
 }
 
