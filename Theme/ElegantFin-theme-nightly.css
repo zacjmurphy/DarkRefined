@@ -731,6 +731,11 @@ progress+span {
     padding: 0 0.5em !important;
 }
 
+.formDialogFooter:not(.formDialogFooter-clear.formDialogFooter-flex)>.formDialogFooterItem{
+    -webkit-flex-basis: 6em;
+    flex-basis: 6em;
+}
+
 .collapseContent {
     background-color: unset !important;
     backdrop-filter: unset !important;
