@@ -801,11 +801,6 @@ progress+span {
     height: calc(100% - 0em);
 }
 
-.checkboxContainer:hover .checkboxOutline:not(.multiSelectCheckboxOutline) {
-    border-color: var(--checkboxCheckedBgColor);
-    border-width: calc(2 * var(--borderWidth));
-}
-
 .checkboxOutline.multiSelectCheckboxOutline {
     border-radius: var(--largeRadius);
     border-width: 0;
@@ -1223,6 +1218,17 @@ div[data-role=controlgroup] a.ui-btn-active {
         color: #fff;
         background-color: rgb(255 255 255 / 5%);
     }
+
+    .emby-select-withcolor:hover:not(.emby-select[disabled], :focus),
+    .emby-input:hover:not(:focus),
+    .emby-textarea:hover:not(:focus) {
+        border-color: var(--dimTextColor) !important;
+    }
+
+    .checkboxContainer:hover .checkboxOutline:not(.multiSelectCheckboxOutline) {
+        border-color: var(--checkboxCheckedBgColor);
+        border-width: calc(2 * var(--borderWidth));
+    }
 }
 
 .paper-icon-button-light:active:not(:disabled) {
@@ -1251,12 +1257,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 .emby-textarea:focus {
     border-color: var(--highlightOutlineColor) !important;
     outline: thin solid var(--highlightOutlineColor) !important;
-}
-
-.emby-select-withcolor:hover:not(.emby-select[disabled], :focus),
-.emby-input:hover:not(:focus),
-.emby-textarea:hover:not(:focus) {
-    border-color: var(--dimTextColor) !important;
 }
 
 .emby-select-withcolor>option {
