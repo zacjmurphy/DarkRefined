@@ -1323,6 +1323,26 @@ div[data-role=controlgroup] a.ui-btn-active {
     border-style: inset;
 }
 
+.mdl-slider-background-lower {
+    background-color: var(--btnSubmitBorderColor);
+}
+
+.mdl-slider::-webkit-slider-thumb {
+    background: var(--btnSubmitBorderColor);
+}
+
+.mdl-slider::-moz-range-thumb {
+    background: var(--btnSubmitBorderColor);
+}
+
+.sliderMarker.watched {
+    background-color: var(--btnSubmitBorderColor);
+}
+
+.iconOsdProgressInner {
+    background: var(--btnSubmitBorderColor);
+}
+
 .subtitleappearance-preview {
     border-radius: var(--smallRadius);
 }
