@@ -1521,3 +1521,8 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 #txtLoginDisclaimer {
     resize: none;
 }
+
+.startTimeText,
+.endTimeText {
+    width: 4em;
+}
