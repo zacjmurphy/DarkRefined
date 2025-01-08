@@ -1412,6 +1412,8 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 .playerStats,
 .iconOsd {
     border-radius: var(--largeRadius);
+    background-color: rgba(69, 69, 69, 0.69);
+    backdrop-filter: blur(5px);
 }
 
 #scenesContent .cardScalable:hover {
