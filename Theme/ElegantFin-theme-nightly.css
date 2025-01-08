@@ -415,6 +415,16 @@ h1 {
 
 @media (orientation: landscape) and (max-height: 40em) {
 
+    .overflowPortraitCard,
+    .overflowSquareCard {
+        width: 13vw;
+    }
+
+    .overflowBackdropCard,
+    .overflowSmallBackdropCard {
+        width: 20vw;
+    }
+
     .portraitCard {
         min-width: 2em;
         width: 8.5%;
@@ -424,6 +434,19 @@ h1 {
     .backdropCard {
         width: 23%;
     }
+
+    .layout-mobile .detailImageContainer .card {
+        max-width: 15vw;
+    }
+
+    .layout-mobile .dialogContainer>.focuscontainer.dialog.actionsheet-not-fullscreen.actionSheet.centeredDialog.opened {
+        margin: -.4em -.8em !important;
+    }
+
+    .layout-mobile [dir=ltr] .infoWrapper {
+        padding-left: 25% !important;
+    }
+
 }
 
 .layout-mobile .itemBackdrop {
