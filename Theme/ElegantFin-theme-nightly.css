@@ -185,17 +185,17 @@ html {
     display: none;
 }
 
-.layout-mobile .cardOverlayButton{
-        padding: .425em;
+.layout-mobile .cardOverlayButton {
+    padding: .425em;
 }
 
 .layout-mobile .cardOverlayButton-br>.cardOverlayButtonIcon {
-    border: solid var(--borderColor) var(--borderWidth); 
+    border: solid var(--borderColor) var(--borderWidth);
 }
 
 .layout-mobile .portraitCard .cardOverlayButton-br,
 .layout-mobile .backdropCard .cardOverlayButton-br,
-.layout-mobile .cardOverlayButton-br[data-action="menu"]{
+.layout-mobile .cardOverlayButton-br[data-action="menu"] {
     display: none;
 }
 
@@ -564,36 +564,6 @@ progress+span {
     border: solid var(--lighterBorderColor) var(--borderWidth);
 }
 
-.inputContainer .emby-input-iconbutton {
-    color: rgba(255, 255, 255, 0.5);
-    margin-left: -2.5em;
-    background-color: transparent !important;
-}
-
-.searchfields-txtSearch {
-    padding: .75em 1.5em !important;
-    border-radius: 4em;
-}
-
-.searchfields-icon {
-    padding: .25em;
-    margin-left: -1.75em;
-    margin-bottom: 0;
-    border-radius: var(--largeRadius);
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.searchfields-icon:hover,
-.searchfields-icon:active,
-.inputContainer .emby-input-iconbutton:hover,
-.inputContainer .emby-input-iconbutton:active {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.searchFields>.searchFieldsInner {
-    flex-direction: row-reverse;
-}
-
 .button-link {
     color: rgb(200, 200, 200);
 }
@@ -763,7 +733,7 @@ progress+span {
     padding: 0 0.5em !important;
 }
 
-.formDialogFooter:not(.formDialogFooter-clear.formDialogFooter-flex)>.formDialogFooterItem{
+.formDialogFooter:not(.formDialogFooter-clear.formDialogFooter-flex)>.formDialogFooterItem {
     -webkit-flex-basis: 6em;
     flex-basis: 6em;
 }
@@ -1296,8 +1266,39 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: var(--selectorBackgroundColor);
 }
 
+.inputContainer .emby-input-iconbutton {
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: -2.5em;
+    background-color: transparent !important;
+}
+
+.searchfields-txtSearch {
+    padding: .75em 1.5em !important;
+    border-radius: 4em;
+}
+
+.searchfields-icon {
+    padding: .25em;
+    margin-left: -1.75em;
+    margin-bottom: 0;
+    border-radius: var(--largeRadius);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.searchfields-icon:hover,
+.searchfields-icon:active,
+.inputContainer .emby-input-iconbutton:hover,
+.inputContainer .emby-input-iconbutton:active {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.searchFields>.searchFieldsInner {
+    flex-direction: row-reverse;
+}
+
 .layout-mobile [dir=ltr] .infoWrapper {
     padding-left: 34%;
+    padding-bottom: 2%;
 }
 
 [dir=ltr] .mediaInfoItem {
@@ -1496,6 +1497,6 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     justify-content: center;
 }
 
-#txtLoginDisclaimer{
+#txtLoginDisclaimer {
     resize: none;
 }
