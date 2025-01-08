@@ -1389,7 +1389,8 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     gap: 0.5rem;
 }
 
-.playerStats {
+.playerStats,
+.iconOsd {
     border-radius: var(--largeRadius);
 }
 
