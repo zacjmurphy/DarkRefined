@@ -1416,6 +1416,12 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     backdrop-filter: blur(5px);
 }
 
+.playerStats-stats {
+    max-height: 58vh;
+    flex-wrap: wrap;
+    padding: 1em !important;
+}
+
 #scenesContent .cardScalable:hover {
     border-color: var(--dimTextColor) !important;
 }
