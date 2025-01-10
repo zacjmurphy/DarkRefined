@@ -217,28 +217,70 @@ html {
     max-width: 18em;
 }
 
-@media (min-width: 31.25em) {
+/* @media (min-width: 31.25em) {
 
     .portraitCard,
     .smallBackdropCard,
     .squareCard {
         width: 30% !important;
     }
+} */
+
+/* if the window width is equal to or more than (at minimum) 100em then the code in the query will trigger */
+@media (min-width: 120em) {
+
+    .portraitCard,
+    .squareCard {
+        width: 10.4% !important;
+    }
 }
 
-@media (min-width: 43.75em) {
+/* if the window width is equal to or less than (at maximum) 100em then the code in the query will trigger */
+@media (max-width: 120em) {
+
+    .portraitCard,
+    .squareCard {
+        width: 13.2% !important;
+    }
+}
+
+@media (max-width: 100em) {
+
+    .portraitCard,
+    .squareCard {
+        width: 15.2% !important;
+    }
+}
+
+@media (max-width: 60em) {
+
+    .portraitCard,
+    .squareCard {
+        width: 17.7% !important;
+    }
+}
+
+/* @media (max-width: 50em) {
+
+    .portraitCard,
+    .squareCard {
+        width: 17.7% !important;
+    }
+} */
+
+/* @media (max-width: 43.75em) {
 
     .portraitCard,
     .squareCard {
         width: 23% !important;
     }
-}
+} */
 
-@media (min-width: 50em) {
+@media (max-width: 30em) {
 
     .portraitCard,
     .squareCard {
-        width: 23% !important;
+        width: 28.8% !important;
     }
 }
 
@@ -305,8 +347,8 @@ h1 {
 
 .portraitCard {
     min-width: 5em;
-    width: 29.5%;
-    max-width: 12.9em;
+    /* width: 29.5%; */
+    /* max-width: 12.9em; */
 }
 
 .headerHomeButton {
