@@ -214,94 +214,113 @@ html {
 .backdropCard,
 .bannerCard {
     width: 46%;
-    max-width: 18em;
 }
 
-/* @media (min-width: 31.25em) {
+.portraitCard {
+    min-width: 5em;
+}
+
+/* if the window width is equal to or more than (at minimum) 150em then the code in the query will trigger */
+/* 14 posters, 10 thumbs */
+@media (min-width: 150em) {
 
     .portraitCard,
-    .smallBackdropCard,
     .squareCard {
-        width: 30% !important;
+        width: 6.6% !important;
     }
-} */
 
-/* if the window width is equal to or more than (at minimum) 100em then the code in the query will trigger */
-@media (min-width: 120em) {
+    .backdropCard {
+        width: 9.5%;
+    }
+}
+
+/* if the window width is equal to or less than (at maximum) 150em then the code in the query will trigger */
+/* 9 posters, 7 thumbs */
+@media (max-width: 150em) {
 
     .portraitCard,
     .squareCard {
         width: 10.4% !important;
     }
+
+    .backdropCard {
+        width: 13.6%;
+    }
 }
 
-/* if the window width is equal to or less than (at maximum) 100em then the code in the query will trigger */
+/* 7 posters, 6 thumbs */
 @media (max-width: 120em) {
 
     .portraitCard,
     .squareCard {
-        width: 13.2% !important;
+        width: 13.5% !important;
+    }
+
+    .backdropCard {
+        width: 15.8%;
     }
 }
 
+/* 6 posters, 5 thumbs */
 @media (max-width: 100em) {
 
     .portraitCard,
     .squareCard {
         width: 15.2% !important;
     }
-}
 
-@media (max-width: 60em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 17.7% !important;
+    .backdropCard {
+        width: 18.4%;
     }
 }
 
-/* @media (max-width: 50em) {
+/* 5 posters, 4 thumbs */
+@media (max-width: 62em) {
 
     .portraitCard,
     .squareCard {
-        width: 17.7% !important;
+        width: 17.9% !important;
     }
-} */
 
-/* @media (max-width: 43.75em) {
+    .backdropCard {
+        width: 23.3%;
+    }
+
+}
+
+/* 4 posters, 3 thumbs */
+@media (max-width: 48.125em) {
 
     .portraitCard,
     .squareCard {
-        width: 23% !important;
+        width: 22.3% !important;
     }
-} */
 
+    .backdropCard {
+        width: 30.7%;
+    }
+}
+
+/* 3 posters, 2 thumbs */
 @media (max-width: 30em) {
 
     .portraitCard,
     .squareCard {
         width: 28.8% !important;
     }
-}
 
-@media (min-width: 25em) {
+    .layout-mobile .portraitCard,
+    .layout-mobile .squareCard {
+        width: 29.8% !important;
+    }
+
     .backdropCard {
         width: 46%;
     }
 }
 
-@media (min-width: 48.125em) {
-    .backdropCard {
-        width: 31%;
-    }
-}
-
 .detailLogo {
     display: none;
-}
-
-h1 {
-    /* font-size: 3em; */
 }
 
 .detailPageWrapperContainer {
@@ -343,12 +362,6 @@ h1 {
 
 .layout-desktop .detailPageSecondaryContainer {
     background-color: transparent;
-}
-
-.portraitCard {
-    min-width: 5em;
-    /* width: 29.5%; */
-    /* max-width: 12.9em; */
 }
 
 .headerHomeButton {
@@ -404,6 +417,7 @@ h1 {
 
 .layout-desktop .detailImageContainer .card {
     top: unset !important;
+    width: 25vw !important;
 }
 
 @media (max-width: 62.5em) {
