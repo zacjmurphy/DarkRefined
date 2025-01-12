@@ -678,6 +678,10 @@ progress+span {
 
 .button-flat:hover {
     color: unset;
+}
+
+.button-flat:active {
+    color: unset;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -956,9 +960,9 @@ progress+span {
     filter: brightness(1.35);
 }
 
-.raised:hover,
-.fab:hover,
-.emby-button:hover {
+.raised:active,
+.fab:active,
+.emby-button:active {
     filter: brightness(1.2) !important;
 }
 
@@ -1151,8 +1155,7 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: rgba(255, 255, 255, 0.25);
 }
 
-.alphaPickerButton-selected,
-.alphaPickerButton:hover {
+.alphaPickerButton-selected{
     color: rgba(255, 255, 255, 1);
 }
 
@@ -1288,6 +1291,20 @@ div[data-role=controlgroup] a.ui-btn-active {
     .checkboxContainer:hover .checkboxOutline:not(.multiSelectCheckboxOutline) {
         border-color: var(--checkboxCheckedBgColor);
         border-width: calc(2 * var(--borderWidth));
+    }
+
+    .raised:hover,
+    .fab:hover,
+    .emby-button:hover {
+        filter: brightness(1.2) !important;
+    }
+
+    .button-flat:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .alphaPickerButton:hover {
+        color: rgba(255, 255, 255, 1);
     }
 }
 
