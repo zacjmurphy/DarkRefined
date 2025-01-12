@@ -1441,7 +1441,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 fieldset {
     border-radius: var(--smallRadius);
-    border-color: var(--borderColor) solid var(--borderWidth);
+    border: solid var(--borderColor) var(--borderWidth);
 }
 
 #serverActivityPage .MuiPaper-elevation2 {
