@@ -1609,3 +1609,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 .endTimeText {
     width: 4em;
 }
+
+.filterIndicator{
+    background: var(--activeColor);
+}
