@@ -42,7 +42,7 @@ html {
     font-optical-sizing: auto;
     font-weight: 425;
     font-style: normal;
-    -webkit-tap-highlight-color:  transparent !important; 
+    -webkit-tap-highlight-color: transparent !important;
 }
 
 .dashboardFooter {
@@ -1155,7 +1155,7 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: rgba(255, 255, 255, 0.25);
 }
 
-.alphaPickerButton-selected{
+.alphaPickerButton-selected {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -1610,6 +1610,6 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     width: 4em;
 }
 
-.filterIndicator{
+.filterIndicator {
     background: var(--activeColor);
 }
