@@ -45,6 +45,12 @@ html {
     -webkit-tap-highlight-color: transparent !important;
 }
 
+/* The icon pack that we use does not have some icons, so we use the default icon pack on those */
+.material-icons.lyrics,
+.material-icons.bookplayerButtonIcon {
+    font-family: 'Material Icons' !important;
+}
+
 .dashboardFooter {
     font-family: Noto Sans;
     transition: transform 50ms;
