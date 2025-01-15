@@ -61,27 +61,20 @@ html {
 }
 
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
-    border-radius: var(--largerRadius) !important;
-    border: solid rgba(0, 0, 0, 1) var(--borderWidth) !important;
-    outline: var(--borderWidth) rgba(255, 255, 255, 1) solid;
-    transition: border .1s;
+    border-color: var(--highlightOutlineColor) !important;
     filter: brightness(1.125);
 }
 
 .emby-button.show-focus:focus,
 .paper-icon-button-light.show-focus:focus {
-    background: #2f3a53;
-    outline: var(--borderWidth) rgb(255 255 255) solid !important;
-    outline-offset: calc(-1*var(--borderWidth));
+    background-color: var(--highlightOutlineColor);
     color: #fff;
-    transition: outline 0s, border 0s;
 }
 
 .emby-tabs .emby-button.show-focus:focus {
-    outline: .05em rgb(255 255 255) solid !important;
-    outline-offset: -1em;
+    outline: none !important;
     color: #fff;
-    border-radius: var(--largerRadius);
+    background-color: var(--highlightOutlineColor) !important;
 }
 
 [dir=ltr] .itemsContainer>.card>.cardBox {
@@ -830,6 +823,10 @@ progress+span {
     outline: solid var(--borderWidth) white;
 }
 
+.layout-tv .emby-checkbox:checked+span+.checkboxOutline {
+    outline: none;
+}
+
 .checkboxOutline {
     top: unset;
     height: 1.3em;
@@ -897,6 +894,14 @@ progress+span {
 .emby-checkbox:focus+span+.checkboxOutline {
     border-color: white !important;
     outline: var(--borderWidth) solid var(--highlightOutlineColor);
+}
+
+.layout-tv .emby-checkbox:focus:not(:checked)+span+.checkboxOutline {
+    outline: none;
+}
+
+.layout-tv .emby-checkbox:focus+span+.checkboxOutline {
+    outline: none;
 }
 
 .cardIndicators {
@@ -1149,6 +1154,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     border-color: transparent !important;
 }
 
+.listItem-border.emby-button.show-focus:focus {
+    border-radius: var(--smallRadius);
+}
+
 .alphaPickerButton {
     font-family: monospace;
     margin: .15em;
@@ -1165,6 +1174,10 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .alphaPicker {
     justify-content: center;
+}
+
+.alphaPickerButton-tv:focus {
+    background-color: var(--highlightOutlineColor);
 }
 
 [dir=ltr] .padded-left.vertical-wrap {
@@ -1336,6 +1349,13 @@ div[data-role=controlgroup] a.ui-btn-active {
     outline: thin solid var(--highlightOutlineColor) !important;
 }
 
+.layout-tv .emby-select-withcolor:focus,
+.layout-tv .emby-input:focus,
+.layout-tv .emby-textarea:focus {
+    border-color: var(--highlightOutlineColor) !important;
+    outline: none !important;
+}
+
 .emby-select-withcolor>option {
     color: inherit;
     background-color: var(--selectorBackgroundColor);
@@ -1415,6 +1435,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .layout-tv .headerLeft {
     overflow: unset;
+    margin: .25em .5em;
 }
 
 .mdl-spinner__circle {
