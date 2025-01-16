@@ -1129,15 +1129,24 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin: .5em 1em !important;
 }
 
-.listItem:hover,
-.navMenuOption:hover {
-    background: rgba(255, 255, 255, 0.125);
-    border-radius: .7em;
-}
-
 .navMenuOption-selected {
     background-color: var(--activeColor) !important;
     border: solid var(--lighterBorderColor) var(--borderWidth);
+}
+
+.listItem,
+.navMenuOption {
+    border-radius: .7em;
+}
+
+.listItem:hover,
+.navMenuOption:hover {
+    background: unset;
+}
+
+.listItem:active,
+.navMenuOption:active {
+    background: rgba(255, 255, 255, 0.125);
 }
 
 .MuiListItem-root>a,
@@ -1368,6 +1377,20 @@ div[data-role=controlgroup] a.ui-btn-active {
     .alphaPickerButton:hover {
         color: rgba(255, 255, 255, 1);
     }
+
+    .listItem:hover,
+    .navMenuOption:hover {
+        background: rgba(255, 255, 255, 0.125);
+    }
+
+    .searchfields-icon:hover,
+    .inputContainer .emby-input-iconbutton:hover {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    #scenesContent .cardScalable:hover {
+        border-color: var(--dimTextColor) !important;
+    }
 }
 
 .paper-icon-button-light:active:not(:disabled) {
@@ -1432,9 +1455,7 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.searchfields-icon:hover,
 .searchfields-icon:active,
-.inputContainer .emby-input-iconbutton:hover,
 .inputContainer .emby-input-iconbutton:active {
     color: rgba(255, 255, 255, 0.8);
 }
@@ -1570,7 +1591,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     padding: 1em !important;
 }
 
-#scenesContent .cardScalable:hover {
+#scenesContent .cardScalable:active {
     border-color: var(--dimTextColor) !important;
 }
 
