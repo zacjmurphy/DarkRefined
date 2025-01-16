@@ -689,11 +689,23 @@ progress+span {
 }
 
 .itemDetailsGroup {
-    outline: var(--borderWidth) solid var(--borderColor);
+    outline: var(--borderWidth) solid transparent;
     outline-offset: calc(-1*var(--borderWidth));
     overflow: hidden;
     margin-top: 1.5em;
+    border: solid var(--borderColor) var(--borderWidth);
     border-radius: var(--smallRadius);
+}
+
+@supports(display:revert) {
+    .itemDetailsGroup {
+        outline: var(--borderWidth) solid var(--borderColor);
+        outline-offset: calc(-1*var(--borderWidth));
+        overflow: hidden;
+        margin-top: 1.5em;
+        border: solid transparent var(--borderWidth);
+        border-radius: var(--smallRadius);
+    }
 }
 
 .itemDetailsGroup>div:not(:last-child) {
@@ -826,11 +838,13 @@ progress+span {
     border-color: white;
     border-style: solid;
     border-width: calc(2 * var(--borderWidth));
-    outline: solid var(--borderWidth) white;
+    outline: none;
 }
 
-.layout-tv .emby-checkbox:checked+span+.checkboxOutline {
-    outline: none;
+@supports(display:revert) {
+    .emby-checkbox:checked+span+.checkboxOutline {
+        outline: solid var(--borderWidth) white;
+    }
 }
 
 .checkboxOutline {
@@ -893,13 +907,26 @@ progress+span {
 
 .emby-checkbox:focus:not(:checked)+span+.checkboxOutline {
     border-color: var(--highlightOutlineColor) !important;
-    outline: var(--borderWidth) solid gray;
+    outline: var(--borderWidth) solid transparent;
     outline-offset: calc(-2.5*var(--borderWidth));
 }
 
 .emby-checkbox:focus+span+.checkboxOutline {
-    border-color: white !important;
-    outline: var(--borderWidth) solid var(--highlightOutlineColor);
+    border-color: var(--highlightOutlineColor) !important;
+    outline: var(--borderWidth) solid transparent;
+}
+
+@supports(display:revert) {
+    .emby-checkbox:focus:not(:checked)+span+.checkboxOutline {
+        border-color: var(--highlightOutlineColor) !important;
+        outline: var(--borderWidth) solid gray;
+        outline-offset: calc(-2.5*var(--borderWidth));
+    }
+
+    .emby-checkbox:focus+span+.checkboxOutline {
+        border-color: white !important;
+        outline: var(--borderWidth) solid var(--highlightOutlineColor);
+    }
 }
 
 .layout-tv .emby-checkbox:focus:not(:checked)+span+.checkboxOutline {
@@ -1352,14 +1379,17 @@ div[data-role=controlgroup] a.ui-btn-active {
 .emby-input:focus,
 .emby-textarea:focus {
     border-color: var(--highlightOutlineColor) !important;
-    outline: thin solid var(--highlightOutlineColor) !important;
+    outline: none !important;
 }
 
-.layout-tv .emby-select-withcolor:focus,
-.layout-tv .emby-input:focus,
-.layout-tv .emby-textarea:focus {
-    border-color: var(--highlightOutlineColor) !important;
-    outline: none !important;
+@supports (display:revert) {
+
+    .emby-select-withcolor:focus,
+    .emby-input:focus,
+    .emby-textarea:focus {
+        border-color: var(--highlightOutlineColor) !important;
+        outline: thin solid var(--highlightOutlineColor) !important;
+    }
 }
 
 .emby-select-withcolor>option {
