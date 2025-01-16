@@ -638,18 +638,31 @@ progress+span {
     margin-top: 2em;
 }
 
-.btnPlay {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: solid var(--lighterBorderColor) var(--borderWidth);
-}
-
 .button-link {
     color: rgb(200, 200, 200);
 }
 
 .button-link:hover {
+    color: unset !important;
+    text-decoration: none;
+}
+
+.button-link:active {
     color: rgb(243, 243, 243) !important;
     text-decoration: none;
+}
+
+.detailButton {
+    border-radius: var(--smallRadius);
+    border: solid var(--lighterBorderColor) var(--borderWidth);
+    padding: .5em .5em !important;
+    margin: 0.125em !important;
+    backdrop-filter: blur(.1em);
+}
+
+.btnPlay.detailButton {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: solid var(--lighterBorderColor) var(--borderWidth);
 }
 
 .btnPlay>.detailButton-content {
@@ -681,14 +694,6 @@ progress+span {
 
 .mainDrawer-scrollContainer {
     padding-bottom: 5vh;
-}
-
-.detailButton {
-    border-radius: var(--smallRadius);
-    border: solid var(--lighterBorderColor) var(--borderWidth);
-    padding: .5em .5em !important;
-    margin: 0.125em !important;
-    backdrop-filter: blur(.1em);
 }
 
 .btnHeaderSave.button-flat {
@@ -1286,6 +1291,9 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .sectionTitleTextButton:hover {
     background: transparent !important;
+}
+
+.sectionTitleTextButton:active {
     color: white !important;
 }
 
@@ -1390,6 +1398,16 @@ div[data-role=controlgroup] a.ui-btn-active {
 
     #scenesContent .cardScalable:hover {
         border-color: var(--dimTextColor) !important;
+    }
+
+    .sectionTitleTextButton:hover {
+        background: transparent !important;
+        color: white !important;
+    }
+
+    .button-link:hover {
+        color: rgb(243, 243, 243) !important;
+        text-decoration: none;
     }
 }
 
