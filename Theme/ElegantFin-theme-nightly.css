@@ -1,7 +1,13 @@
 /* ElegantFin Theme for Jellyfin by lscambo13 */
 
-@import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/round.css");
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'Material Icons Round';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialiconsround/v108/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2) format('woff2');
+}
 
 :root {
     --darkerGradientPoint: #111827;
@@ -45,10 +51,21 @@ html {
     -webkit-tap-highlight-color: transparent !important;
 }
 
-/* The icon pack that we use does not have some icons, so we use the default icon pack on those */
-.material-icons.lyrics,
-.material-icons.bookplayerButtonIcon {
-    font-family: 'Material Icons' !important;
+.material-icons {
+    font-family: 'Material Icons Round' !important;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
 }
 
 .dashboardFooter {
