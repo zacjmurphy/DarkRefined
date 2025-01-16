@@ -689,8 +689,7 @@ progress+span {
 }
 
 .itemDetailsGroup {
-    outline: var(--borderWidth) solid transparent;
-    outline-offset: calc(-1*var(--borderWidth));
+    outline: none;
     overflow: hidden;
     margin-top: 1.5em;
     border: solid var(--borderColor) var(--borderWidth);
@@ -701,10 +700,7 @@ progress+span {
     .itemDetailsGroup {
         outline: var(--borderWidth) solid var(--borderColor);
         outline-offset: calc(-1*var(--borderWidth));
-        overflow: hidden;
-        margin-top: 1.5em;
-        border: solid transparent var(--borderWidth);
-        border-radius: var(--smallRadius);
+        border: none;
     }
 }
 
@@ -907,18 +903,16 @@ progress+span {
 
 .emby-checkbox:focus:not(:checked)+span+.checkboxOutline {
     border-color: var(--highlightOutlineColor) !important;
-    outline: var(--borderWidth) solid transparent;
-    outline-offset: calc(-2.5*var(--borderWidth));
+    outline: none;
 }
 
 .emby-checkbox:focus+span+.checkboxOutline {
     border-color: var(--highlightOutlineColor) !important;
-    outline: var(--borderWidth) solid transparent;
+    outline: none;
 }
 
 @supports(display:revert) {
     .emby-checkbox:focus:not(:checked)+span+.checkboxOutline {
-        border-color: var(--highlightOutlineColor) !important;
         outline: var(--borderWidth) solid gray;
         outline-offset: calc(-2.5*var(--borderWidth));
     }
