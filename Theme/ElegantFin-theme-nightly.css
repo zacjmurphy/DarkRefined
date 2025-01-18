@@ -982,7 +982,7 @@ progress+span {
 
 .defaultCardBackground,
 .cardScalable {
-    background: var(--cardBackgroundGradient) !important;
+    background: var(--cardBackgroundGradient);
 }
 
 .listItemImage {
