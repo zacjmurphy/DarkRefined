@@ -147,6 +147,7 @@ html {
 
 .card.card-hoverable:hover .cardImageContainer {
     transform: scale(1.025);
+    filter: brightness(1.125);
 }
 
 .card.card-hoverable .itemSelectionPanel {
