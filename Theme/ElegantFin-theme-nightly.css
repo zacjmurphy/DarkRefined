@@ -907,6 +907,10 @@ progress+span {
     height: calc(100% - 1.75em);
 }
 
+div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer {
+    height: calc(100% - 0em);
+}
+
 .checkboxContainer .emby-checkbox:checked+span+.checkboxOutline.multiSelectCheckboxOutline {
     border-radius: var(--largeRadius) !important;
 }
