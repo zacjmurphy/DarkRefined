@@ -41,6 +41,24 @@
     --borderWidth: 0.075em;
     --loginPageBgUrl: url("");
     --loginPageText: "Sign in to continue";
+    --colorOverlayMoviesCover: rgb(193, 103, 104);
+    --colorOverlayTvshowsCover: rgb(140, 149, 43);
+    --colorOverlayLivetvCover: rgb(17, 98, 159);
+    --colorOverlayPlaylistsCover: rgb(118, 61, 216);
+    --colorOverlayBoxsetsCover: rgb(219, 180, 53);
+    --colorOverlayMusicCover: rgb(11, 93, 72);
+    --colorOverlayHomevideosCover: rgb(39, 90, 185);
+    --colorOverlayBooksCover: rgb(166, 68, 70);
+    --colorOverlayFoldersCover: rgb(173, 60, 113);
+    --urlMoviesCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/movies.webp);
+    --urlTvshowsCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/tvshows.webp);
+    --urlLivetvCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/livetv.webp);
+    --urlPlaylistsCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/playlists.webp);
+    --urlBoxsetsCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/boxsets.webp);
+    --urlMusicCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/music.webp);
+    --urlHomevideosCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/homevideos.webp);
+    --urlBooksCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/books.webp);
+    --urlFoldersCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/folders.webp);
 }
 
 html {
@@ -1725,4 +1743,136 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 
 .filterIndicator {
     background: var(--activeColor);
+}
+
+.cardImageContainer .material-icons:before {
+    color: var(--dimTextColor);
+}
+
+.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+    text-align: left;
+}
+
+div[data-isfolder="true"] .cardPadder-overflowBackdrop {
+    padding-bottom: 50%;
+}
+
+div[data-isfolder="true"] .cardText-first {
+    display: none;
+}
+
+div[data-isfolder="true"] .cardImageIcon.material-icons::before {
+    display: none;
+}
+
+/* To override images on all, use .cardContent instead of .defaultCardBackground */
+/* Default Jellyfin cover sizes are 960px x 540px */
+
+div[data-isfolder="true"] .cardImageContainer.defaultCardBackground::before {
+    position: absolute;
+    font-size: 3.5vh;
+    margin-bottom: .175em;
+    font-weight: 800;
+    color: white;
+    font-family: 'Noto Sans';
+}
+
+div[data-collectiontype="movies"] .cardImageContainer.defaultCardBackground {
+    background: var(--colorOverlayMoviesCover) !important;
+    background-image: var(--urlMoviesCover) !important;
+}
+
+div[data-collectiontype="tvshows"] .cardImageContainer.defaultCardBackground {
+    background: var(--colorOverlayTvshowsCover) !important;
+    background-image: var(--urlTvshowsCover) !important;
+}
+
+div[data-collectiontype="livetv"] .cardImageContainer.defaultCardBackground {
+    background: var(--colorOverlayLivetvCover) !important;
+    background-image: var(--urlLivetvCover) !important;
+}
+
+div[data-collectiontype="music"] .cardImageContainer.defaultCardBackground {
+    background: var(--colorOverlayMusicCover) !important;
+    background-image: var(--urlMusicCover) !important;
+}
+
+div[data-collectiontype="homevideos"] .cardImageContainer.defaultCardBackground {
+    background: var(--colorOverlayHomevideosCover) !important;
+    background-image: var(--urlHomevideosCover) !important;
+}
+
+div[data-collectiontype="books"] .cardImageContainer.defaultCardBackground {
+    background: var(--colorOverlayBooksCover) !important;
+    background-image: var(--urlBooksCover) !important;
+}
+
+div[data-collectiontype="boxsets"] .cardImageContainer.defaultCardBackground {
+    background: var(--colorOverlayBoxsetsCover) !important;
+    background-image: var(--urlBoxsetsCover) !important;
+}
+
+div[data-collectiontype="folders"] .cardImageContainer.defaultCardBackground {
+    background: var(--colorOverlayFoldersCover) !important;
+    background-image: var(--urlFoldersCover) !important;
+}
+
+div[data-collectiontype="playlists"] .cardImageContainer.defaultCardBackground {
+    background: var(--colorOverlayPlaylistsCover) !important;
+    background-image: var(--urlPlaylistsCover) !important;
+}
+
+div[data-isfolder="true"] .cardImageContainer.defaultCardBackground {
+    filter: contrast(0.85);
+    background-size: cover !important;
+    background-position-y: 50% !important;
+    background-blend-mode: multiply;
+}
+
+div[data-collectiontype="movies"] .cardImageContainer.defaultCardBackground::before {
+    content: "Movies";
+}
+
+div[data-collectiontype="tvshows"] .cardImageContainer.defaultCardBackground::before {
+    content: "TV Shows";
+}
+
+div[data-collectiontype="livetv"] .cardImageContainer.defaultCardBackground::before {
+    content: "Live TV";
+}
+
+div[data-collectiontype="music"] .cardImageContainer.defaultCardBackground::before {
+    content: "Music";
+}
+
+div[data-collectiontype="homevideos"] .cardImageContainer.defaultCardBackground::before {
+    content: "Home Videos";
+}
+
+div[data-collectiontype="books"] .cardImageContainer.defaultCardBackground::before {
+    content: "Books";
+}
+
+div[data-collectiontype="boxsets"] .cardImageContainer.defaultCardBackground::before {
+    content: "Collections";
+}
+
+div[data-collectiontype="folders"] .cardImageContainer.defaultCardBackground::before {
+    content: "Folders";
+}
+
+div[data-collectiontype="playlists"] .cardImageContainer.defaultCardBackground::before {
+    content: "Playlists";
+}
+
+div[data-collectiontype="movies"] .cardImageContainer,
+div[data-collectiontype="tvshows"] .cardImageContainer,
+div[data-collectiontype="livetv"] .cardImageContainer,
+div[data-collectiontype="boxsets"] .cardImageContainer,
+div[data-collectiontype="playlists"] .cardImageContainer,
+div[data-collectiontype="folders"] .cardImageContainer,
+div[data-collectiontype="books"] .cardImageContainer,
+div[data-collectiontype="homevideos"] .cardImageContainer,
+div[data-collectiontype="music"] .cardImageContainer {
+    /* mix-blend-mode: color-dodge; */
 }
