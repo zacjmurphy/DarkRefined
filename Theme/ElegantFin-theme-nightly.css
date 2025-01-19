@@ -1016,10 +1016,21 @@ div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer
     right: .2em;
 }
 
-
 .indicator {
     border: solid rgb(124 124 124 / 50%) var(--borderWidth);
     border-radius: 100em;
+}
+
+.playedIndicator {
+    background: rgb(34, 197, 94);
+    border: var(--lighterBorderColor) solid var(--borderWidth);
+}
+
+.videoIndicator{
+    background: rgb(142 70 45);
+    padding: .5em;
+    transform: scale(.85);
+    border: var(--lighterBorderColor) solid var(--borderWidth); 
 }
 
 .defaultCardBackground,
