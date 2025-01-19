@@ -5,6 +5,17 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 
 <hr>
 
+### 🖼️ Preview
+
+<details>
+  <summary><i>Click here to reveal</i></summary>
+  
+<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/10.%20My%20Media%20Cover%20Arts.png" style="width:720px;height:auto;"></img>
+
+</details>
+
+<hr>
+
 ### 👇 How to enable this add-on? 
 
 - Paste the following at the end in Custom CSS code box:
