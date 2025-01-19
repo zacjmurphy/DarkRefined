@@ -1531,6 +1531,14 @@ div[data-role=controlgroup] a.ui-btn-active {
     padding-bottom: 2%;
 }
 
+.infoWrapper h1.itemName{
+    font-size: xx-large;
+}
+
+.layout-mobile .infoWrapper h1.itemName{
+    font-size: x-large;
+}
+
 [dir=ltr] .mediaInfoItem {
     transform-origin: left;
     transform: scale(.85);
