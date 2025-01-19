@@ -1,5 +1,8 @@
 /* ElegantFin Theme for Jellyfin by lscambo13 */
 
+/* Add-ons: Uncomment to enable */
+/* @import url(""); */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @font-face {
@@ -39,8 +42,12 @@
     --smallRadius: .5em;
     --smallerRadius: .375em;
     --borderWidth: 0.075em;
+
+    /* login page customizations */
     --loginPageBgUrl: url("");
     --loginPageText: "Sign in to continue";
+
+    /* my media library default covers customizations */
     --colorOverlayMoviesCover: rgb(193, 103, 104);
     --colorOverlayTvshowsCover: rgb(140, 149, 43);
     --colorOverlayLivetvCover: rgb(17, 98, 159);
@@ -60,6 +67,19 @@
     --urlBooksCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/books.webp);
     --urlFoldersCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/folders.webp);
 }
+
+/* :root{
+    --urlMoviesCover: url(https://artworks.thetvdb.com/banners/v4/movie/159/backgrounds/6328557507dd4.jpg);
+    --urlTvshowsCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/tvshows.webp);
+    --urlLivetvCover: url(https://artworks.thetvdb.com/banners/fanart/original/71663-33.jpg);
+    --urlPlaylistsCover: url(https://m.media-amazon.com/images/M/MV5BMzRjMjgwMTUtMjNiOS00ZWJlLWJkODktZTU5NmQ5Y2UxZDA3XkEyXkFqcGc@._V1_QL75_UX820_.jpg);
+    --urlBoxsetsCover: url(https://artworks.thetvdb.com/banners/v4/movie/155/backgrounds/671ae49f9c44f.jpg);
+    --urlMusicCover: url(https://artworks.thetvdb.com/banners/v4/movie/223419/backgrounds/614203ff892f8.jpg);
+    --urlHomevideosCover: url(https://artworks.thetvdb.com/banners/v4/movie/132448/backgrounds/646b4c94e9b29.jpg);
+    --urlBooksCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/books.webp);
+    --urlFoldersCover: url(https://raw.githubusercontent.com/lscambo13/ElegantFin/refs/heads/main/Theme/assets/img/library-covers/folders.webp);
+} */
+
 
 html {
     font-family: "Inter", serif;
@@ -1170,6 +1190,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 .listItem:hover,
 .navMenuOption:hover {
     background: unset;
+    border-radius: var(--smallRadius);
 }
 
 .listItem:active,
@@ -1757,28 +1778,28 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     text-align: left;
 }
 
-div[data-isfolder="true"] .cardPadder-overflowBackdrop {
+.card-withuserdata[data-isfolder="true"] .cardPadder-overflowBackdrop {
     padding-bottom: 50%;
 }
 
-div[data-isfolder="true"] .cardText-first {
-    display: none;
-}
-
-div[data-isfolder="true"] .cardImageIcon.material-icons::before {
-    display: none;
-}
-
-/* To override images on all, use .cardContent instead of .defaultCardBackground */
-/* Default Jellyfin cover sizes are 960px x 540px */
-
-div[data-isfolder="true"] .cardImageContainer.defaultCardBackground::before {
+.card-withuserdata[data-isfolder="true"] .cardImageContainer.cardContent::before {
     position: absolute;
     font-size: 3.5vh;
     margin-bottom: .175em;
     font-weight: 800;
     color: white;
     font-family: 'Noto Sans';
+    text-align: center;
+}
+
+.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"],[data-type="Series"],[data-type="Folder"]) .cardText-first,
+.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"],[data-type="Series"],[data-type="Folder"]) .cardText.cardTextCentered,
+.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"],[data-type="Series"],[data-type="Folder"]) .cardImageIcon.material-icons:not(.quiz)::before {
+    display: none;
+}
+
+.padded-right-withalphapicker .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"],[data-type="Series"],[data-type="Folder"]) {
+    margin-bottom: -1.5em;
 }
 
 div[data-collectiontype="movies"] .cardImageContainer.defaultCardBackground {
@@ -1826,10 +1847,10 @@ div[data-collectiontype="playlists"] .cardImageContainer.defaultCardBackground {
     background-image: var(--urlPlaylistsCover) !important;
 }
 
-div[data-isfolder="true"] .cardImageContainer.defaultCardBackground {
+.card-withuserdata[data-isfolder="true"] .cardImageContainer.defaultCardBackground {
     filter: contrast(0.85);
     background-size: cover !important;
-    background-position-y: 50% !important;
+    background-position: 50% !important;
     background-blend-mode: multiply;
 }
 
@@ -1869,7 +1890,7 @@ div[data-collectiontype="playlists"] .cardImageContainer.defaultCardBackground::
     content: "Playlists";
 }
 
-div[data-collectiontype="movies"] .cardImageContainer,
+/* div[data-collectiontype="movies"] .cardImageContainer,
 div[data-collectiontype="tvshows"] .cardImageContainer,
 div[data-collectiontype="livetv"] .cardImageContainer,
 div[data-collectiontype="boxsets"] .cardImageContainer,
@@ -1878,5 +1899,5 @@ div[data-collectiontype="folders"] .cardImageContainer,
 div[data-collectiontype="books"] .cardImageContainer,
 div[data-collectiontype="homevideos"] .cardImageContainer,
 div[data-collectiontype="music"] .cardImageContainer {
-    /* mix-blend-mode: color-dodge; */
-}
+    mix-blend-mode: color-dodge;
+} */
