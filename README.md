@@ -12,6 +12,7 @@ This is a Jellyfin theme inspired from JellySeerr to improve the overall look an
 - reduced clutter by hiding unimportant buttons and elements
 - overall rounded design
 - stylish borders, hover effects and shadows
+- various fixes to the user experience
 
 <hr>
 
