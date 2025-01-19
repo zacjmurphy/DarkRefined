@@ -24,7 +24,7 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 ### 🖼️ Previews
 
 <details>
-  <summary><i>Click here to reveal</i></summary>
+  <summary><i>Click here to reveal (last updated: 2025-01-19)</i></summary>
   
 <img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/1.%20Homepage.png" style="width:360px;height:auto;"></img>
 <img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/2.%20Movies%20Library.png" style="width:360px;height:auto;"></img>
@@ -65,6 +65,12 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 4. Click save.
 </details>
 
+
+<hr>
+
+### 🧩 How to customise this theme? 
+- Documentation yet to be added. Help needed.
+- [Experimental add-ons](https://github.com/lscambo13/ElegantFin/blob/main/Add-Ons.md)
 
 <hr>
 
