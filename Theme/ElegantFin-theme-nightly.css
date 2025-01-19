@@ -1460,6 +1460,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: rgb(255 255 255 / 5%);
 }
 
+.emby-textarea{
+    font-family: consolas;
+}
+
 .emby-select-withcolor,
 .emby-select,
 .emby-input,
