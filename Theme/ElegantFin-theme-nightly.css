@@ -1220,7 +1220,11 @@ div[data-role=controlgroup] a.ui-btn-active {
 .listItem:hover,
 .navMenuOption:hover {
     background: unset;
-    border-radius: var(--smallRadius);
+    border-radius: .7em;
+}
+
+.listItem:focus {
+    background: var(--highlightOutlineColor);
 }
 
 .listItem:active,
