@@ -86,6 +86,18 @@ html {
     font-family: Material Icons;
 }
 
+div[data-type="Book"] .play_arrow:before {
+    content: "\f53b";
+}
+
+div[data-type="Photo"] .play_arrow:before {
+    content: "\e5d0";
+}
+
+div[data-type="PhotoAlbum"] .play_arrow:before {
+    content: "\e8eb";
+}
+
 ::selection {
     background: var(--activeColorAlpha);
 }
