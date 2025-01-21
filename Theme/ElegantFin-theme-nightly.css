@@ -1182,13 +1182,16 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin-bottom: .5em;
 }
 
+[dir="ltr"] .listItem:not(.actionSheetMenuItem)[data-type="Episode"] .listItemBodyText:not(.secondary) {
+    font-size: 1.17em;
+    font-weight: 600;
+}
+
 .listItemBody {
     padding: 0;
 }
 
 .listItemBody>.listItemBodyText:not(.secondary) {
-    font-size: 1.125em;
-    font-weight: 600;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -1203,7 +1206,8 @@ div[data-role=controlgroup] a.ui-btn-active {
     overflow: hidden;
 }
 
-.listItem-bottomoverview {
+.listItem-bottomoverview,
+[dir="ltr"] .listItem:not(.actionSheetMenuItem)[data-type="Episode"] .listItem-overview p {
     margin-top: .75em;
     margin-bottom: 0em;
 }
