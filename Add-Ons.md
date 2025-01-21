@@ -5,7 +5,7 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 
 <hr>
 
-### 🖼️ Presets
+### 🖼️ Presets: Modify these styles according to your own liking 
 
 <details>
   <summary><i>This is how the covers look without this add-on.</i></summary>
@@ -93,6 +93,39 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 
 </details>
 
+<details>
+  <summary><i>Need something in between?</i></summary>
+
+![image](https://github.com/user-attachments/assets/6975a5ef-4824-4807-9afa-434fc3ebaf6f)
+
+
+```
+@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
+
+:root{
+    --colorOverlayMoviesCover: rgb(193, 103, 104);
+    --colorOverlayTvshowsCover: rgb(140, 149, 43);
+    --colorOverlayLivetvCover: rgb(17, 98, 159);
+    --colorOverlayPlaylistsCover: rgb(118, 61, 216);
+    --colorOverlayBoxsetsCover: rgb(219, 180, 53);
+    --colorOverlayMusicCover: rgb(11, 93, 72);
+    --colorOverlayHomevideosCover: rgb(39, 90, 185);
+    --colorOverlayBooksCover: rgb(166, 68, 70);
+    --colorOverlayFoldersCover: rgb(173, 60, 113);
+    --urlMoviesCover: linear-gradient(0deg, #313131, #585858 25%);
+    --urlTvshowsCover: linear-gradient(0deg, #313131, #585858 25%);
+    --urlLivetvCover: linear-gradient(0deg, #313131, #585858 25%);
+    --urlPlaylistsCover: linear-gradient(0deg, #313131, #585858 25%);
+    --urlBoxsetsCover: linear-gradient(0deg, #313131, #585858 25%);
+    --urlMusicCover: linear-gradient(0deg, #313131, #585858 25%);
+    --urlHomevideosCover: linear-gradient(0deg, #313131, #585858 25%);
+    --urlBooksCover: linear-gradient(0deg, #313131, #585858 25%);
+    --urlFoldersCover: linear-gradient(0deg, #313131, #585858 25%);
+}
+```
+
+</details>
+
 <hr>
 
 ### 👇 How to enable this add-on? 
@@ -116,7 +149,7 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 	
 - To configure your theme to use the custom images, you'll need to input a URL pointing to an image in variables starting with '--url' and an overlay color in variables starting with '--color'.
 	
-- The ideal Jellyfin cover sizes are `960px x 540px`, and the colors should be in rgb format i.e. `rbg(128, 128, 128)`.
+- The ideal Jellyfin cover sizes are `960px x 540px`, and the colors can be in rgb format i.e. `rbg(128, 128, 128)`.
   
 - Below are all the configurable variables, but you should remove the entries you do not intend to modify:
  
