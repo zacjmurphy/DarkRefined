@@ -622,7 +622,8 @@ html {
     background: var(--backgroundGradient)
 }
 
-.skinHeader-blurred:not(.osdHeader) {
+.skinHeader-blurred:not(.osdHeader),
+.appfooter {
     background-color: var(--headerColor) !important;
     backdrop-filter: blur(5px) !important;
 }
