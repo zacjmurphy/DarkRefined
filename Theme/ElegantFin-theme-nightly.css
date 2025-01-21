@@ -429,6 +429,13 @@ html {
     height: 1.5em;
 }
 
+.headerLeft .pageTitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .paper-icon-button-light>.material-icons {
     font-size: 1.25em;
 }
