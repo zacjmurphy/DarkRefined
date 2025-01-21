@@ -832,16 +832,19 @@ progress+span {
     width: unset;
 }
 
-.dialogContainer {
+.dialogContainer:not(:has(.dialog-fullscreen, .dialog-fullscreen-lowres)) {
     margin: .33em;
 }
 
 .dialog {
     backdrop-filter: blur(5px);
     background-color: var(--drawerColor);
+    min-width: 11em;
+}
+
+.dialog:not(.dialog-fullscreen, .dialog-fullscreen-lowres) {
     border-radius: var(--largeRadius) !important;
     border: var(--defaultBorder);
-    min-width: 11em;
 }
 
 .dialogBackdropOpened {
