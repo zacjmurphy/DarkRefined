@@ -640,6 +640,31 @@ html {
     transition: all .375s ease-in-out;
 }
 
+.lyricPage {
+    padding-inline: 1em;
+}
+
+.lyricsLine {
+    font-size: 2.5em;
+    margin: 0.5em;
+    color: var(--textColor);
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    transition: transform .125s;
+}
+
+.pastLyric,
+.futureLyric {
+    transform: scale(.75);
+    font-weight: 400;
+    text-align: center;
+}
+
+.pastLyric {
+    opacity: .5;
+}
+
 .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
     backdrop-filter: blur(.1em);
     background-color: rgb(123 123 123 / 30%) !important;
