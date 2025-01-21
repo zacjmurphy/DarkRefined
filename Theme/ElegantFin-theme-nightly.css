@@ -1066,10 +1066,23 @@ div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer
 }
 
 .videoIndicator {
-    background: rgb(121 65 5);
+    background: rgb(41 41 41);
     padding: .5em;
     transform: scale(.85);
     border: var(--defaultLighterBorder);
+}
+
+.videoIndicator:has(.photo_album),
+.videoIndicator:has(.folder) {
+    background: peru;
+}
+
+.videoIndicator:has(.photo) {
+    background: steelblue;
+}
+
+.videoIndicator:has(.videocam) {
+    background: indianred;
 }
 
 .defaultCardBackground,
