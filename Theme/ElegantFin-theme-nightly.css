@@ -1235,6 +1235,9 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 [dir=ltr] .listItem:not(.actionSheetMenuItem, .childrenItemsContainer .listItem, .activityLogListWidget .listItem) {
     padding: 0.375em !important;
+}
+
+[dir=ltr] .listItem:not(.actionSheetMenuItem, .childrenItemsContainer .listItem, .activityLogListWidget .listItem):not(:last-child) {
     margin-bottom: .5em;
 }
 
