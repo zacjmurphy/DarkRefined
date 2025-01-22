@@ -1246,6 +1246,11 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin-bottom: .5em;
 }
 
+.listItem[data-type="Audio"] {
+    margin-inline: 1em;
+    /* padding-inline: 1em !important; */
+}
+
 [dir="ltr"] .listItem:not(.actionSheetMenuItem)[data-type="Episode"] .listItemBodyText:not(.secondary) {
     font-size: 1.17em;
     font-weight: 600;
