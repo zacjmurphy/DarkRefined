@@ -871,7 +871,7 @@ progress+span {
     min-width: 11em;
 }
 
-.dialog:not(.dialog-fullscreen, .dialog-fullscreen-lowres) {
+.dialog:not(.dialog-fullscreen, .dialog-fullscreen-lowres, .dialog-fixedSize) {
     border-radius: var(--largeRadius) !important;
     border: var(--defaultBorder);
 }
