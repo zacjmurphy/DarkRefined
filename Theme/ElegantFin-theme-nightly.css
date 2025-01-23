@@ -1304,9 +1304,9 @@ div[data-role=controlgroup] a.ui-btn-active {
     font-weight: 600;
 }
 
-.listItemBody {
+/* .listItemBody {
     padding: 0;
-}
+} */
 
 .listItemBody>.listItemBodyText:not(.secondary) {
     display: -webkit-box;
@@ -1380,14 +1380,13 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin: .5em 1em !important;
 }
 
-[dir=ltr] .navMenuOption,
-#myPreferencesMenuPage .listItem {
+[dir=ltr] .navMenuOption {
     padding: 1em !important;
     margin-bottom: unset;
 }
 
 #myPreferencesMenuPage .listItemIcon {
-    margin: 0 1em 0 0;
+    margin-inline: .5em .25em;
 }
 
 .navMenuOption-selected {
@@ -1766,6 +1765,10 @@ div[data-role=controlgroup] a.ui-btn-active {
 .mdl-slider::-webkit-slider-thumb {
     background: var(--btnSubmitBorderColor);
 }
+
+/* .layout-desktop .mdl-slider::-webkit-slider-thumb {
+    transform: scale(.05);
+} */
 
 .mdl-slider::-moz-range-thumb {
     background: var(--btnSubmitBorderColor);
