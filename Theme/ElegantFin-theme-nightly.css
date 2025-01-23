@@ -487,6 +487,9 @@ html {
 }
 
 .starIcon {
+    background: linear-gradient(to right, #90cea1, #01b4e4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-left: -.125em;
     transform: translateY(-.02em);
 }
