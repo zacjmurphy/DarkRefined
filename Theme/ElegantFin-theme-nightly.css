@@ -659,12 +659,11 @@ html {
 }
 
 .lyricPage {
-    padding-inline: 1em;
+    padding-inline: .5em;
 }
 
 .lyricsLine {
     font-size: 2.5em;
-    margin: 0.5em;
     color: var(--textColor);
     text-align: center;
     align-self: center;
@@ -680,7 +679,7 @@ html {
 }
 
 .pastLyric {
-    opacity: .5;
+    opacity: .65;
 }
 
 .buttonActive {
