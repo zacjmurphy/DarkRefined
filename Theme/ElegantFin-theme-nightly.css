@@ -1130,6 +1130,7 @@ div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer
 
 div[data-type="Book"] .play_arrow:before {
     content: "\f53b";
+    font-size: 85%;
 }
 
 div[data-type="Photo"] .play_arrow:before {
