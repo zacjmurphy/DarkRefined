@@ -898,10 +898,26 @@ progress+span {
     min-width: 11em;
 }
 
-.dialog:not(.dialog-fullscreen, .dialog-fullscreen-lowres, .dialog-fixedSize) {
+.dialog:not(.dialog-fullscreen) {
     border-radius: var(--largeRadius) !important;
     border: var(--defaultBorder);
 }
+
+@media (max-width: 80em),
+(max-height: 45em) {
+
+    .dialog.dialog-fixedSize,
+    .dialog.dialog-fullscreen-lowres {
+        border-radius: unset !important;
+        border: unset;
+    }
+
+    body:has(.dialog.dialog-fixedSize.opened,
+        .dialog.dialog-fullscreen-lowres.opened) {
+        overflow: hidden;
+    }
+}
+
 
 .dialogBackdropOpened {
     opacity: .66;
