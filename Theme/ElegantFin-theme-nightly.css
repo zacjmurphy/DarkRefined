@@ -482,7 +482,7 @@ html {
 
 .mediaInfoOfficialRating {
     background: transparent !important;
-    font-size: xx-small;
+    font-size: .6em;
     transform: translateY(-.15em);
     padding-inline: .5em !important;
     font-weight: 600;
