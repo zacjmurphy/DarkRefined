@@ -117,7 +117,7 @@ html {
 
 .emby-button.show-focus:focus,
 .paper-icon-button-light.show-focus:focus {
-    background-color: var(--highlightOutlineColor);
+    background-color: var(--highlightOutlineColor) !important;
     color: #fff;
 }
 
