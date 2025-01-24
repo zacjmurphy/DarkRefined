@@ -19,6 +19,7 @@
     --darkerGradientPointAlpha: rgba(17, 24, 39, 0.85);
     --lighterGradientPoint: #1d2635;
     --borderColor: rgb(71, 80, 92);
+    /* --borderColor: rgb(62 72 85); */
     --lighterBorderColor: rgb(255 255 255 / 20%);
     --headerColor: rgba(30, 40, 54, 0.8);
     --drawerColor: rgba(30, 40, 54, 0.9);
@@ -2001,3 +2002,43 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     color: red;
     background: var(--highlightOutlineColor);
 } */
+
+.nowPlayingPageImageContainerNoAlbum {
+    border: var(--defaultBorder);
+    border-radius: var(--smallRadius);
+    overflow: hidden;
+}
+
+.nowPlayingPageImageContainerNoAlbum .defaultCardBackground {
+    background: repeating-radial-gradient(black, transparent 16em);
+}
+
+.nowPlayingPageImageContainerNoAlbum .cardImageContainer .cardImageIcon {
+    color: var(--borderColor);
+}
+
+.layout-mobile .playlistSection .playlist {
+    padding: 2em 0;
+    top: 3.5em;
+    bottom: 4.4em;
+    background: var(--headerColor);
+    backdrop-filter: blur(4em);
+    z-index: 0;
+}
+
+.layout-mobile .playlistSectionButton {
+    background: var(--headerColor);
+    border-top: var(--defaultBorder);
+    backdrop-filter: blur(.5em);
+    z-index: 1;
+}
+
+@media (orientation: portrait) and (max-width: 43em) {
+    .nowPlayingInfoContainer {
+        height: calc(95% - 4.2em);
+    }
+}
+
+.nowPlayingInfoContainerMedia>div:not(.hide) {
+    margin-bottom: 1em;
+}
