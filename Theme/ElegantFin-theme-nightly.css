@@ -51,6 +51,11 @@
     /* login page customizations */
     --loginPageBgUrl: url("");
     --loginPageText: "Sign in to continue";
+
+    --blurSmallest: blur(2px);
+    --blurDefault: blur(5px);
+    --blurLarge: blur(10px);
+    --blurLargest: blur(20px);
 }
 
 html {
@@ -246,7 +251,7 @@ html {
 .layout-mobile .cardOverlayButton-br>.cardOverlayButtonIcon {
     border: var(--defaultLighterBorder);
     border-color: rgba(23, 23, 23, 0.6);
-    backdrop-filter: blur(.1em);
+    backdrop-filter: var(--blurSmallest);
 }
 
 .layout-mobile .portraitCard .cardOverlayButton-br,
@@ -256,7 +261,7 @@ html {
 }
 
 .cardOverlayContainer:has(.cardOverlayButton:hover) {
-    backdrop-filter: blur(.25em);
+    backdrop-filter: var(--blurDefault);
 }
 
 .listViewUserDataButtons {
@@ -646,7 +651,7 @@ html {
 .skinHeader-blurred:not(.osdHeader),
 .appfooter {
     background-color: var(--headerColor) !important;
-    backdrop-filter: blur(5px) !important;
+    backdrop-filter: var(--blurDefault) !important;
 }
 
 .headroom--unpinned {
@@ -690,7 +695,7 @@ html {
 }
 
 .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
-    backdrop-filter: blur(.1em);
+    backdrop-filter: var(--blurSmallest);
     background-color: rgb(123 123 123 / 30%) !important;
     height: .3em;
     box-shadow: inset 0px 0px 0.01em .01em #969696;
@@ -760,7 +765,7 @@ progress+span {
     border: var(--defaultLighterBorder);
     padding: .5em .5em !important;
     margin: 0.125em !important;
-    backdrop-filter: blur(.1em);
+    backdrop-filter: var(--blurSmallest);
 }
 
 .btnPlay.detailButton {
@@ -792,7 +797,7 @@ progress+span {
 .drawer-open {
     background-color: var(--drawerColor);
     border-right: var(--defaultBorder);
-    backdrop-filter: blur(8px);
+    backdrop-filter: var(--blurLarge);
 }
 
 .mainDrawer-scrollContainer {
@@ -898,7 +903,7 @@ progress+span {
 }
 
 .dialog {
-    backdrop-filter: blur(5px);
+    backdrop-filter: var(--blurDefault);
     background-color: var(--drawerColor);
     min-width: 11em;
 }
@@ -956,7 +961,7 @@ progress+span {
 .selectionCommandsPanel {
     background: var(--lighterGradientPoint);
     border-bottom: var(--defaultBorder);
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--blurLarge);
 }
 
 .selectionCommandsPanel>h1 {
@@ -1210,7 +1215,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 .formDialogFooter:not(.formDialogFooter-clear),
 .formDialogHeader:not(.formDialogHeader-clear) {
     background-color: var(--headerColor);
-    backdrop-filter: blur(5px);
+    backdrop-filter: var(--blurDefault);
 }
 
 .visualCardBox,
@@ -1258,13 +1263,13 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .MuiAppBar-root {
     background: var(--headerColor);
-    backdrop-filter: blur(5px);
+    backdrop-filter: var(--blurDefault);
     border-bottom: var(--defaultBorder);
 }
 
 .MuiDrawer-paper {
     background: var(--drawerColor);
-    backdrop-filter: blur(5px);
+    backdrop-filter: var(--blurLarge);
     border-right: var(--defaultBorder);
 }
 
@@ -1578,7 +1583,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 .upNextContainer {
     background: var(--headerColor) !important;
     border: var(--defaultBorder) !important;
-    backdrop-filter: blur(1em);
+    backdrop-filter: var(--blurDefault);
 }
 
 .activeSession {
@@ -1845,7 +1850,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 .iconOsd {
     border-radius: var(--largeRadius);
     background-color: rgba(69, 69, 69, 0.69);
-    backdrop-filter: blur(5px);
+    backdrop-filter: var(--blurDefault);
 }
 
 .playerStats-stats {
@@ -1892,7 +1897,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     background: rgba(30, 40, 54, 0.7);
     padding: 2em 2em 1em 2em !important;
     border-radius: var(--largerRadius);
-    backdrop-filter: blur(5px);
+    backdrop-filter: var(--blurDefault);
     box-sizing: border-box;
 }
 
@@ -2022,14 +2027,14 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     top: 3.5em;
     bottom: 4.3em;
     background: color-mix(in srgb, var(--headerColor), var(--darkerGradientPoint) 50%);
-    backdrop-filter: blur(4em);
+    backdrop-filter: var(--blurLargest);
     z-index: 0;
 }
 
 .layout-mobile .playlistSectionButton {
     background: var(--drawerColor);
     border-top: var(--defaultBorder);
-    backdrop-filter: blur(.5em);
+    backdrop-filter: var(--blurSmallest);
     z-index: 1;
 }
 
