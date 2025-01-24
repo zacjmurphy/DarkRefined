@@ -927,17 +927,13 @@ progress+span {
     opacity: .66;
 }
 
-[dir=ltr] .actionsheetMenuItemIcon.check {
-    margin: 0 .45em 0 .45em !important;
+.dialogContainer:has([data-id="editlyrics"]) {
+    top: -1em;
 }
 
 .subtitleEditor-dropZone,
 .imageEditor-dropZone {
     border-radius: var(--largeRadius);
-}
-
-.actionSheetContent>h1 {
-    font-size: unset;
 }
 
 .formDialogHeaderTitle {
@@ -1373,6 +1369,26 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .actionSheetContent {
     padding: .4em !important;
+}
+
+.actionSheetContent>h1 {
+    font-size: unset;
+}
+
+[dir=ltr] .actionsheetMenuItemIcon.check {
+    margin: 0 .45em 0 .45em !important;
+}
+
+.actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check) {
+    background-color: var(--highlightOutlineColor);
+}
+
+.actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check) .listItemIcon.material-icons.check {
+    display: none;
+}
+
+.actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check[style*="hidden"]) {
+    background-color: transparent;
 }
 
 .navMenuOption {
@@ -1976,3 +1992,12 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 .padded-right-withalphapicker .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"]) {
     margin-bottom: -1.5em;
 }
+
+/* input[type="radio"]:checked {
+    background-color: var(--highlightOutlineColor);
+} */
+
+/* .mdl-radio__focus-circle {
+    color: red;
+    background: var(--highlightOutlineColor);
+} */
