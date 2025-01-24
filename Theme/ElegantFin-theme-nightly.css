@@ -1377,11 +1377,11 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .navMenuOption {
     border-radius: var(--smallRadius) !important;
-    margin: .5em 1em !important;
+    margin: 0em 1em !important;
 }
 
 [dir=ltr] .navMenuOption {
-    padding: 1em !important;
+    padding: 0.75em 1em !important;
     margin-bottom: unset;
 }
 
