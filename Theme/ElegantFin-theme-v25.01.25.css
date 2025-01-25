@@ -15,6 +15,7 @@
 }
 
 :root {
+    --elegantFinFooterText: "ElegantFin v25.01.25";
     --darkerGradientPoint: #111827;
     --darkerGradientPointAlpha: rgba(17, 24, 39, 0.85);
     --lighterGradientPoint: #1d2635;
@@ -66,6 +67,17 @@ html {
     -webkit-tap-highlight-color: transparent !important;
 }
 
+.dashboardFooter {
+    font-family: "Noto Sans", serif;
+    transition: transform 50ms;
+}
+
+.dashboardFooter::after {
+    content: var(--elegantFinFooterText);
+    font-size: .8em;
+    color: #4e4e60;
+}
+
 .material-icons {
     font-family: 'Material Icons Round' !important;
     font-weight: normal;
@@ -98,17 +110,6 @@ html {
 
 .cardImageIcon {
     color: var(--borderColor);
-}
-
-.dashboardFooter {
-    font-family: Noto Sans;
-    transition: transform 50ms;
-}
-
-.dashboardFooter::after {
-    content: "ElegantFin v25.01.25";
-    font-size: .8em;
-    color: #4e4e60;
 }
 
 .card {
@@ -488,8 +489,11 @@ html {
 .mediaInfoOfficialRating {
     background: transparent !important;
     font-size: .6em;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: normal;
     transform: translateY(-.15em);
     padding-inline: .5em !important;
+    padding-block: .2em !important;
     font-weight: 600;
     border: var(--defaultBorder);
 }
@@ -934,7 +938,7 @@ progress+span {
 }
 
 .dialogContainer:has([data-id="editlyrics"]) {
-    top: -1em;
+    top: -1.75em;
 }
 
 .subtitleEditor-dropZone,
@@ -1780,6 +1784,22 @@ div[data-role=controlgroup] a.ui-btn-active {
     border-style: inset;
 }
 
+.mdl-slider-container {
+    height: 1em;
+}
+
+.mdl-slider {
+    height: unset;
+}
+
+.mdl-slider-background-flex-container {
+    backdrop-filter: var(--blurSmallest);
+}
+
+.mdl-slider-background-flex {
+    border-radius: var(--smallRadius);
+}
+
 .mdl-slider-background-lower {
     background-color: var(--btnSubmitBorderColor);
 }
@@ -1788,9 +1808,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     background: var(--btnSubmitBorderColor);
 }
 
-/* .layout-desktop .mdl-slider::-webkit-slider-thumb {
-    transform: scale(.05);
-} */
+.mdl-slider::-webkit-slider-thumb {
+    width: .75em !important;
+    height: .75em !important;
+}
 
 .mdl-slider::-moz-range-thumb {
     background: var(--btnSubmitBorderColor);
@@ -1990,12 +2011,12 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     text-align: center;
 }
 
-.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"]) .cardText-first,
-.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"]) .cardText.cardTextCentered {
+.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText-first,
+.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText.cardTextCentered {
     display: none;
 }
 
-.padded-right-withalphapicker .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"]) {
+.padded-right-withalphapicker .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) {
     margin-bottom: -1.5em;
 }
 
@@ -2015,11 +2036,17 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 .nowPlayingPageImageContainerNoAlbum .defaultCardBackground {
-    background: repeating-radial-gradient(black, transparent 16em);
+    background: repeating-radial-gradient(black, transparent 10em);
 }
 
 .nowPlayingPageImageContainerNoAlbum .cardImageContainer .cardImageIcon {
     color: var(--borderColor);
+}
+
+@media (orientation: portrait) and (max-width: 43em) {
+    .nowPlayingPageImageContainerNoAlbum .cardImageContainer .cardImageIcon {
+        font-size: 8em !important;
+    }
 }
 
 .layout-mobile .playlistSection .playlist {
@@ -2038,6 +2065,12 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     z-index: 1;
 }
 
+.layout-mobile .playlistSectionButton.playlistSectionButtonTransparent {
+    background: transparent;
+    border-top: var(--defaultBorder);
+    border-color: transparent;
+}
+
 @media (orientation: portrait) and (max-width: 43em) {
     .nowPlayingInfoContainer {
         height: calc(95% - 4.2em);
@@ -2046,4 +2079,37 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 
 .nowPlayingInfoContainerMedia>div:not(.hide) {
     margin-bottom: 1em;
+}
+
+.nowPlayingSongName.nowPlayingEpisode {
+    font-size: 1.25em;
+    color: var(--textColor);
+}
+
+.nowPlayingAlbum.nowPlayingSeason {
+    color: var(--dimTextColor);
+}
+
+.playlistIndexIndicatorImage {
+    background-blend-mode: difference;
+    background-color: var(--textColor);
+    background-size: contain !important;
+}
+
+.playlistIndexIndicatorImage.defaultCardBackground .audiotrack {
+    display: none;
+}
+
+#dialogToc {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-height: unset;
+    max-width: unset;
+}
+
+#dialogToc .toc li {
+    font-size: unset;
+    font-weight: 600;
+    list-style-type: circle;
+    margin-bottom: .5em;
+    font-family: "Math", serif;
 }
