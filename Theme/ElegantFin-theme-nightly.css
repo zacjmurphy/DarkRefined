@@ -489,8 +489,11 @@ html {
 .mediaInfoOfficialRating {
     background: transparent !important;
     font-size: .6em;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: normal;
     transform: translateY(-.15em);
     padding-inline: .5em !important;
+    padding-block: .2em !important;
     font-weight: 600;
     border: var(--defaultBorder);
 }
