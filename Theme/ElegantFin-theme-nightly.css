@@ -15,6 +15,7 @@
 }
 
 :root {
+    --elegantFinFooterText: "ElegantFin Nightly";
     --darkerGradientPoint: #111827;
     --darkerGradientPointAlpha: rgba(17, 24, 39, 0.85);
     --lighterGradientPoint: #1d2635;
@@ -66,6 +67,17 @@ html {
     -webkit-tap-highlight-color: transparent !important;
 }
 
+.dashboardFooter {
+    font-family: Noto Sans;
+    transition: transform 50ms;
+}
+
+.dashboardFooter::after {
+    content: var(--elegantFinFooterText);
+    font-size: .8em;
+    color: #4e4e60;
+}
+
 .material-icons {
     font-family: 'Material Icons Round' !important;
     font-weight: normal;
@@ -98,17 +110,6 @@ html {
 
 .cardImageIcon {
     color: var(--borderColor);
-}
-
-.dashboardFooter {
-    font-family: Noto Sans;
-    transition: transform 50ms;
-}
-
-.dashboardFooter::after {
-    content: "ElegantFin Nightly";
-    font-size: .8em;
-    color: #4e4e60;
 }
 
 .card {
