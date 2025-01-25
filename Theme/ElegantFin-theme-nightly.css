@@ -2047,3 +2047,12 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 .nowPlayingInfoContainerMedia>div:not(.hide) {
     margin-bottom: 1em;
 }
+
+.nowPlayingSongName.nowPlayingEpisode{
+font-size: 1.25em;
+color: var(--textColor);
+}
+
+.nowPlayingAlbum.nowPlayingSeason{
+color: var(--dimTextColor);
+}
