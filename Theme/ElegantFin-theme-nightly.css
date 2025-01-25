@@ -934,7 +934,7 @@ progress+span {
 }
 
 .dialogContainer:has([data-id="editlyrics"]) {
-    top: -1em;
+    top: -1.75em;
 }
 
 .subtitleEditor-dropZone,
