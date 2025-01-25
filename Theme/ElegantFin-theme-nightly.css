@@ -68,7 +68,7 @@ html {
 }
 
 .dashboardFooter {
-    font-family: Noto Sans;
+    font-family: "Noto Sans", serif;
     transition: transform 50ms;
 }
 
@@ -1785,7 +1785,7 @@ div[data-role=controlgroup] a.ui-btn-active {
     height: 1em;
 }
 
-.mdl-slider{
+.mdl-slider {
     height: unset;
 }
 
@@ -2078,13 +2078,13 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     margin-bottom: 1em;
 }
 
-.nowPlayingSongName.nowPlayingEpisode{
-font-size: 1.25em;
-color: var(--textColor);
+.nowPlayingSongName.nowPlayingEpisode {
+    font-size: 1.25em;
+    color: var(--textColor);
 }
 
-.nowPlayingAlbum.nowPlayingSeason{
-color: var(--dimTextColor);
+.nowPlayingAlbum.nowPlayingSeason {
+    color: var(--dimTextColor);
 }
 
 .playlistIndexIndicatorImage {
@@ -2093,6 +2093,20 @@ color: var(--dimTextColor);
     background-size: contain !important;
 }
 
-.playlistIndexIndicatorImage.defaultCardBackground .audiotrack{
+.playlistIndexIndicatorImage.defaultCardBackground .audiotrack {
     display: none;
+}
+
+#dialogToc {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-height: unset;
+    max-width: unset;
+}
+
+#dialogToc .toc li {
+    font-size: unset;
+    font-weight: 600;
+    list-style-type: circle;
+    margin-bottom: .5em;
+    font-family: "Math", serif;
 }
