@@ -2079,3 +2079,13 @@ color: var(--textColor);
 .nowPlayingAlbum.nowPlayingSeason{
 color: var(--dimTextColor);
 }
+
+.playlistIndexIndicatorImage {
+    background-blend-mode: difference;
+    background-color: var(--textColor);
+    background-size: contain !important;
+}
+
+.playlistIndexIndicatorImage.defaultCardBackground .audiotrack{
+    display: none;
+}
