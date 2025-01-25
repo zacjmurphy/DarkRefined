@@ -1780,6 +1780,22 @@ div[data-role=controlgroup] a.ui-btn-active {
     border-style: inset;
 }
 
+.mdl-slider-container {
+    height: 1em;
+}
+
+.mdl-slider{
+    height: unset;
+}
+
+.mdl-slider-background-flex-container {
+    backdrop-filter: var(--blurSmallest);
+}
+
+.mdl-slider-background-flex {
+    border-radius: var(--smallRadius);
+}
+
 .mdl-slider-background-lower {
     background-color: var(--btnSubmitBorderColor);
 }
@@ -1788,9 +1804,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     background: var(--btnSubmitBorderColor);
 }
 
-/* .layout-desktop .mdl-slider::-webkit-slider-thumb {
-    transform: scale(.05);
-} */
+.mdl-slider::-webkit-slider-thumb {
+    width: .75em !important;
+    height: .75em !important;
+}
 
 .mdl-slider::-moz-range-thumb {
     background: var(--btnSubmitBorderColor);
