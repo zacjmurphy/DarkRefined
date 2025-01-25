@@ -2061,6 +2061,12 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     z-index: 1;
 }
 
+.layout-mobile .playlistSectionButton.playlistSectionButtonTransparent {
+    background: transparent;
+    border-top: var(--defaultBorder);
+    border-color: transparent;
+}
+
 @media (orientation: portrait) and (max-width: 43em) {
     .nowPlayingInfoContainer {
         height: calc(95% - 4.2em);
