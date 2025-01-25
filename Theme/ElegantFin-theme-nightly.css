@@ -36,6 +36,7 @@
     --activeColorAlpha: rgba(144, 81, 169, 0.4);
     --activeColor: rgb(144, 81, 169);
     --tableBodyColor: rgb(31 41 55 / 1);
+    --uiAccentColor: rgb(117 111 226);
     --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
     --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
     --hoverGradientA: linear-gradient(130deg, rgb(255 255 255 / 35%) 20%, rgb(255 255 255 / 15%) 40%);
@@ -695,7 +696,7 @@ html {
 }
 
 .buttonActive {
-    color: var(--btnSubmitBorderColor) !important;
+    color: var(--uiAccentColor) !important;
 }
 
 .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
@@ -709,7 +710,7 @@ html {
 
 .itemProgressBarForeground {
     border-radius: var(--largeRadius);
-    background-color: var(--btnSubmitBorderColor);
+    background-color: var(--uiAccentColor);
 }
 
 .backgroundProgress>div {
@@ -717,16 +718,16 @@ html {
 }
 
 .playbackProgress>div {
-    background-color: var(--btnSubmitBorderColor);
+    background-color: var(--uiAccentColor);
 }
 
 ::-moz-progress-bar {
-    background: var(--btnSubmitBorderColor) !important;
+    background: var(--uiAccentColor) !important;
     border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
 }
 
 ::-webkit-progress-value {
-    background: var(--btnSubmitBorderColor) !important;
+    background: var(--uiAccentColor) !important;
     border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
 }
 
@@ -739,7 +740,53 @@ progress,
 }
 
 progress+span {
-    color: var(--btnSubmitBorderColor) !important;
+    color: var(--uiAccentColor) !important;
+}
+
+.mdl-spinner__circle {
+    border-color: var(--dimTextColor);
+    border-style: inset;
+}
+
+.mdl-slider-container {
+    height: 1em;
+}
+
+.mdl-slider {
+    height: unset;
+}
+
+.mdl-slider-background-flex-container {
+    backdrop-filter: var(--blurSmallest);
+}
+
+.mdl-slider-background-flex {
+    border-radius: var(--smallRadius);
+}
+
+.mdl-slider-background-lower {
+    background-color: var(--uiAccentColor);
+}
+
+.mdl-slider::-webkit-slider-thumb {
+    background: var(--uiAccentColor);
+}
+
+.mdl-slider::-webkit-slider-thumb {
+    width: .75em !important;
+    height: .75em !important;
+}
+
+.mdl-slider::-moz-range-thumb {
+    background: var(--uiAccentColor);
+}
+
+.sliderMarker.watched {
+    background-color: var(--uiAccentColor);
+}
+
+.iconOsdProgressInner {
+    background: var(--uiAccentColor);
 }
 
 .selectLabel {
@@ -809,7 +856,7 @@ progress+span {
 }
 
 .btnHeaderSave.button-flat {
-    color: var(--btnSubmitBorderColor) !important;
+    color: var(--uiAccentColor) !important;
     gap: 0.3em;
     border-radius: var(--smallRadius);
 }
@@ -1779,52 +1826,6 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin: .25em .5em;
 }
 
-.mdl-spinner__circle {
-    border-color: var(--dimTextColor);
-    border-style: inset;
-}
-
-.mdl-slider-container {
-    height: 1em;
-}
-
-.mdl-slider {
-    height: unset;
-}
-
-.mdl-slider-background-flex-container {
-    backdrop-filter: var(--blurSmallest);
-}
-
-.mdl-slider-background-flex {
-    border-radius: var(--smallRadius);
-}
-
-.mdl-slider-background-lower {
-    background-color: var(--btnSubmitBorderColor);
-}
-
-.mdl-slider::-webkit-slider-thumb {
-    background: var(--btnSubmitBorderColor);
-}
-
-.mdl-slider::-webkit-slider-thumb {
-    width: .75em !important;
-    height: .75em !important;
-}
-
-.mdl-slider::-moz-range-thumb {
-    background: var(--btnSubmitBorderColor);
-}
-
-.sliderMarker.watched {
-    background-color: var(--btnSubmitBorderColor);
-}
-
-.iconOsdProgressInner {
-    background: var(--btnSubmitBorderColor);
-}
-
 .subtitleappearance-preview {
     border-radius: var(--smallRadius);
 }
@@ -1885,7 +1886,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 .progressring-spiner {
-    border-color: var(--btnSubmitBorderColor);
+    border-color: var(--uiAccentColor);
 }
 
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.semiTransparent.noHeaderRight {
