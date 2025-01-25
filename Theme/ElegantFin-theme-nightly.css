@@ -2015,11 +2015,17 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 .nowPlayingPageImageContainerNoAlbum .defaultCardBackground {
-    background: repeating-radial-gradient(black, transparent 16em);
+    background: repeating-radial-gradient(black, transparent 10em);
 }
 
 .nowPlayingPageImageContainerNoAlbum .cardImageContainer .cardImageIcon {
     color: var(--borderColor);
+}
+
+@media (orientation: portrait) and (max-width: 43em) {
+    .nowPlayingPageImageContainerNoAlbum .cardImageContainer .cardImageIcon {
+        font-size: 8em !important;
+    }
 }
 
 .layout-mobile .playlistSection .playlist {
