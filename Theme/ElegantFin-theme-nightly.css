@@ -1672,6 +1672,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 
     .button-flat:hover {
         background-color: rgba(255, 255, 255, 0.2);
+        color: white;
     }
 
     .alphaPickerButton:hover {
