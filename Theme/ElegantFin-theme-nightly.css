@@ -60,6 +60,23 @@
     --blurLargest: blur(20px);
 }
 
+/* div {
+    transition: opacity .1s ease, transform .1s ease, display .1s ease allow-discrete;
+}
+
+div.hide {
+    opacity: 0;
+    transform: scale(1.25);
+    display: none !important;
+}
+
+
+@starting-style {
+    div.hide {
+        opacity: 1;
+    }
+} */
+
 html {
     font-family: "Inter", serif;
     font-optical-sizing: auto;
@@ -1497,6 +1514,26 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .trackSelectionFieldContainer>.selectArrowContainer {
     top: .5em;
+}
+
+.trackSelectionFieldContainer>label {
+    max-width: 2.25em;
+    background-repeat: no-repeat;
+    color: transparent;
+    transform: scale(.9);
+    /* opacity: .8; */
+}
+
+.selectVideoContainer.trackSelectionFieldContainer>label {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='%23d1d5db'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z' stroke='%23d1d5db' stroke-width='1.5'%3E%3C/path%3E%3Cpath d='M17 2.5L17 21.5' stroke='%23d1d5db' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M7 2.5L7 21.5' stroke='%23d1d5db' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M2.5 7L7 7M21.5 7L17 7' stroke='%23d1d5db' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M2.5 17L7 17M21.5 17L17 17' stroke='%23d1d5db' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M2 12H22' stroke='%23d1d5db' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.selectAudioContainer.trackSelectionFieldContainer>label {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23d1d5db' stroke='%23d1d5db'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Ctitle%3ESound%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Sound'%3E%3Crect id='Rectangle' fill-rule='nonzero' x='0' y='0' width='24' height='24'%3E%3C/rect%3E%3Cpath d='M21,16 L21,6.54138 C21,4.68756 19.3354,3.27743 17.5068,3.5822 L11.5068,4.5822 C10.0602,4.82329 9,6.07486 9,7.54138 L9,18' id='Path' stroke='%23d1d5db' stroke-width='2' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M6.5,21 C7.88071,21 9,19.8807 9,18.5 L9,16 L6.5,16 C5.11929,16 4,17.1193 4,18.5 C4,19.8807 5.11929,21 6.5,21 Z' id='Path' stroke='%23d1d5db' stroke-width='2' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M18.5,19 C19.8807,19 21,17.8807 21,16.5 L21,14 L18.5,14 C17.1193,14 16,15.1193 16,16.5 C16,17.8807 17.1193,19 18.5,19 Z' id='Path' stroke='%23d1d5db' stroke-width='2' stroke-linecap='round'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.selectSubtitlesContainer.trackSelectionFieldContainer>label {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='%23d1d5db'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12C22 15.7712 22 17.6569 20.8284 18.8284C19.6569 20 17.7712 20 14 20H10C6.22876 20 4.34315 20 3.17157 18.8284C2 17.6569 2 15.7712 2 12Z' stroke='%23d1d5db' stroke-width='1.5'%3E%3C/path%3E%3Cpath d='M10 16H6' stroke='%23d1d5db' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M14 13H18' stroke='%23d1d5db' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M14 16H12.5' stroke='%23d1d5db' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M9.5 13H11.5' stroke='%23d1d5db' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M18 16H16.5' stroke='%23d1d5db' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M6 13H7' stroke='%23d1d5db' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
 .detailSectionContent {
