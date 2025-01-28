@@ -1458,6 +1458,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: var(--activeColor);
 }
 
+.actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check) .listItemBodyText {
+    color: white;
+}
+
 .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check) .listItemIcon.material-icons.check {
     display: none;
 }
