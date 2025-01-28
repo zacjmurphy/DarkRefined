@@ -1517,7 +1517,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .trackSelectionFieldContainer>label {
-    max-width: 2.25em;
+    max-width: 2.75em;
     background-repeat: no-repeat;
     color: transparent;
     transform: scale(.9);
