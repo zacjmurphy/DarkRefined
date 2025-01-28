@@ -472,11 +472,11 @@ html {
 }
 
 .itemMiscInfo>.mediaInfoItem:not(:first-child, .mediaInfoCriticRating) {
-    padding-inline-start: .125em;
+    /* padding-inline-start: .125em; */
 }
 
 .itemMiscInfo>.mediaInfoItem:not(:last-child) {
-    padding-inline-end: .125em;
+    /* padding-inline-end: .125em; */
 }
 
 .mediaInfoItem {
@@ -490,11 +490,12 @@ html {
 .mediaInfoOfficialRating {
     background: transparent !important;
     font-size: .6em;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: normal;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.5em;
     transform: translateY(-.15em);
-    padding-inline: .5em !important;
-    padding-block: .2em !important;
+    /* padding-inline: .5em !important; */
+    /* padding-block: .2em !important; */
     font-weight: 600;
     border: var(--defaultBorder);
 }
