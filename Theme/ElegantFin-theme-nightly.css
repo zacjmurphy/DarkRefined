@@ -37,6 +37,9 @@
     --activeColor: rgb(119, 91, 244);
     --tableBodyColor: rgb(31 41 55 / 1);
     --uiAccentColor: rgb(117 111 226);
+    /* --btnPlayColor: rgb(41 154 93); */
+    --btnPlayColor: rgb(32, 32, 32);
+    --btnPlayBorderColor: color-mix(in srgb, var(--btnPlayColor), rgb(255, 255, 255) 5%);
     --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
     --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
     --hoverGradientA: linear-gradient(130deg, rgb(255 255 255 / 35%) 20%, rgb(255 255 255 / 15%) 40%);
@@ -246,17 +249,18 @@ html {
 }
 
 .cardOverlayContainer>.cardOverlayFab-primary,
-.listItemImageButton {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: var(--textColor);
-    border: var(--defaultBorder);
+.listItemImageButton,
+.layout-mobile .cardOverlayButton-br>.cardOverlayButtonIcon {
+    background-color: var(--btnPlayColor) !important;
+    color: white;
+    border: var(--defaultLighterBorder);
+    border-color: var(--btnPlayBorderColor);
     font-size: 75%;
 }
 
 .cardOverlayContainer>.cardOverlayFab-primary:hover,
 .listItemImageButton:hover {
-    background-color: rgba(0, 0, 0, 0.75) !important;
-    color: unset;
+    color: white;
 }
 
 .layout-desktop .cardOverlayButton-br {
@@ -265,12 +269,6 @@ html {
 
 .layout-mobile .cardOverlayButton {
     padding: .425em;
-}
-
-.layout-mobile .cardOverlayButton-br>.cardOverlayButtonIcon {
-    border: var(--defaultLighterBorder);
-    border-color: rgba(23, 23, 23, 0.6);
-    backdrop-filter: var(--blurSmallest);
 }
 
 .layout-mobile .portraitCard .cardOverlayButton-br,
@@ -1689,9 +1687,13 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .paper-icon-button-light:hover:not(:disabled) {
+    .paper-icon-button-light:hover:not(:disabled, .cardOverlayButton) {
         color: #fff;
         background-color: rgb(255 255 255 / 5%);
+    }
+
+    .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check[style*="hidden"]):hover {
+        background-color: rgba(255, 255, 255, 0.125);
     }
 
     .emby-select-withcolor:hover:not(.emby-select[disabled], :focus),
