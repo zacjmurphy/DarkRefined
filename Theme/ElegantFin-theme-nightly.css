@@ -1468,6 +1468,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: transparent;
 }
 
+.actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check[style*="hidden"]):active {
+    background-color: rgba(255, 255, 255, 0.125);
+}
+
 .navMenuOption {
     border-radius: var(--smallRadius) !important;
     margin: 0em 1em !important;
