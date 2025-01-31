@@ -956,6 +956,12 @@ progress+span {
     color: var(--textColor) !important;
 }
 
+.layout-desktop .itemExternalLinks.focuscontainer-x>a:hover,
+.itemExternalLinks.focuscontainer-x>a:active {
+    background-color: var(--activeColor) !important;
+    color: white !important;
+}
+
 .layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="themoviedb.org"]:hover,
 .itemExternalLinks.focuscontainer-x>a[href*="themoviedb.org"]:active {
     background-color: rgb(26, 183, 216) !important;
