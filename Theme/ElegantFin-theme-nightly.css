@@ -940,6 +940,58 @@ progress+span {
     color: var(--textColor);
 }
 
+.itemExternalLinks.focuscontainer-x {
+    color: transparent;
+}
+
+.itemExternalLinks.focuscontainer-x>.button-link {
+    color: var(--textColor);
+    background-color: var(--selectorBackgroundColor);
+    padding: .125em .5em;
+    border-radius: var(--smallerRadius);
+    margin-bottom: .5em;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="themoviedb.org"]:hover,
+.itemExternalLinks.focuscontainer-x>a[href*="themoviedb.org"]:active {
+    background-color: rgb(26, 183, 216) !important;
+    color: black !important;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="imdb.com"]:hover,
+.itemExternalLinks.focuscontainer-x>a[href*="imdb.com"]:active {
+    background-color: rgb(226, 182, 22) !important;
+    color: black !important;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="thetvdb.com"]:hover,
+.itemExternalLinks.focuscontainer-x>a[href*="thetvdb.com"]:active {
+    background-color: rgb(108, 213, 145) !important;
+    color: black !important;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="trakt.tv"]:hover,
+.itemExternalLinks.focuscontainer-x>a[href*="trakt.tv"]:active {
+    background-color: rgb(159, 66, 198) !important;
+    color: var(--textColor) !important;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="theaudiodb.com"]:hover,
+.itemExternalLinks.focuscontainer-x>a[href*="theaudiodb.com"]:active {
+    background-color: rgb(99, 153, 204) !important;
+    color: rgb(15, 22, 28) !important;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="musicbrainz.org"]:hover,
+.itemExternalLinks.focuscontainer-x>a[href*="musicbrainz.org"]:active {
+    background-color: rgb(186, 71, 143) !important;
+    color: var(--textColor) !important;
+}
+
+.layout-mobile .itemExternalLinks.focuscontainer-x>.button-link:hover {
+    color: var(--textColor) !important;
+}
+
 .itemTags,
 .itemTags>a {
     display: none;
