@@ -37,9 +37,9 @@
     --activeColor: rgb(119, 91, 244);
     --tableBodyColor: rgb(31 41 55 / 1);
     --uiAccentColor: rgb(117 111 226);
-    /* --btnPlayColor: rgb(41 154 93); */
-    --btnPlayColor: rgb(32, 32, 32);
-    --btnPlayBorderColor: color-mix(in srgb, var(--btnPlayColor), rgb(255, 255, 255) 5%);
+    --btnMiniPlayColor: rgb(41 154 93);
+    /* --btnMiniPlayColor: rgb(32, 32, 32); */
+    --btnPlayBorderColor: color-mix(in srgb, var(--btnMiniPlayColor), rgb(255, 255, 255) 5%);
     --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
     --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
     --hoverGradientA: linear-gradient(130deg, rgb(255 255 255 / 35%) 20%, rgb(255 255 255 / 15%) 40%);
@@ -251,7 +251,7 @@ html {
 .cardOverlayContainer>.cardOverlayFab-primary,
 .listItemImageButton,
 .layout-mobile .cardOverlayButton-br>.cardOverlayButtonIcon {
-    background-color: var(--btnPlayColor) !important;
+    background-color: var(--btnMiniPlayColor) !important;
     color: white;
     border: var(--defaultLighterBorder);
     border-color: var(--btnPlayBorderColor);
