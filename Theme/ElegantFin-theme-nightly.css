@@ -2209,17 +2209,19 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     }
 }
 
-.nowPlayingInfoContainerMedia>div:not(.hide) {
-    margin-bottom: 1em;
-}
-
 .nowPlayingSongName.nowPlayingEpisode {
+    margin-bottom: 1em;
     font-size: 1.25em;
     color: var(--textColor);
 }
 
 .nowPlayingAlbum.nowPlayingSeason {
     color: var(--dimTextColor);
+    margin-bottom: .5em;
+}
+
+.nowPlayingArtist.nowPlayingSerie{
+    margin-bottom: .5em;
 }
 
 .playlistIndexIndicatorImage {
