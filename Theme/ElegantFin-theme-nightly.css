@@ -1423,17 +1423,17 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .listItem[data-type="Audio"] {
     margin-inline: 1em;
-    /* padding-inline: 1em !important; */
+}
+
+.listItem[data-type="Audio"]:has(.playlistIndexIndicatorImage) .listItemBodyText {
+    color: white;
+    font-weight: 600;
 }
 
 [dir="ltr"] .listItem:not(.actionSheetMenuItem)[data-type="Episode"] .listItemBodyText:not(.secondary) {
     font-size: 1.17em;
     font-weight: 600;
 }
-
-/* .listItemBody {
-    padding: 0;
-} */
 
 .listItemBody>.listItemBodyText:not(.secondary) {
     display: -webkit-box;
