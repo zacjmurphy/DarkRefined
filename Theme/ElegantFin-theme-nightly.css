@@ -2105,7 +2105,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     background: var(--activeColor);
 }
 
-.card-withuserdata[data-isfolder="true"] .cardPadder-overflowBackdrop {
+#indexPage:not(.hide) .card-withuserdata[data-isfolder="true"] .cardPadder-overflowBackdrop {
     padding-bottom: 50%;
 }
 
@@ -2119,13 +2119,9 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     text-align: center;
 }
 
-.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText-first,
-.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText.cardTextCentered {
+#indexPage:not(.hide) .card-withuserdata[data-isfolder="true"] .cardText-first,
+#indexPage:not(.hide) .card-withuserdata[data-isfolder="true"] .cardText.cardTextCentered {
     display: none;
-}
-
-.padded-right-withalphapicker .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) {
-    margin-bottom: -1.5em;
 }
 
 /* input[type="radio"]:checked {
@@ -2220,7 +2216,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     margin-bottom: .5em;
 }
 
-.nowPlayingArtist.nowPlayingSerie{
+.nowPlayingArtist.nowPlayingSerie {
     margin-bottom: .5em;
 }
 
