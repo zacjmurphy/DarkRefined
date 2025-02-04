@@ -286,6 +286,10 @@ html {
     font-size: x-small;
 }
 
+.listItem-largeImage[data-type="Episode"] .listViewUserDataButtons {
+    font-size: small;
+}
+
 .smallBackdropCard,
 .squareCard,
 .backdropCard,
