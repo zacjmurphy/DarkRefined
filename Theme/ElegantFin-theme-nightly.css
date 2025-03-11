@@ -185,6 +185,11 @@ html {
     transition: transform .375s;
 }
 
+.card.squareCard[data-type="TvChannel"] .cardImageContainer.cardContent {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* box-shadow: inset 0px -2em 1em -1em #0000002e; */
+}
+
 .cardImageContainer>.cardDefaultText {
     font-size: 2em;
     padding-top: 1.5em;
