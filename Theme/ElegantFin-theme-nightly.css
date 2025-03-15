@@ -15,6 +15,7 @@
 }
 
 :root {
+    color-scheme: dark;
     --elegantFinFooterText: "ElegantFin Nightly";
     --darkerGradientPoint: #111827;
     --darkerGradientPointAlpha: rgba(17, 24, 39, 0.85);
