@@ -2308,3 +2308,47 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     margin-bottom: .5em;
     font-family: "Math", serif;
 }
+
+/* .MuiTabs-root>.MuiTabs-scroller>.MuiTabs-indicator */
+.MuiTabs-indicator {
+    display: none;
+}
+
+.MuiTabs-root>.MuiTabs-scroller {
+    align-content: center;
+}
+
+.MuiTabs-flexContainer>.MuiButtonBase-root {
+    border-radius: var(--largeRadius);
+    min-height: 40px;
+    min-width: 72px;
+}
+
+.MuiTabs-flexContainer>.MuiButtonBase-root.Mui-selected,
+.MuiToggleButtonGroup-grouped.Mui-selected {
+    color: white;
+    /* background-color: var(--selectorBackgroundColor) !important; */
+    /* font-weight: 550; */
+    background-color: transparent !important;
+}
+
+.MuiButtonBase-root.MuiIconButton-root:hover {
+    color: white;
+    background-color: transparent;
+}
+
+table {
+    border-color: var(--borderColor) !important;
+    border-radius: var(--smallRadius);
+    /* border-spacing: 14px; */
+    border: var(--defaultBorder);
+    background: var(--selectorBackgroundColorAlpha);
+}
+
+.detailTableBodyRow-shaded:nth-child(odd) {
+    background: var(--darkerGradientPointAlpha);
+}
+
+.detailTableBodyRow-shaded:nth-child(even) {
+    background: var(--lighterGradientPointAlpha);
+}
