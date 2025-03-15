@@ -810,6 +810,11 @@ progress+span {
     background-color: var(--uiAccentColor);
 }
 
+.sliderMarker {
+    height: 4px;
+    border-radius: 2px;
+}
+
 .iconOsdProgressInner {
     background: var(--uiAccentColor);
 }
