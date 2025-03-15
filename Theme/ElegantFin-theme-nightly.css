@@ -2020,8 +2020,9 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 .playerStats-stats {
-    max-height: 58vh;
+    max-height: 50vh;
     flex-wrap: wrap;
+    overflow-x: auto;
     padding: 1em !important;
 }
 
