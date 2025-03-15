@@ -782,7 +782,7 @@ progress+span {
 }
 
 .mdl-slider-background-flex-container {
-    backdrop-filter: var(--blurSmallest);
+    /* backdrop-filter: var(--blurSmallest); */
 }
 
 .mdl-slider-background-flex {
