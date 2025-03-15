@@ -2122,8 +2122,37 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 .startTimeText,
+.endTimeText,
+.positionTime,
+.runtime {
+    width: 4.5em;
+    box-sizing: border-box;
+}
+
+.startTimeText {
+    margin: 0 !important;
+}
+
 .endTimeText {
-    width: 4em;
+    justify-content: right;
+    padding-inline-end: .8em;
+}
+
+.startTimeText,
+.endTimeText {
+    padding-top: .25em;
+}
+
+.startTimeText,
+.positionTime {
+    text-align: start;
+    justify-content: left;
+}
+
+.endTimeText,
+.runtime {
+    text-align: end;
+    justify-content: right;
 }
 
 .filterIndicator {
