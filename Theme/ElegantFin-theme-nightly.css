@@ -1785,6 +1785,20 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: white;
 }
 
+.skip-button {
+    background-color: whitesmoke;
+    box-shadow: var(--shadow);
+}
+
+.skip-button:hover {
+    background-color: white;
+}
+
+.skip-button:active {
+    background-color: rgba(245, 245, 245, 0.7);
+    box-shadow: none;
+}
+
 .toast,
 .upNextContainer {
     background: var(--headerColor) !important;
