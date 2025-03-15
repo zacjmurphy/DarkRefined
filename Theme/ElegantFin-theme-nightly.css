@@ -1760,9 +1760,25 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: var(--textColor);
 }
 
+[dir=ltr] .upNextContainer {
+    margin: 2em;
+    box-sizing: border-box;
+    max-width: 80vw;
+}
+
 .upNextContainer .btnStartNow {
     background-color: var(--btnSubmitColor);
     border-color: var(--btnSubmitBorderColor);
+}
+
+.upNextDialog-title {
+    white-space: wrap;
+    width: unset;
+}
+
+.upNextDialog-buttons {
+    width: unset;
+    flex-wrap: wrap;
 }
 
 .upNextContainer .upNextDialog-countdownText {
