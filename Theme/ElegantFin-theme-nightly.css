@@ -725,7 +725,7 @@ html {
 }
 
 .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
-    backdrop-filter: var(--blurSmallest);
+    backdrop-filter: var(--blurLarge);
     background-color: rgb(123 123 123 / 30%) !important;
     /* height: .3em; */
     box-shadow: inset 0px 0px 0.01em .01em #969696;
