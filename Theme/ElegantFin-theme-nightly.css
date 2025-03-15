@@ -1706,6 +1706,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: #6c7bab;
 }
 
+.jstree-default .jstree-wholerow-clicked {
+    background: var(--selectorBackgroundColor) !important;
+}
+
 .sectionTitleTextButton {
     padding-inline: .5em;
 }
