@@ -786,6 +786,7 @@ progress+span {
 
 .mdl-slider-background-flex-container {
     /* backdrop-filter: var(--blurSmallest); */
+    padding: 0;
 }
 
 .mdl-slider-background-flex {
@@ -807,6 +808,10 @@ progress+span {
 
 .mdl-slider::-moz-range-thumb {
     background: var(--uiAccentColor);
+}
+
+.sliderMarkerContainer {
+    margin: 0 .1em;
 }
 
 .sliderMarker.watched {
