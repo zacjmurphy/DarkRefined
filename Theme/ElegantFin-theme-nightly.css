@@ -15,17 +15,19 @@
 }
 
 :root {
-    color-scheme: dark;
     --elegantFinFooterText: "ElegantFin Nightly";
+    color-scheme: dark;
     --darkerGradientPoint: #111827;
     --darkerGradientPointAlpha: rgba(17, 24, 39, 0.85);
     --lighterGradientPoint: #1d2635;
+    --lighterGradientPointAlpha: rgba(29, 38, 53, 0.85);
     --borderColor: rgb(71, 80, 92);
     /* --borderColor: rgb(62 72 85); */
     --lighterBorderColor: rgb(255 255 255 / 20%);
     --headerColor: rgba(30, 40, 54, 0.8);
     --drawerColor: rgba(30, 40, 54, 0.9);
     --selectorBackgroundColor: rgb(55, 65, 81);
+    --selectorBackgroundColorAlpha: rgba(55, 65, 81, 0.5);
     --btnDeleteColor: rgb(169, 29, 29);
     --btnDeleteBorderColor: rgb(217, 84, 84);
     --btnSubmitColor: rgb(61, 54, 178);
