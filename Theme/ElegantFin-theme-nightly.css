@@ -2158,6 +2158,10 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     background: var(--highlightOutlineColor);
 } */
 
+.nowPlayingButtonsContainer {
+    margin-top: 1em;
+}
+
 .nowPlayingPageImageContainerNoAlbum {
     border: var(--defaultBorder);
     border-radius: var(--smallRadius);
