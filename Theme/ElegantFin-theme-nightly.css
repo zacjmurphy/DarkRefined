@@ -2056,6 +2056,8 @@ table:not(.MuiTable-root.MuiTable-stickyHeader) {
     /* border-spacing: 14px; */
     border: var(--defaultBorder);
     background: var(--tableBodyColor);
+    border-collapse: separate;
+    overflow: hidden;
 }
 
 .detailTableHeaderCell{
