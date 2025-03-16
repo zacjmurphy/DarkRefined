@@ -2426,3 +2426,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     color: white;
     background-color: transparent;
 }
+
+#viewPanel .ui-panel-inner{
+    margin-top: 4em;
+}
