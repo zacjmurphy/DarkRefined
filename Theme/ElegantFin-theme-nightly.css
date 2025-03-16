@@ -2368,12 +2368,13 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     min-width: 72px;
 }
 
-.MuiTabs-flexContainer>.MuiButtonBase-root.Mui-selected,
-.MuiToggleButtonGroup-grouped.Mui-selected {
+.MuiTabs-flexContainer>.MuiButtonBase-root.Mui-selected{
     color: white;
-    /* background-color: var(--selectorBackgroundColor) !important; */
-    /* font-weight: 550; */
     background-color: transparent !important;
+}
+
+.MuiToggleButtonGroup-grouped.Mui-selected{
+    color: white;
 }
 
 .MuiButtonBase-root.MuiIconButton-root:hover {
