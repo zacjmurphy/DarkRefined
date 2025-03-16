@@ -2029,17 +2029,39 @@ fieldset {
     border: var(--defaultBorder);
 }
 
+table:not(.MuiTable-root.MuiTable-stickyHeader) {
+    border-color: var(--borderColor) !important;
+    border-radius: var(--smallRadius);
+    /* border-spacing: 14px; */
+    border: var(--defaultBorder);
+    background: var(--tableBodyColor);
+}
+
+.detailTableHeaderCell{
+    vertical-align: middle;
+}
+
 #serverActivityPage .MuiPaper-elevation2 {
     border: var(--defaultBorder) !important;
     box-shadow: unset !important;
+}
+
+#serverActivityPage .MuiPaper-elevation2,
+#serverActivityPage .MuiPaper-elevation2>.MuiBox-root,
+#serverActivityPage .MuiTableRow-root.MuiTableRow-head{
     background-color: var(--tableBodyColor);
 }
 
-#serverActivityPage .MuiPaper-elevation2>.MuiBox-root,
-#serverActivityPage .MuiTableRow-root.MuiTableRow-head,
-#serverActivityPage .MuiTableRow-root {
-    background-color: var(--tableBodyColor) !important;
+.detailTableBodyRow-shaded:nth-child(odd),
+#serverActivityPage .MuiTableBody-root .MuiTableRow-root:nth-child(odd) {
+    background: var(--darkerGradientPointAlpha) !important;
 }
+
+.detailTableBodyRow-shaded:nth-child(even),
+#serverActivityPage .MuiTableBody-root .MuiTableRow-root:nth-child(even) {
+    background: var(--lighterGradientPointAlpha) !important;
+}
+
 
 .MuiList-root.MuiMenu-list {
     background-color: var(--drawerColor);
@@ -2380,20 +2402,4 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 .MuiButtonBase-root.MuiIconButton-root:hover {
     color: white;
     background-color: transparent;
-}
-
-table {
-    border-color: var(--borderColor) !important;
-    border-radius: var(--smallRadius);
-    /* border-spacing: 14px; */
-    border: var(--defaultBorder);
-    background: var(--selectorBackgroundColorAlpha);
-}
-
-.detailTableBodyRow-shaded:nth-child(odd) {
-    background: var(--darkerGradientPointAlpha);
-}
-
-.detailTableBodyRow-shaded:nth-child(even) {
-    background: var(--lighterGradientPointAlpha);
 }
