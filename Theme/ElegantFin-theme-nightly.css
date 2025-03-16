@@ -2053,7 +2053,7 @@ fieldset {
 table:not(.MuiTable-root.MuiTable-stickyHeader) {
     border-color: var(--borderColor) !important;
     border-radius: var(--smallRadius);
-    /* border-spacing: 14px; */
+    border-spacing: 1px;
     border: var(--defaultBorder);
     background: var(--tableBodyColor);
     border-collapse: separate;
