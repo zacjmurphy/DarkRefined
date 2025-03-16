@@ -1317,6 +1317,11 @@ div[data-type="PhotoAlbum"] .play_arrow:before {
     border: var(--defaultBorder);
 }
 
+.editItemMetadataForm>.metadataFormFields div:has(.formDialogFooterItem) {
+    display: flex;
+    justify-content: center;
+}
+
 .btnBrowse>.folder {
     margin-inline-end: .5em;
 }
