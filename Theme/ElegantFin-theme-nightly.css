@@ -2,17 +2,9 @@
 
 /* Add-ons: Uncomment to enable */
 /* @import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/assets/add-ons/custom-media-covers-latest-min.css"); */
-/* @import url(./assets/add-ons/custom-media-covers-nightly.css); */
 
-
+/* Inter Font Family */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-@font-face {
-    font-family: 'Material Icons Round';
-    font-style: normal;
-    font-weight: 100 700;
-    src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v222/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2) format('woff2');
-}
 
 :root {
     --elegantFinFooterText: "ElegantFin Nightly";
@@ -22,7 +14,6 @@
     --lighterGradientPoint: #1d2635;
     --lighterGradientPointAlpha: rgba(29, 38, 53, 0.85);
     --borderColor: rgb(71, 80, 92);
-    /* --borderColor: rgb(62 72 85); */
     --lighterBorderColor: rgb(255 255 255 / 20%);
     --headerColor: rgba(30, 40, 54, 0.8);
     --drawerColor: rgba(30, 40, 54, 0.9);
@@ -41,7 +32,6 @@
     --tableBodyColor: rgb(31 41 55 / 1);
     --uiAccentColor: rgb(117 111 226);
     --btnMiniPlayColor: rgb(41 154 93);
-    /* --btnMiniPlayColor: rgb(32, 32, 32); */
     --btnPlayBorderColor: color-mix(in srgb, var(--btnMiniPlayColor), rgb(255, 255, 255) 5%);
     --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
     --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
@@ -64,24 +54,10 @@
     --blurDefault: blur(5px);
     --blurLarge: blur(10px);
     --blurLargest: blur(20px);
+
+    /* to revert to old icons, use 'Material Icons'*/
+    --iconPack: 'Material Icons Round';
 }
-
-/* div {
-    transition: opacity .1s ease, transform .1s ease, display .1s ease allow-discrete;
-}
-
-div.hide {
-    opacity: 0;
-    transform: scale(1.25);
-    display: none !important;
-}
-
-
-@starting-style {
-    div.hide {
-        opacity: 1;
-    }
-} */
 
 html {
     font-family: "Inter", serif;
@@ -91,19 +67,16 @@ html {
     -webkit-tap-highlight-color: transparent !important;
 }
 
-.dashboardFooter {
-    font-family: "Noto Sans", serif;
-    transition: transform 50ms;
-}
-
-.dashboardFooter::after {
-    content: var(--elegantFinFooterText);
-    font-size: .8em;
-    color: #4e4e60;
+/* Material Icons Round */
+@font-face {
+    font-family: 'Material Icons Round';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v222/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2) format('woff2');
 }
 
 .material-icons {
-    font-family: 'Material Icons Round' !important;
+    font-family: var(--iconPack) !important;
     font-weight: normal;
     font-style: normal;
     display: inline-block;
@@ -126,6 +99,17 @@ html {
 
 .material-icons.info_outline:before {
     font-family: Material Icons;
+}
+
+.dashboardFooter {
+    font-family: "Noto Sans", serif;
+    transition: transform 50ms;
+}
+
+.dashboardFooter::after {
+    content: var(--elegantFinFooterText);
+    font-size: .8em;
+    color: #4e4e60;
 }
 
 ::selection {
@@ -190,7 +174,6 @@ html {
 
 .card.squareCard[data-type="TvChannel"] .cardImageContainer.cardContent {
     background-color: rgba(255, 255, 255, 0.2);
-    /* box-shadow: inset 0px -2em 1em -1em #0000002e; */
 }
 
 .cardImageContainer>.cardDefaultText {
@@ -498,14 +481,6 @@ html {
     height: 13em;
 }
 
-.itemMiscInfo>.mediaInfoItem:not(:first-child, .mediaInfoCriticRating) {
-    /* padding-inline-start: .125em; */
-}
-
-.itemMiscInfo>.mediaInfoItem:not(:last-child) {
-    /* padding-inline-end: .125em; */
-}
-
 .mediaInfoItem {
     font-family: system-ui;
     border-radius: var(--smallRadius);
@@ -517,12 +492,9 @@ html {
 .mediaInfoOfficialRating {
     background: transparent !important;
     font-size: .6em;
-    /* font-family: 'Times New Roman', Times, serif; */
     font-family: 'Noto Sans', sans-serif;
     line-height: 1.5em;
     transform: translateY(-.15em);
-    /* padding-inline: .5em !important; */
-    /* padding-block: .2em !important; */
     font-weight: 600;
     border: var(--defaultBorder);
 }
@@ -590,12 +562,6 @@ html {
     .layout-mobile .itemBackdrop {
         height: 40vh;
     }
-
-    /* .mediaInfoOfficialRating {
-        padding-inline-start: .5em;
-        padding-inline-end: .475em;
-        padding-block-start: 0.470em;
-    } */
 
     .layout-mobile .detailPageWrapperContainer {
         padding-top: 35vh;
@@ -730,7 +696,6 @@ html {
 .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
     backdrop-filter: var(--blurLarge);
     background-color: rgb(123 123 123 / 30%) !important;
-    /* height: .3em; */
     box-shadow: inset 0px 0px 0.01em .01em #969696;
     overflow: hidden;
     border-radius: var(--largeRadius);
@@ -785,7 +750,6 @@ progress+span {
 }
 
 .mdl-slider-background-flex-container {
-    /* backdrop-filter: var(--blurSmallest); */
     padding: 0;
 }
 
@@ -1533,7 +1497,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .Mui-selected {
     background-color: var(--activeColor) !important;
-    /* border: var(--defaultLighterBorder) !important; */
 }
 
 .actionSheetContent {
@@ -1584,7 +1547,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .navMenuOption-selected {
     background-color: var(--activeColor) !important;
-    /* border: var(--defaultLighterBorder); */
 }
 
 .detailSection {
@@ -1623,7 +1585,6 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-repeat: no-repeat;
     color: transparent;
     transform: scale(.9);
-    /* opacity: .8; */
 }
 
 .selectVideoContainer.trackSelectionFieldContainer>label {
@@ -1821,7 +1782,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .emby-tab-button:hover {
-    /* color: #c1c1c1; */
     color: whitesmoke;
 
 }
@@ -1987,16 +1947,11 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .guideVerticalScroller{
-    /* background-color: var(--selectorBackgroundColorAlpha); */
     padding: 0;
 }
 
 .programGrid {
     background-color: var(--lighterGradientPointAlpha);
-}
-
-.channelPrograms, .guide-channelHeaderCell, .programCell {
-    /* background-color: var(--selectorBackgroundColorAlpha); */
 }
 
 .emby-select-iconbutton {
@@ -2398,7 +2353,6 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     font-family: "Math", serif;
 }
 
-/* .MuiTabs-root>.MuiTabs-scroller>.MuiTabs-indicator */
 .MuiTabs-indicator {
     display: none;
 }
