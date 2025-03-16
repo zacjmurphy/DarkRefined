@@ -1818,7 +1818,9 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .emby-tab-button:hover {
-    color: #c1c1c1;
+    /* color: #c1c1c1; */
+    color: whitesmoke;
+
 }
 
 @media (hover: hover) and (pointer: fine) {
