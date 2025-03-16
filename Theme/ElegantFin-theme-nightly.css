@@ -1360,7 +1360,8 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 #btnDeleteImage,
-.button-delete {
+.button-delete,
+.btnRevoke  {
     background: var(--btnDeleteColor);
     border: solid var(--btnDeleteBorderColor) var(--borderWidth);
 }
