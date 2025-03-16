@@ -1359,6 +1359,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: #fff !important;
 }
 
+.guide-date-tab-button.emby-tab-button-active, .guide-date-tab-button:focus {
+    color: white;
+}
+
 #btnDeleteImage,
 .button-delete,
 .btnRevoke  {
@@ -1415,7 +1419,6 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: rgb(41, 49, 83) !important;
     border: var(--defaultBorder);
 }
-
 
 .readOnlyContent {
     flex-direction: column !important;
@@ -1972,10 +1975,28 @@ div[data-role=controlgroup] a.ui-btn-active {
     font-size: 1.6em;
 }
 
+#liveTvSuggestedPage,
+.liveTvContainer{
+    background-color: var(--tableBodyColor);
+}
+
 .programCell-active {
     background-color: var(--activeColor) !important;
     border-radius: .5em;
     margin-block: .5em !important;
+}
+
+.guideVerticalScroller{
+    /* background-color: var(--selectorBackgroundColorAlpha); */
+    padding: 0;
+}
+
+.programGrid {
+    background-color: var(--lighterGradientPointAlpha);
+}
+
+.channelPrograms, .guide-channelHeaderCell, .programCell {
+    /* background-color: var(--selectorBackgroundColorAlpha); */
 }
 
 .emby-select-iconbutton {
