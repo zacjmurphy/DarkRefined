@@ -1323,13 +1323,14 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: #fff !important;
 }
 
-.guide-date-tab-button.emby-tab-button-active, .guide-date-tab-button:focus {
+.guide-date-tab-button.emby-tab-button-active,
+.guide-date-tab-button:focus {
     color: white;
 }
 
 #btnDeleteImage,
 .button-delete,
-.btnRevoke  {
+.btnRevoke {
     background: var(--btnDeleteColor);
     border: solid var(--btnDeleteBorderColor) var(--borderWidth);
 }
@@ -1936,7 +1937,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 #liveTvSuggestedPage,
-.liveTvContainer{
+.liveTvContainer {
     background-color: var(--tableBodyColor);
 }
 
@@ -1946,7 +1947,7 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin-block: .5em !important;
 }
 
-.guideVerticalScroller{
+.guideVerticalScroller {
     padding: 0;
 }
 
@@ -2015,7 +2016,7 @@ table:not(.MuiTable-root.MuiTable-stickyHeader) {
     overflow: hidden;
 }
 
-.detailTableHeaderCell{
+.detailTableHeaderCell {
     vertical-align: middle;
 }
 
@@ -2026,7 +2027,7 @@ table:not(.MuiTable-root.MuiTable-stickyHeader) {
 
 #serverActivityPage .MuiPaper-elevation2,
 #serverActivityPage .MuiPaper-elevation2>.MuiBox-root,
-#serverActivityPage .MuiTableRow-root.MuiTableRow-head{
+#serverActivityPage .MuiTableRow-root.MuiTableRow-head {
     background-color: var(--tableBodyColor);
 }
 
@@ -2367,12 +2368,12 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     min-width: 72px;
 }
 
-.MuiTabs-flexContainer>.MuiButtonBase-root.Mui-selected{
+.MuiTabs-flexContainer>.MuiButtonBase-root.Mui-selected {
     color: white;
     background-color: transparent !important;
 }
 
-.MuiToggleButtonGroup-grouped.Mui-selected{
+.MuiToggleButtonGroup-grouped.Mui-selected {
     color: white;
 }
 
@@ -2381,6 +2382,6 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     background-color: transparent;
 }
 
-#viewPanel .ui-panel-inner{
+#viewPanel .ui-panel-inner {
     margin-top: 4em;
 }
