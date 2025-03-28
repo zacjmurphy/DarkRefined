@@ -697,6 +697,10 @@ html {
     color: var(--uiAccentColor) !important;
 }
 
+#divRunningTasks progress {
+    width: 86%;
+}
+
 .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
     backdrop-filter: var(--blurLarge);
     background-color: rgb(123 123 123 / 30%) !important;
