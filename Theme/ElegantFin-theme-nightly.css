@@ -1368,9 +1368,15 @@ div[data-role=controlgroup] a.ui-btn-active {
     padding: 1em;
 }
 
+.serverInfo>:nth-child(1n) {
+    -webkit-flex: 1 0 30%;
+    flex: 1 0 30%;
+}
+
 .serverInfo>:nth-child(2n) {
-    -webkit-flex: 1 0 60%;
-    flex: 1 0 60%;
+    -webkit-flex: 1 0 50%;
+    flex: 1 0 50%;
+    text-align: end;
 }
 
 .listItemIcon:not(.listItemIcon-transparent) {
