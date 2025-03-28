@@ -444,8 +444,8 @@ html {
 /* hide sync button on home screen on phones only in portrait mode */
 @media (orientation: portrait) {
     .layout-mobile .skinHeader.noHomeButtonHeader .headerSyncButton {
-    display: none;
-}
+        display: none;
+    }
 }
 
 .pageTitle {
