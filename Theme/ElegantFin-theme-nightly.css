@@ -1959,6 +1959,19 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: var(--lighterGradientPointAlpha);
 }
 
+.channelPrograms>.programCell:nth-child(odd) {
+    background-color: var(--darkerGradientPoint);
+}
+
+.channelPrograms>.programCell:nth-child(even) {
+    /* background-color: #11182700; */
+}
+
+.guide-channelHeaderCell:focus,
+.programCell:focus {
+    background-color: var(--highlightOutlineColor) !important;
+}
+
 .emby-select-iconbutton {
     background-color: var(--selectorBackgroundColor);
     border: var(--defaultLighterBorder);
