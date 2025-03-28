@@ -541,11 +541,12 @@ html {
 
 @media (max-width: 50em) {
     .homeLibraryButton {
-        width: 45% !important;
+        width: 45.6% !important;
     }
 }
 
 .homeLibraryButton {
+    padding-inline-start: .25em;
     min-width: 15%;
 }
 
@@ -1644,11 +1645,11 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: var(--highlightOutlineColor);
 }
 
-[dir=ltr] .padded-left.vertical-wrap {
+[dir=ltr] .padded-left.vertical-wrap:not(div:has(.homeLibraryButton)) {
     padding-left: 5% !important;
 }
 
-[dir=ltr] .padded-right.vertical-wrap {
+[dir=ltr] .padded-right.vertical-wrap:not(div:has(.homeLibraryButton)) {
     padding-right: 5% !important;
 }
 
