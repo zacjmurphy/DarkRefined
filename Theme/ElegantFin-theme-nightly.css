@@ -1794,7 +1794,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .activeSession {
     width: 98% !important;
-    max-width: 27rem !important;
 }
 
 .emby-tab-button:hover {
