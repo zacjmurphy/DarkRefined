@@ -120,16 +120,16 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 </details>
 
 <details>
-  <summary>5️⃣ - <i>How to customize the login screen?</i></summary>
+  <summary>5️⃣ - <i>How to customize the login screen? (Just for the development version for now)</i></summary>
 
-- To enable the background wallpaper on the login screen, first tick the 'Enable the splash screen' option in your Jellyfin Dashboard below the Custom CSS Box.
+- To enable the background wallpaper [like this](https://user-images.githubusercontent.com/16425113/129554147-6ac7ba51-43e7-4c8e-ba77-e646a3ef6b12.jpg) on the login screen, first tick the 'Enable the splash screen' option in your Jellyfin Dashboard below the Custom CSS Box.
 - Second, copy and paste the following code at the end in Custom CSS box but don't save yet.
   ```
   :root{
     --loginPageBgUrl: url("<YOUR-JELLYFIN-SERVER-ADDRESS>/Branding/Splashscreen?format=webp&foregroundLayer=1&quality=33&width=3840&height=2160&blur=2");
   }
   ```
-- Third, replace <YOUR-JELLYFIN-SERVER-ADDRESS> with your Jellyfin server address. For example, if your Jellyfin is hosted at http://192.168.0.1:8097, it should look like http://192.168.0.1:8097/Branding... .
+- Third, replace `<YOUR-JELLYFIN-SERVER-ADDRESS>` with your Jellyfin server address, for example, `http://192.168.0.1:8097`.
 - Don't forget the correct http or https in your domain.
 - You can also modify the parameters, for example blur size or the resolution, according to your liking.
 - Once done, save and refresh your apps and webpages.
