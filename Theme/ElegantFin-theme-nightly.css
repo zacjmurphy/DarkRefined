@@ -703,7 +703,7 @@ html {
 }
 
 #divRunningTasks progress {
-    width: 86%;
+    width: calc(100% - 7em);
 }
 
 .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
@@ -2116,7 +2116,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     min-height: 100vh;
     padding: 1em;
     overflow-y: auto;
-    background:linear-gradient(to bottom, var(--darkerGradientPointAlpha), var(--lighterGradientPoint)), var(--loginPageBgUrl);
+    background: linear-gradient(to bottom, var(--darkerGradientPointAlpha), var(--lighterGradientPoint)), var(--loginPageBgUrl);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2142,11 +2142,11 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     width: 40em;
 }
 
-#divUsers .squareCard{
+#divUsers .squareCard {
     width: 30% !important;
 }
 
-.layout-mobile #divUsers .squareCard{
+.layout-mobile #divUsers .squareCard {
     width: 45% !important;
 }
 
