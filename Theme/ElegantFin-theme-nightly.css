@@ -716,6 +716,10 @@ html {
     border-radius: var(--largeRadius);
 }
 
+.layout-mobile .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
+    width: calc(100% - 2.5em);
+}
+
 .itemProgressBarForeground {
     border-radius: var(--largeRadius);
     background-color: var(--dimTextColor);
