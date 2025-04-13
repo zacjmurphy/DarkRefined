@@ -219,7 +219,9 @@ html {
 
 .cardOverlayContainer {
     transition: .25s;
-    background: var(--hoverGradientA);
+    background: rgba(255, 255, 255, 0.1);
+    /* Uncomment the code below to get back the old overlay on hovering over cards*/
+    /* background: var(--hoverGradientA); */
     background-size: 200%;
     background-position-x: 100%;
 }
