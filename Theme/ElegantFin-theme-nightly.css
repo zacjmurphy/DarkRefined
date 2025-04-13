@@ -710,15 +710,15 @@ html {
 
 .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
     backdrop-filter: var(--blurLarge);
-    background-color: rgb(123 123 123 / 30%) !important;
-    box-shadow: inset 0px 0px 0.01em .01em #969696;
+    background-color: rgba(169, 169, 169, 0.3) !important;
+    height: 0.35em;
     overflow: hidden;
     border-radius: var(--largeRadius);
 }
 
 .itemProgressBarForeground {
     border-radius: var(--largeRadius);
-    background-color: var(--uiAccentColor);
+    background-color: var(--dimTextColor);
 }
 
 .backgroundProgress>div {
@@ -1024,11 +1024,12 @@ progress+span {
 
 .innerCardFooter,
 .chapterThumbTextContainer {
-    background: transparent;
+    background: linear-gradient(0deg, #000000e8, transparent);
     font-weight: 500;
     text-shadow: .1em .1em 0px black;
-    padding: 1em;
+    padding: 5em 2em 1.5em 2em;
     width: auto;
+    width: -webkit-fill-available;
 }
 
 .centerMessage {
