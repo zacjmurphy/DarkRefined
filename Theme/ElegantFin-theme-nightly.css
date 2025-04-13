@@ -768,6 +768,10 @@ progress+span {
     padding: 0;
 }
 
+.sliderContainer:active .mdl-slider-background-flex {
+        transform: scaleY(1.75);
+}
+
 .mdl-slider-background-flex {
     border-radius: var(--smallRadius);
 }
