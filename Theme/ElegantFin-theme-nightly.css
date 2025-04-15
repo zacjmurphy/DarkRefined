@@ -720,6 +720,11 @@ html {
     width: calc(100% - 2.5em);
 }
 
+.layout-mobile .backdropCard .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
+    width: 100%;
+    width: -webkit-fill-available;
+}
+
 .itemProgressBarForeground {
     border-radius: var(--largeRadius);
     background-color: var(--dimTextColor);
