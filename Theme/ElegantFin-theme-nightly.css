@@ -263,7 +263,7 @@ html {
 }
 
 .layout-mobile .cardOverlayButton {
-    padding: .425em;
+    padding: .75em;
 }
 
 .layout-mobile .portraitCard .cardOverlayButton-br,
@@ -440,11 +440,12 @@ html {
     background-color: transparent;
 }
 
+/* hides home button from the appbar/header on all layouts */
 .headerHomeButton {
     display: none;
 }
 
-/* hide sync button on home screen on phones only in portrait mode */
+/* hides sync button on home screen on phones only in portrait mode */
 @media (orientation: portrait) {
     .layout-mobile .skinHeader.noHomeButtonHeader .headerSyncButton {
         display: none;
