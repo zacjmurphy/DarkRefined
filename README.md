@@ -74,7 +74,7 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 <details>
   <summary><i>1. Custom media covers for user media libraries</i></summary>
 
-- [Preview](https://private-user-images.githubusercontent.com/32175188/438879202-343b8aae-fbae-4ad6-bff7-c1baf5573b1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDYyMDMyNTEsIm5iZiI6MTc0NjIwMjk1MSwicGF0aCI6Ii8zMjE3NTE4OC80Mzg4NzkyMDItMzQzYjhhYWUtZmJhZS00YWQ2LWJmZjctYzFiYWY1NTczYjFhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTAyVDE2MjIzMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI3MjE3YjNjOGU2ZDU2YTdmMTg0MzA5ZGYyMGY0N2UxZmU4OGRlNmM5MjkzZTVhZmU5NTVlYmNlOTE5OTE4ZGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.kQTa5XFb2lEHxPJeCG8eOnAqrWLdoSZXWSxF_R0NscQ)
+- [Previews](https://github.com/lscambo13/ElegantFin/blob/main/custom-media-covers.md#%EF%B8%8F-presets-modify-these-styles-according-to-your-own-liking)
 - Read more about this experimental add-on [here](https://github.com/lscambo13/ElegantFin/blob/main/custom-media-covers.md)
 
 </details>
