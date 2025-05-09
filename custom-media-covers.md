@@ -22,7 +22,7 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 ![image](https://github.com/user-attachments/assets/5284af32-3b2e-4150-938c-f6d0fdfddf06)
 
 ```
-@import url("https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
+@import url('https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css');
 ```
 
 </details>
@@ -40,7 +40,7 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 ![Screenshot 2025-01-19 192133](https://github.com/user-attachments/assets/daaefe74-d3a9-4bb4-8389-9605a4364372)
 
 ```
-@import url("https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
+@import url('https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css');
 
 :root {
     --colorOverlayMoviesCover: transparent;
@@ -69,7 +69,7 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 ![Screenshot 2025-01-19 192505](https://github.com/user-attachments/assets/256718f2-67ca-4fbd-8407-e41803380174)
 
 ```
-@import url("https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
+@import url('https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css');
 
 :root {
     --colorOverlayMoviesCover: transparent;
@@ -102,7 +102,7 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 
 
 ```
-@import url("https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
+@import url('https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css');
 
 :root {
     --colorOverlayMoviesCover: rgb(193, 103, 104);
@@ -135,7 +135,7 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 - Paste the following at the end in Custom CSS code box:
 
 ```
-@import url("https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
+@import url('https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css');
 ```
 
 <hr>
@@ -193,11 +193,11 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 Suppose you want to modify the Live TV cover art. You'll have to modify the variables named `--colorOverlayLivetvCover` and `--urlLivetvCover`, so that your final configuration will look something like this:
 
 ```
-@import url("https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
+@import url('https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css');
 
 :root {
     --colorOverlayLivetvCover: rgb(39, 68, 185);
-    --urlLivetvCover: url(https://artworks.thetvdb.com/banners/fanart/original/71663-33.jpg);
+    --urlLivetvCover: url('https://artworks.thetvdb.com/banners/fanart/original/71663-33.jpg');
 }
 
 ```
