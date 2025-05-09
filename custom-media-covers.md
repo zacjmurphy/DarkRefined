@@ -1,11 +1,13 @@
-# 🧩 Add-on:  Custom media covers for ElegantFin
+# 🧩 Add-on:  Custom media covers for Dark Refined
 This is a Jellyfin add-on that allows you to customise My Media cover arts. This is an experimental feature, so limited support will be provided.
 
-#### **Author:** [lscambo13](https://github.com/lscambo13)
+#### **Original Author:** [lscambo13](https://github.com/lscambo13)
+
+#### **Modifed By:** [Zach J Murphy](https://github.com/zacjmurphy)
 
 <hr>
 
-### 🖼️ Presets with previews: Modify these styles according to your own liking 
+### 🖼️ Presets with previews: Modify these styles according to your own liking
 
 <details>
   <summary><i>This is how the covers look without this add-on.</i></summary>
@@ -16,18 +18,18 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 
 <details>
   <summary><i>This is how they look with this add-on, by default.</i></summary>
-	
+
 ![image](https://github.com/user-attachments/assets/5284af32-3b2e-4150-938c-f6d0fdfddf06)
 
 ```
-@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
+@import url("https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
 ```
 
 </details>
 
 <details>
   <summary><i>You can also change these covers.</i></summary>
-	
+
 ![Screenshot 2025-01-19 192015](https://github.com/user-attachments/assets/11719ef1-36ca-46e9-8030-b464a5ae5b79)
 
 </details>
@@ -38,9 +40,9 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 ![Screenshot 2025-01-19 192133](https://github.com/user-attachments/assets/daaefe74-d3a9-4bb4-8389-9605a4364372)
 
 ```
-@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
+@import url("https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
 
-:root{
+:root {
     --colorOverlayMoviesCover: transparent;
     --colorOverlayTvshowsCover: transparent;
     --colorOverlayLivetvCover: transparent;
@@ -67,9 +69,9 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 ![Screenshot 2025-01-19 192505](https://github.com/user-attachments/assets/256718f2-67ca-4fbd-8407-e41803380174)
 
 ```
-@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
+@import url("https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
 
-:root{
+:root {
     --colorOverlayMoviesCover: transparent;
     --colorOverlayTvshowsCover: transparent;
     --colorOverlayLivetvCover: transparent;
@@ -100,9 +102,9 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 
 
 ```
-@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
+@import url("https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
 
-:root{
+:root {
     --colorOverlayMoviesCover: rgb(193, 103, 104);
     --colorOverlayTvshowsCover: rgb(140, 149, 43);
     --colorOverlayLivetvCover: rgb(17, 98, 159);
@@ -128,17 +130,17 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 
 <hr>
 
-### 👇 How to enable this add-on? 
+### 👇 How to enable this add-on?
 
 - Paste the following at the end in Custom CSS code box:
 
 ```
-@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
+@import url("https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
 ```
 
 <hr>
 
-### ⚙️ How to configure this add-on? 
+### ⚙️ How to configure this add-on?
 
 - Remember, you do not need to configure anything if you're happy with the default set of images.
 
@@ -146,16 +148,16 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 
 <details>
   <summary><i>Click here to reveal.</i></summary>
-	
+
 - To configure your theme to use the custom images, you'll need to input a URL pointing to an image in variables starting with '--url' and an overlay color in variables starting with '--color'.
-	
+
 - The ideal Jellyfin cover sizes are `960px x 540px`, and the colors can be in rgb format i.e. `rbg(128, 128, 128)`.
-  
+
 - Below are all the configurable variables, but you should remove the entries you do not intend to modify:
- 
+
 ```
 
-:root{
+:root {
 
     <!-- overlay colors; change according to your image. -->
 
@@ -191,9 +193,9 @@ This is a Jellyfin add-on that allows you to customise My Media cover arts. This
 Suppose you want to modify the Live TV cover art. You'll have to modify the variables named `--colorOverlayLivetvCover` and `--urlLivetvCover`, so that your final configuration will look something like this:
 
 ```
-@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
+@import url("https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css");
 
-:root{
+:root {
     --colorOverlayLivetvCover: rgb(39, 68, 185);
     --urlLivetvCover: url(https://artworks.thetvdb.com/banners/fanart/original/71663-33.jpg);
 }

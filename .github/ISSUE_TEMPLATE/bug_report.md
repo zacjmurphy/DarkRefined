@@ -16,7 +16,7 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**ElegantFin:**
+**Dark Refined:**
  - Version [e.g. 24.12.11]
 
 **Desktop (please complete the following information):**

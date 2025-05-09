@@ -1,85 +1,72 @@
-/* ElegantFin Theme for Jellyfin by lscambo13 */
-
-/* Add-ons: Uncomment to enable */
-/* @import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/assets/add-ons/custom-media-covers-latest-min.css"); */
-/* @import url(./assets/add-ons/custom-media-covers-v25.01.25.css); */
-
-
+/* Original Theme - ElegantFin Theme v25.05.03 for Jellyfin by lscambo13 - Modified by: Zach J Murphy */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-@font-face {
-    font-family: 'Material Icons Round';
-    font-style: normal;
-    font-weight: 100 700;
-    src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v222/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2) format('woff2');
-}
-
 :root {
-    --elegantFinFooterText: "ElegantFin v25.01.25";
-    --darkerGradientPoint: #111827;
-    --darkerGradientPointAlpha: rgba(17, 24, 39, 0.85);
-    --lighterGradientPoint: #1d2635;
-    --borderColor: rgb(71, 80, 92);
-    /* --borderColor: rgb(62 72 85); */
-    --lighterBorderColor: rgb(255 255 255 / 20%);
-    --headerColor: rgba(30, 40, 54, 0.8);
-    --drawerColor: rgba(30, 40, 54, 0.9);
-    --selectorBackgroundColor: rgb(55, 65, 81);
+    --darkRefinedFooterText: 'Dark Refined v1.0.0';
+    color-scheme: dark;
+    --darkerGradientPoint: #0e1014;
+    --darkerGradientPointAlpha: rgba(17, 18, 21, 0.85);
+    --lighterGradientPoint: #0e1014;
+    --lighterGradientPointAlpha: rgba(17, 18, 21, 0.85);
+    --borderColor: transparent;
+    --lighterBorderColor: transparent;
+    --headerColor: #0e1014;
+    --drawerColor: #0e1014;
+    --selectorBackgroundColor: rgb(30, 32, 35);
+    --selectorBackgroundColorAlpha: rgb(30, 32, 35);
     --btnDeleteColor: rgb(169, 29, 29);
-    --btnDeleteBorderColor: rgb(217, 84, 84);
-    --btnSubmitColor: rgb(61, 54, 178);
-    --btnSubmitBorderColor: rgb(117 111 226);
-    --checkboxCheckedBgColor: rgb(79, 70, 229);
-    --highlightOutlineColor: rgb(37, 99, 235);
+    --btnDeleteBorderColor: transparent;
+    --btnSubmitColor: rgb(245, 62, 62);
+    --btnSubmitBorderColor: transparent;
+    --checkboxCheckedBgColor: rgb(245, 62, 62);
+    --highlightOutlineColor: rgb(46, 46, 46);
     --textColor: rgb(209, 213, 219);
     --dimTextColor: rgb(156, 163, 175);
-    --activeColorAlpha: rgba(144, 81, 169, 0.4);
-    --activeColor: rgb(144, 81, 169);
-    --tableBodyColor: rgb(31 41 55 / 1);
+    --activeColorAlpha: rgba(245, 62, 62, 0.852);
+    --activeColor: rgb(245, 62, 62);
+    --tableBodyColor: #0e1014;
+    --uiAccentColor: rgba(17, 18, 21, 0.85);
+    --btnMiniPlayColor: rgb(245, 62, 62);
+    --uiIconColor: rgb(245, 62, 62);
+    --btnPlayBorderColor: transparent;
     --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
     --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
-    --hoverGradientA: linear-gradient(130deg, rgb(255 255 255 / 35%) 20%, rgb(255 255 255 / 15%) 40%);
-    --hoverGradientB: radial-gradient(100% 250% at 90% 190%, rgba(255, 255, 255, 0.15) 85%, rgba(255, 255, 255, 0.33) 100%);
-    --shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+    --hoverGradientA: linear-gradient(130deg, rgba(32, 32, 32, 0.35) 20%, rgb(255 255 255 / 15%) 40%);
+    --hoverGradientB: radial-gradient(100% 250% at 90% 190%, rgba(36, 36, 36, 0.15) 85%, rgba(36, 36, 36, 0.33) 100%);
+    --shadow: none;
     --largerRadius: 1.25em;
     --largeRadius: 1em;
     --smallRadius: .5em;
     --smallerRadius: .375em;
-    --borderWidth: 0.075em;
+    --borderWidth: .075em;
     --defaultBorder: var(--borderWidth) solid var(--borderColor);
     --defaultLighterBorder: var(--borderWidth) solid var(--lighterBorderColor);
-
-    /* login page customizations */
-    --loginPageBgUrl: url("");
-    --loginPageText: "Sign in to continue";
-
+    --loginPageBgUrl: url('');
+    --loginPageText: 'Sign in to continue';
     --blurSmallest: blur(2px);
     --blurDefault: blur(5px);
     --blurLarge: blur(10px);
     --blurLargest: blur(20px);
+    --iconPack: 'Material Icons Round';
 }
 
 html {
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     font-optical-sizing: auto;
     font-weight: 425;
     font-style: normal;
     -webkit-tap-highlight-color: transparent !important;
 }
 
-.dashboardFooter {
-    font-family: "Noto Sans", serif;
-    transition: transform 50ms;
-}
-
-.dashboardFooter::after {
-    content: var(--elegantFinFooterText);
-    font-size: .8em;
-    color: #4e4e60;
+@font-face {
+    font-family: 'Material Icons Round';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url('https://fonts.gstatic.com/s/materialsymbolsrounded/v230/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2') format('woff2');
 }
 
 .material-icons {
-    font-family: 'Material Icons Round' !important;
+    font-family: var(--iconPack) !important;
     font-weight: normal;
     font-style: normal;
     display: inline-block;
@@ -93,15 +80,22 @@ html {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: 'liga';
-    font-variation-settings:
-        'FILL' 1,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
+    font-variation-settings: 'FILL'1, 'wght'400, 'GRAD'0, 'opsz'24
 }
 
 .material-icons.info_outline:before {
     font-family: Material Icons;
+}
+
+.dashboardFooter {
+    font-family: 'Noto Sans', serif;
+    transition: transform 50ms;
+}
+
+.dashboardFooter:after {
+    content: var(--darkRefinedFooterText);
+    font-size: .8em;
+    color: #4e4e60;
 }
 
 ::selection {
@@ -117,20 +111,20 @@ html {
 }
 
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
-    border-color: var(--highlightOutlineColor) !important;
+    border-color: rgb(255 255 255 / 5%) !important;
     filter: brightness(1.125);
 }
 
 .emby-button.show-focus:focus,
 .paper-icon-button-light.show-focus:focus {
-    background-color: var(--highlightOutlineColor) !important;
+    background-color: rgb(255 255 255 / 5%) !important;
     color: #fff;
 }
 
 .emby-tabs .emby-button.show-focus:focus {
     outline: none !important;
     color: #fff;
-    background-color: var(--highlightOutlineColor) !important;
+    background-color: rgb(255 255 255 / 5%) !important;
 }
 
 [dir=ltr] .itemsContainer>.card>.cardBox {
@@ -145,7 +139,7 @@ html {
 .countIndicator,
 .fullSyncIndicator,
 .mediaSourceIndicator {
-    background: rgb(31, 80, 189);
+    background: var(--uiIconColor);
     border: var(--defaultLighterBorder);
 }
 
@@ -164,6 +158,10 @@ html {
     transition: transform .375s;
 }
 
+.card.squareCard[data-type="TvChannel"] .cardImageContainer.cardContent {
+    background-color: rgba(255, 255, 255, .2);
+}
+
 .cardImageContainer>.cardDefaultText {
     font-size: 2em;
     padding-top: 1.5em;
@@ -171,13 +169,13 @@ html {
     white-space: pre;
 }
 
-.cardImageContainer>.cardDefaultText::before {
-    content: "?\A";
+.cardImageContainer>.cardDefaultText:before {
+    content: '?\A';
     color: var(--borderColor);
 }
 
 .card.card-hoverable:hover .cardScalable {
-    border-color: var(--textColor) !important;
+    border-color: var(--uiIconColor) !important;
 }
 
 .card.card-hoverable:hover .cardImageContainer {
@@ -205,13 +203,13 @@ html {
 
 .cardOverlayContainer {
     transition: .25s;
-    background: var(--hoverGradientA);
+    background: transparent !important;
     background-size: 200%;
     background-position-x: 100%;
 }
 
 .layout-desktop .card.card-hoverable:hover .cardOverlayContainer {
-    background-position-x: 0%;
+    background-position-x: 0;
 }
 
 .cardBox:not(.visualCardBox) .cardPadder {
@@ -227,18 +225,19 @@ html {
     bottom: 1.25em;
 }
 
+.listItemImageButton,
 .cardOverlayContainer>.cardOverlayFab-primary,
-.listItemImageButton {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: var(--textColor);
-    border: var(--defaultBorder);
+.layout-mobile .cardOverlayButton-br>.cardOverlayButtonIcon {
+    background-color: var(--btnMiniPlayColor) !important;
+    color: white;
+    border: var(--defaultLighterBorder);
+    border-color: var(--btnPlayBorderColor);
     font-size: 75%;
 }
 
-.cardOverlayContainer>.cardOverlayFab-primary:hover,
-.listItemImageButton:hover {
-    background-color: rgba(0, 0, 0, 0.75) !important;
-    color: unset;
+.listItemImageButton:hover,
+.cardOverlayContainer>.cardOverlayFab-primary:hover {
+    color: white;
 }
 
 .layout-desktop .cardOverlayButton-br {
@@ -246,13 +245,7 @@ html {
 }
 
 .layout-mobile .cardOverlayButton {
-    padding: .425em;
-}
-
-.layout-mobile .cardOverlayButton-br>.cardOverlayButtonIcon {
-    border: var(--defaultLighterBorder);
-    border-color: rgba(23, 23, 23, 0.6);
-    backdrop-filter: var(--blurSmallest);
+    padding: .75em;
 }
 
 .layout-mobile .portraitCard .cardOverlayButton-br,
@@ -270,10 +263,14 @@ html {
     font-size: x-small;
 }
 
-.smallBackdropCard,
+.listItem-largeImage[data-type="Episode"] .listViewUserDataButtons {
+    font-size: small;
+}
+
+.bannerCard,
 .squareCard,
 .backdropCard,
-.bannerCard {
+.smallBackdropCard {
     width: 46%;
 }
 
@@ -281,102 +278,85 @@ html {
     min-width: 5em;
 }
 
-/* if the window width is equal to or more than (at minimum) 150em then the code in the query will trigger */
-/* 14 posters, 10 thumbs */
-@media (min-width: 150em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 6.6% !important;
+@media (min-width:150em) {
+    .squareCard,
+    .portraitCard {
+        width: 6.6% !important
     }
 
     .backdropCard {
-        width: 9.5%;
+        width: 9.5%
     }
 }
 
-/* if the window width is equal to or less than (at maximum) 150em then the code in the query will trigger */
-/* 9 posters, 7 thumbs */
-@media (max-width: 150em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 10.4% !important;
+@media (max-width:150em) {
+    .squareCard,
+    .portraitCard {
+        width: 10.4% !important
     }
 
     .backdropCard {
-        width: 13.6%;
+        width: 13.6%
     }
 }
 
-/* 7 posters, 6 thumbs */
-@media (max-width: 120em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 13.5% !important;
+@media (max-width:120em) {
+    .squareCard,
+    .portraitCard {
+        width: 13.5% !important
     }
 
     .backdropCard {
-        width: 15.8%;
+        width: 15.8%
     }
 }
 
-/* 6 posters, 5 thumbs */
-@media (max-width: 100em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 15.2% !important;
+@media (max-width:100em) {
+    .squareCard,
+    .portraitCard {
+        width: 15.2% !important
     }
 
     .backdropCard {
-        width: 18.4%;
+        width: 18.4%
     }
 }
 
-/* 5 posters, 4 thumbs */
-@media (max-width: 62em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 17.9% !important;
+@media (max-width:62em) {
+    .squareCard,
+    .portraitCard {
+        width: 17.9% !important
     }
 
     .backdropCard {
-        width: 23.3%;
-    }
-
-}
-
-/* 4 posters, 3 thumbs */
-@media (max-width: 48.125em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 22.3% !important;
-    }
-
-    .backdropCard {
-        width: 30.7%;
+        width: 23.3%
     }
 }
 
-/* 3 posters, 2 thumbs */
-@media (max-width: 30em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 28.8% !important;
-    }
-
-    .layout-mobile .portraitCard,
-    .layout-mobile .squareCard {
-        width: 29.8% !important;
+@media (max-width:48.125em) {
+    .squareCard,
+    .portraitCard {
+        width: 22.3% !important
     }
 
     .backdropCard {
-        width: 46%;
+        width: 30.7%
+    }
+}
+
+@media (max-width:30em) {
+    .squareCard,
+    .portraitCard {
+        width: 28.8% !important
+    }
+
+    .layout-mobile .squareCard,
+    .layout-mobile .portraitCard {
+        width: 29.8% !important
+    }
+
+    .backdropCard {
+        width: 46%
     }
 }
 
@@ -429,9 +409,10 @@ html {
     display: none;
 }
 
-/* hide sync button on home screen */
-.skinHeader.noHomeButtonHeader .headerSyncButton {
-    display: none;
+@media (orientation:portrait) {
+    .layout-mobile .skinHeader.noHomeButtonHeader .headerSyncButton {
+        display: none
+    }
 }
 
 .pageTitle {
@@ -453,7 +434,7 @@ html {
     padding-top: 1.25em !important;
 }
 
-.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+.layout-mobile:not(.sectionTitleContainer-cards)>.sectionTitle-cards {
     text-align: left;
 }
 
@@ -470,14 +451,6 @@ html {
     height: 13em;
 }
 
-.itemMiscInfo>.mediaInfoItem:not(:first-child, .mediaInfoCriticRating) {
-    padding-inline-start: .125em;
-}
-
-.itemMiscInfo>.mediaInfoItem:not(:last-child) {
-    padding-inline-end: .125em;
-}
-
 .mediaInfoItem {
     font-family: system-ui;
     border-radius: var(--smallRadius);
@@ -489,11 +462,9 @@ html {
 .mediaInfoOfficialRating {
     background: transparent !important;
     font-size: .6em;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: normal;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.5em;
     transform: translateY(-.15em);
-    padding-inline: .5em !important;
-    padding-block: .2em !important;
     font-weight: 600;
     border: var(--defaultBorder);
 }
@@ -511,8 +482,8 @@ html {
     padding-left: 1.5em;
 }
 
-[dir=ltr] .mediaInfoCriticRating::after {
-    content: "%";
+[dir=ltr] .mediaInfoCriticRating:after {
+    content: '%';
 }
 
 .layout-desktop .detailRibbon {
@@ -525,90 +496,87 @@ html {
     width: 23vw !important;
 }
 
-@media (max-width: 62.5em) {
+.layout-tv .detailImageContainer .card {
+    width: 23vw !important;
+}
+
+@media (max-width:62.5em) {
     .layout-desktop .itemBackdrop {
-        height: 7em !important;
+        height: 7em !important
     }
 
     .layout-desktop .detailPageWrapperContainer {
-        min-height: calc(100vh - 7em);
+        min-height: calc(100vh - 7em)
     }
 }
 
-@media (max-width: 50em) {
+@media (max-width:50em) {
     .homeLibraryButton {
-        width: 45% !important;
+        width: 45.6% !important
     }
 }
 
 .homeLibraryButton {
+    padding-inline-start: .25em;
     min-width: 15%;
 }
 
-@media (orientation: landscape) and (min-width: 40em) {
+@media (orientation:landscape) and (min-width:40em) {
     .layout-mobile .itemBackdrop {
         height: 40vh;
-        opacity: .10;
+        opacity: .10
     }
 
     .layout-mobile .detailPageWrapperContainer {
         padding-top: 35vh;
-        margin-top: -47vh;
+        margin-top: -47vh
     }
 }
 
-@media (orientation: portrait) and (max-width: 40em) {
+@media (orientation:portrait) and (max-width:40em) {
     .layout-mobile .itemBackdrop {
-        height: 40vh;
+        height: 40vh
     }
-
-    /* .mediaInfoOfficialRating {
-        padding-inline-start: .5em;
-        padding-inline-end: .475em;
-        padding-block-start: 0.470em;
-    } */
 
     .layout-mobile .detailPageWrapperContainer {
         padding-top: 35vh;
-        margin-top: -47vh;
+        margin-top: -47vh
     }
 
     [data-type=Movie] .listItemImage,
     [data-type=Series] .listItemImage {
-        display: unset;
+        display: unset
     }
 }
 
-@media (orientation: landscape) and (max-height: 40em) {
-
-    .overflowPortraitCard,
-    .overflowSquareCard {
-        width: 13vw;
+@media (orientation:landscape) and (max-height:40em) {
+    .overflowSquareCard,
+    .overflowPortraitCard {
+        width: 13vw
     }
 
     .overflowBackdropCard,
     .overflowSmallBackdropCard {
-        width: 20vw;
+        width: 20vw
     }
 
     .portraitCard {
         min-width: 2em;
         width: 8.5%;
-        max-width: 6.5em;
+        max-width: 6.5em
     }
 
     .backdropCard {
-        width: 23%;
+        width: 23%
     }
 
     .layout-mobile .detailImageContainer .card {
-        max-width: 15vw;
+        max-width: 15vw
     }
 
     .layout-mobile [dir=ltr] .infoWrapper {
-        padding-left: 25% !important;
+        padding-left: 25% !important
     }
-
 }
 
 .layout-mobile .itemBackdrop {
@@ -637,9 +605,9 @@ h2 {
     color: var(--textColor);
 }
 
+html,
 .nowPlayingPlaylist,
-.nowPlayingContextMenu,
-html {
+.nowPlayingContextMenu {
     background: var(--backgroundGradient)
 }
 
@@ -652,8 +620,8 @@ html {
     background: var(--backgroundGradient)
 }
 
-.skinHeader-blurred:not(.osdHeader),
-.appfooter {
+.appfooter,
+.skinHeader-blurred:not(.osdHeader) {
     background-color: var(--headerColor) !important;
     backdrop-filter: var(--blurDefault) !important;
 }
@@ -695,21 +663,33 @@ html {
 }
 
 .buttonActive {
-    color: var(--btnSubmitBorderColor) !important;
+    color: var(--uiAccentColor) !important;
+}
+
+#divRunningTasks progress {
+    width: calc(100% - 7em);
 }
 
 .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
-    backdrop-filter: var(--blurSmallest);
-    background-color: rgb(123 123 123 / 30%) !important;
-    height: .3em;
-    box-shadow: inset 0px 0px 0.01em .01em #969696;
+    backdrop-filter: var(--blurLarge);
+    background-color: transparent !important;
+    height: .35em;
     overflow: hidden;
     border-radius: var(--largeRadius);
 }
 
+.layout-mobile .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
+    width: calc(100% - 2.5em);
+}
+
+.layout-mobile .backdropCard .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
+    width: 100%;
+    width: -webkit-fill-available;
+}
+
 .itemProgressBarForeground {
     border-radius: var(--largeRadius);
-    background-color: var(--btnSubmitBorderColor);
+    background-color: var(--dimTextColor);
 }
 
 .backgroundProgress>div {
@@ -717,16 +697,16 @@ html {
 }
 
 .playbackProgress>div {
-    background-color: var(--btnSubmitBorderColor);
+    background-color: var(--uiAccentColor);
 }
 
 ::-moz-progress-bar {
-    background: var(--btnSubmitBorderColor) !important;
+    background: var(--uiAccentColor) !important;
     border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
 }
 
 ::-webkit-progress-value {
-    background: var(--btnSubmitBorderColor) !important;
+    background: var(--uiAccentColor) !important;
     border-radius: var(--smallRadius) inherit var(--smallRadius) 0;
 }
 
@@ -739,7 +719,71 @@ progress,
 }
 
 progress+span {
-    color: var(--btnSubmitBorderColor) !important;
+    color: var(--uiAccentColor) !important;
+}
+
+.mdl-spinner__circle {
+    border-color: var(--dimTextColor);
+    border-style: inset;
+}
+
+.mdl-slider-container {
+    height: 1em;
+}
+
+.mdl-slider {
+    height: unset;
+}
+
+.mdl-slider-background-flex-container {
+    padding: 0;
+}
+
+.sliderContainer:active .mdl-slider-background-flex {
+    transform: scaleY(1.75);
+}
+
+.mdl-slider-background-flex {
+    border-radius: var(--smallRadius);
+}
+
+.itemProgressBarForeground,
+.mdl-slider-background-lower {
+    background-color: var(--uiIconColor);
+}
+
+.sliderBubble {
+    background: var(--uiIconColor);
+}
+
+.mdl-slider::-webkit-slider-thumb {
+    background: var(--uiIconColor);
+}
+
+.mdl-slider::-webkit-slider-thumb {
+    width: .75em !important;
+    height: .75em !important;
+}
+
+.mdl-slider::-moz-range-thumb {
+    background: var(--uiIconColor);
+}
+
+.sliderMarkerContainer {
+    margin: 0 .1em;
+}
+
+.sliderMarker.watched {
+    background-color: var(--uiAccentColor);
+}
+
+.sliderMarker {
+    height: 4px;
+    border-radius: 2px;
+}
+
+.iconOsdProgressInner {
+    background: var(--uiAccentColor);
 }
 
 .selectLabel {
@@ -768,12 +812,12 @@ progress+span {
     border-radius: var(--smallRadius);
     border: var(--defaultLighterBorder);
     padding: .5em .5em !important;
-    margin: 0.125em !important;
+    margin: .125em !important;
     backdrop-filter: var(--blurSmallest);
 }
 
 .btnPlay.detailButton {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, .05);
     border: var(--defaultLighterBorder);
 }
 
@@ -789,12 +833,18 @@ progress+span {
     justify-content: flex-start;
 }
 
+.btnPlay[title="Play"]>.detailButton-content:after {
+    content: 'Play';
+}
 
-.btnPlay>.detailButton-content::after {
+.btnPlay[title="Resume"]>.detailButton-content:after {
+    content: 'Resume';
+}
+
+.btnPlay>.detailButton-content:after {
     padding-left: .25em;
     padding-right: .5em;
     place-content: center;
-    content: "Play";
 }
 
 .mainDrawer,
@@ -809,8 +859,8 @@ progress+span {
 }
 
 .btnHeaderSave.button-flat {
-    color: var(--btnSubmitBorderColor) !important;
-    gap: 0.3em;
+    color: var(--uiAccentColor) !important;
+    gap: .3em;
     border-radius: var(--smallRadius);
 }
 
@@ -820,7 +870,7 @@ progress+span {
 
 .button-flat:active {
     color: unset;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .playstatebutton-icon-played {
@@ -839,7 +889,7 @@ progress+span {
     .itemDetailsGroup {
         outline: var(--defaultBorder);
         outline-offset: calc(-1*var(--borderWidth));
-        border: none;
+        border: none
     }
 }
 
@@ -850,7 +900,7 @@ progress+span {
 .detailsGroupItem {
     margin: 0 !important;
     justify-content: space-between;
-    padding: 0.5em 0.9em;
+    padding: .5em .9em;
     align-items: baseline;
 }
 
@@ -877,6 +927,64 @@ progress+span {
     color: var(--textColor);
 }
 
+.itemExternalLinks.focuscontainer-x {
+    color: transparent;
+}
+
+.itemExternalLinks.focuscontainer-x>.button-link {
+    color: var(--textColor);
+    background-color: var(--selectorBackgroundColor);
+    padding: .125em .5em;
+    border-radius: var(--smallerRadius);
+    margin-bottom: .5em;
+}
+
+.layout-mobile .itemExternalLinks.focuscontainer-x>.button-link:hover:not(:active) {
+    color: var(--textColor) !important;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x>a:hover,
+.itemExternalLinks.focuscontainer-x>a:active {
+    background-color: var(--activeColor) !important;
+    color: white !important;
+}
+
+.itemExternalLinks.focuscontainer-x>a[href*="themoviedb.org"]:active,
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="themoviedb.org"]:hover {
+    background-color: rgb(26, 183, 216) !important;
+    color: black !important;
+}
+
+.itemExternalLinks.focuscontainer-x>a[href*="imdb.com"]:active,
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="imdb.com"]:hover {
+    background-color: rgb(226, 182, 22) !important;
+    color: black !important;
+}
+
+.itemExternalLinks.focuscontainer-x>a[href*="thetvdb.com"]:active,
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="thetvdb.com"]:hover {
+    background-color: rgb(108, 213, 145) !important;
+    color: black !important;
+}
+
+.itemExternalLinks.focuscontainer-x>a[href*="trakt.tv"]:active,
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="trakt.tv"]:hover {
+    background-color: rgb(171, 58, 173) !important;
+    color: var(--textColor) !important;
+}
+
+.itemExternalLinks.focuscontainer-x>a[href*="theaudiodb.com"]:active,
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="theaudiodb.com"]:hover {
+    background-color: rgb(99, 153, 204) !important;
+    color: rgb(15, 22, 28) !important;
+}
+
+.itemExternalLinks.focuscontainer-x>a[href*="musicbrainz.org"]:active,
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="musicbrainz.org"]:hover {
+    background-color: rgb(186, 71, 143) !important;
+    color: var(--textColor) !important;
+}
+
 .itemTags,
 .itemTags>a {
     display: none;
@@ -895,11 +1003,12 @@ progress+span {
 
 .innerCardFooter,
 .chapterThumbTextContainer {
-    background: transparent;
+    background: linear-gradient(0deg, #000000e8, transparent);
     font-weight: 500;
-    text-shadow: .1em .1em 0px black;
-    padding: 1em;
+    text-shadow: .1em .1em 0 black;
+    padding: 5em 2em 1.5em 2em;
     width: auto;
+    width: -webkit-fill-available;
 }
 
 .centerMessage {
@@ -917,21 +1026,17 @@ progress+span {
     border: var(--defaultBorder);
 }
 
-@media (max-width: 80em),
-(max-height: 45em) {
-
+@media (max-width:80em), (max-height:45em) {
     .dialog.dialog-fixedSize,
     .dialog.dialog-fullscreen-lowres {
         border-radius: unset !important;
-        border: unset;
+        border: unset
     }
 
-    body:has(.dialog.dialog-fixedSize.opened,
-        .dialog.dialog-fullscreen-lowres.opened) {
-        overflow: hidden;
+    body:has(.dialog.dialog-fixedSize.opened, .dialog.dialog-fullscreen-lowres.opened) {
+        overflow: hidden
     }
 }
-
 
 .dialogBackdropOpened {
     opacity: .66;
@@ -941,15 +1046,15 @@ progress+span {
     top: -1.75em;
 }
 
-.subtitleEditor-dropZone,
-.imageEditor-dropZone {
+.imageEditor-dropZone,
+.subtitleEditor-dropZone {
     border-radius: var(--largeRadius);
 }
 
 .formDialogHeaderTitle {
     margin-inline: 0 !important;
     text-align: center;
-    padding: 0 0.5em !important;
+    padding: 0 .5em !important;
 }
 
 .formDialogFooter:not(.formDialogFooter-clear.formDialogFooter-flex)>.formDialogFooterItem {
@@ -979,9 +1084,9 @@ progress+span {
 
 .emby-checkbox:checked+span+.checkboxOutline {
     border-radius: var(--smallerRadius) !important;
-    box-shadow: inset 0em 7em 10em 20px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 7em 10em 20px rgba(0, 0, 0, .8);
     background: transparent;
-    border-color: white;
+    border-color: transparent;
     border-style: solid;
     border-width: calc(2 * var(--borderWidth));
     outline: none;
@@ -989,7 +1094,7 @@ progress+span {
 
 @supports(display:revert) {
     .emby-checkbox:checked+span+.checkboxOutline {
-        outline: solid var(--borderWidth) white;
+        outline: solid var(--borderWidth) transparent;
     }
 }
 
@@ -999,7 +1104,6 @@ progress+span {
     width: 1.3em;
     border-radius: var(--smallerRadius);
 }
-
 
 .itemSelectionPanel .material-icons.check:before {
     font-size: 4em;
@@ -1012,7 +1116,7 @@ progress+span {
 }
 
 div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer {
-    height: calc(100% - 0em);
+    height: calc(100% - 0);
 }
 
 .checkboxContainer .emby-checkbox:checked+span+.checkboxOutline.multiSelectCheckboxOutline {
@@ -1029,7 +1133,7 @@ div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer
 }
 
 .cardScalable+.itemSelectionPanel>.checkboxContainer {
-    height: calc(100% - 0em);
+    height: calc(100% - 0);
 }
 
 .checkboxOutline.multiSelectCheckboxOutline {
@@ -1068,12 +1172,12 @@ div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer
 @supports(display:revert) {
     .emby-checkbox:focus:not(:checked)+span+.checkboxOutline {
         outline: var(--borderWidth) solid gray;
-        outline-offset: calc(-2.5*var(--borderWidth));
+        outline-offset: calc(-2.5*var(--borderWidth))
     }
 
     .emby-checkbox:focus+span+.checkboxOutline {
         border-color: white !important;
-        outline: var(--borderWidth) solid var(--highlightOutlineColor);
+        outline: var(--borderWidth) solid var(--highlightOutlineColor)
     }
 }
 
@@ -1118,8 +1222,8 @@ div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer
     font-size: .75em;
 }
 
-.videoIndicator:has(.photo_album),
-.videoIndicator:has(.folder) {
+.videoIndicator:has(.folder),
+.videoIndicator:has(.photo_album) {
     background: peru;
 }
 
@@ -1131,40 +1235,45 @@ div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer
     background: indianred;
 }
 
-.defaultCardBackground,
-.cardScalable {
+.cardScalable,
+.defaultCardBackground {
     background: var(--cardBackgroundGradient);
 }
 
 div[data-type="Book"] .play_arrow:before {
-    content: "\f53b";
+    content: '\f53b';
     font-size: 85%;
 }
 
 div[data-type="Photo"] .play_arrow:before {
-    content: "\e5d0";
+    content: '\e5d0';
 }
 
 div[data-type="PhotoAlbum"] .play_arrow:before {
-    content: "\e8eb";
+    content: '\e8eb';
 }
 
 .card-withuserdata[data-isfolder="true"] .cardImageContainer.defaultCardBackground {
-    filter: contrast(0.85);
+    filter: contrast(.85);
     background-size: cover !important;
     background-position: 50% !important;
     background-blend-mode: multiply;
 }
 
-.emby-button.block,
-.button-alt,
 .raised,
+.button-alt,
 #btnDeleteImage,
+.emby-button.block,
 .dashboardActionsContainer>.emby-button {
     color: #fff;
     border-radius: var(--smallRadius);
     background: var(--lighterGradientPoint);
     border: var(--defaultBorder);
+}
+
+.editItemMetadataForm>.metadataFormFields div:has(.formDialogFooterItem) {
+    display: flex;
+    justify-content: center;
 }
 
 .btnBrowse>.folder {
@@ -1187,8 +1296,8 @@ div[data-type="PhotoAlbum"] .play_arrow:before {
     filter: brightness(1.35);
 }
 
-.raised:active,
 .fab:active,
+.raised:active,
 .emby-button:active {
     filter: brightness(1.2) !important;
 }
@@ -1204,8 +1313,15 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: #fff !important;
 }
 
-#btnDeleteImage,
-.button-delete {
+.guide-date-tab-button:focus,
+.guide-date-tab-button.emby-tab-button-active {
+    color: white;
+}
+
+.btnRevoke,
+#btnShutdown,
+.button-delete,
+#btnDeleteImage {
     background: var(--btnDeleteColor);
     border: solid var(--btnDeleteBorderColor) var(--borderWidth);
 }
@@ -1222,8 +1338,8 @@ div[data-role=controlgroup] a.ui-btn-active {
     backdrop-filter: var(--blurDefault);
 }
 
-.visualCardBox,
-.paperList {
+.paperList,
+.visualCardBox {
     background-color: var(--headerColor) !important;
     border-radius: var(--largeRadius) !important;
     border: var(--defaultBorder) !important;
@@ -1238,9 +1354,15 @@ div[data-role=controlgroup] a.ui-btn-active {
     padding: 1em;
 }
 
+.serverInfo>:nth-child(1n) {
+    -webkit-flex: 1 0 30%;
+    flex: 1 0 30%;
+}
+
 .serverInfo>:nth-child(2n) {
-    -webkit-flex: 1 0 60%;
-    flex: 1 0 60%;
+    -webkit-flex: 1 0 50%;
+    flex: 1 0 50%;
+    text-align: end;
 }
 
 .listItemIcon:not(.listItemIcon-transparent) {
@@ -1252,14 +1374,13 @@ div[data-role=controlgroup] a.ui-btn-active {
     border: solid var(--btnDeleteBorderColor) var(--borderWidth);
 }
 
-.listItemIcon.notifications:not(.listItemIcon-transparent),
-.listItemIcon.schedule:not(.listItemIcon-transparent),
 .listItemIcon.person:not(.listItemIcon-transparent),
-.listItemIcon.live_tv:not(.listItemIcon-transparent) {
+.listItemIcon.live_tv:not(.listItemIcon-transparent),
+.listItemIcon.schedule:not(.listItemIcon-transparent),
+.listItemIcon.notifications:not(.listItemIcon-transparent) {
     background-color: rgb(41, 49, 83) !important;
     border: var(--defaultBorder);
 }
-
 
 .readOnlyContent {
     flex-direction: column !important;
@@ -1288,7 +1409,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 [dir=ltr] .listItem:not(.actionSheetMenuItem, .childrenItemsContainer .listItem, .activityLogListWidget .listItem) {
-    padding: 0.375em !important;
+    padding: .375em !important;
 }
 
 [dir=ltr] .listItem:not(.actionSheetMenuItem, .childrenItemsContainer .listItem, .activityLogListWidget .listItem):not(:last-child) {
@@ -1302,17 +1423,17 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .listItem[data-type="Audio"] {
     margin-inline: 1em;
-    /* padding-inline: 1em !important; */
+}
+
+.listItem[data-type="Audio"]:has(.playlistIndexIndicatorImage) .listItemBodyText {
+    color: white;
+    font-weight: 600;
 }
 
 [dir="ltr"] .listItem:not(.actionSheetMenuItem)[data-type="Episode"] .listItemBodyText:not(.secondary) {
     font-size: 1.17em;
     font-weight: 600;
 }
-
-/* .listItemBody {
-    padding: 0;
-} */
 
 .listItemBody>.listItemBodyText:not(.secondary) {
     display: -webkit-box;
@@ -1332,7 +1453,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 .listItem-bottomoverview,
 [dir="ltr"] .listItem:not(.actionSheetMenuItem)[data-type="Episode"] .listItem-overview p {
     margin-top: .75em;
-    margin-bottom: 0em;
+    margin-bottom: 0;
 }
 
 .listItem,
@@ -1352,7 +1473,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .listItem:active,
 .navMenuOption:active {
-    background: rgba(255, 255, 255, 0.125);
+    background: rgba(255, 255, 255, .125);
 }
 
 .listItem-border {
@@ -1363,8 +1484,8 @@ div[data-role=controlgroup] a.ui-btn-active {
     border-radius: var(--smallRadius);
 }
 
-.MuiListItem-root>a,
 .MuiList-root>a,
+.MuiListItem-root>a,
 .MuiListItem-root>div {
     border: solid transparent var(--borderWidth);
     border-radius: .7em;
@@ -1374,7 +1495,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .Mui-selected {
     background-color: var(--activeColor) !important;
-    /* border: var(--defaultLighterBorder) !important; */
 }
 
 .actionSheetContent {
@@ -1393,6 +1513,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: var(--activeColor);
 }
 
+.actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check) .listItemBodyText {
+    color: white;
+}
+
 .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check) .listItemIcon.material-icons.check {
     display: none;
 }
@@ -1401,13 +1525,17 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: transparent;
 }
 
+.actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check[style*="hidden"]):active {
+    background-color: rgba(255, 255, 255, .125);
+}
+
 .navMenuOption {
     border-radius: var(--smallRadius) !important;
-    margin: 0em 1em !important;
+    margin: 0 1em !important;
 }
 
 [dir=ltr] .navMenuOption {
-    padding: 0.75em 1em !important;
+    padding: .75em 1em !important;
     margin-bottom: unset;
 }
 
@@ -1417,7 +1545,6 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .navMenuOption-selected {
     background-color: var(--activeColor) !important;
-    /* border: var(--defaultLighterBorder); */
 }
 
 .detailSection {
@@ -1443,12 +1570,35 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .selectArrowContainer {
-    top: 0em;
+    top: 0;
     opacity: .5;
 }
 
 .trackSelectionFieldContainer>.selectArrowContainer {
     top: .5em;
+}
+
+.trackSelectionFieldContainer>label {
+    max-width: 2.75em;
+    background-repeat: no-repeat;
+    color: transparent;
+    transform: scale(.9);
+}
+
+.selectVideoContainer.trackSelectionFieldContainer>label {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23d1d5db" viewBox="0 0 24 24"><g stroke-width="1.5"><path d="M2 12c0-4.7 0-7 1.5-8.5C4.9 2 7.3 2 12 2s7 0 8.5 1.5C22 4.9 22 7.3 22 12s0 7-1.5 8.5C19.1 22 16.7 22 12 22s-7 0-8.5-1.5C2 19.1 2 16.7 2 12Z"/><path stroke-linecap="round" d="M17 2.5v19M7 2.5v19M2.5 7H7m14.5 0H17M2.5 17H7m14.5 0H17M2 12h20"/></g></svg>');
+}
+
+.selectAudioContainer.trackSelectionFieldContainer>label {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23d1d5db" viewBox="0 0 24 24"><g stroke-width="1.5"><path d="M9 19a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM21 17a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM9 19V8M21 17V6"/><path stroke-linecap="round" d="m15.7 3.8-4 1.3c-1.3.4-2 .6-2.3 1.2C9 6.8 9 7.5 9 8.9V12l12-4v-.5c0-2.5 0-3.7-.8-4.3-.9-.6-2-.2-4.5.6Z"/></g></svg>');
+}
+
+.selectSubtitlesContainer.trackSelectionFieldContainer>label {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23d1d5db" viewBox="0 0 24 24"><g stroke-width="1.5"><path d="M2 12c0-3.8 0-5.7 1.2-6.8C4.3 4 6.2 4 10 4h4c3.8 0 5.7 0 6.8 1.2C22 6.3 22 8.2 22 12s0 5.7-1.2 6.8C19.7 20 17.8 20 14 20h-4c-3.8 0-5.7 0-6.8-1.2C2 17.7 2 15.8 2 12Z"/><path stroke-linecap="round" d="M10 16H6M14 13h4M14 16h-1.5M9.5 13h2M18 16h-1.5M6 13h1"/></g></svg>')
+}
+
+.selectSourceContainer.trackSelectionFieldContainer>label {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="%23d1d5db" d="m15.4 4.05-.5.56.5-.56Zm3.95 3.57-.5.55.5-.55Zm2.3 2.53-.68.3.68-.3ZM3.17 20.83l.53-.53-.53.53Zm17.66 0-.53-.53.53.53Zm-6.83.42h-4v1.5h4v-1.5ZM2.75 14v-4h-1.5v4h1.5Zm18.5-.44V14h1.5v-.44h-1.5Zm-6.36-8.95 3.96 3.56 1-1.11L15.9 3.5l-1 1.11Zm7.86 8.95c0-1.69.02-2.75-.41-3.71l-1.37.6c.26.6.28 1.3.28 3.11h1.5Zm-3.9-5.39c1.35 1.22 1.85 1.7 2.12 2.29l1.37-.61c-.43-.96-1.23-1.66-2.49-2.8l-1 1.12Zm-8.82-5.42c1.58 0 2.18.01 2.71.22l.54-1.4c-.85-.33-1.78-.32-3.25-.32v1.5Zm5.86.75c-1.08-.98-1.76-1.6-2.61-1.93l-.54 1.4c.53.2.98.59 2.15 1.64l1-1.11ZM10 21.25c-1.9 0-3.26 0-4.29-.14-1-.13-1.58-.39-2-.81l-1.07 1.06c.75.75 1.7 1.08 2.87 1.24 1.15.15 2.63.15 4.49.15v-1.5ZM1.25 14c0 1.86 0 3.34.15 4.49a4.71 4.71 0 0 0 1.24 2.87L3.7 20.3c-.42-.43-.67-1-.81-2.01A36 36 0 0 1 2.75 14h-1.5ZM14 22.75c1.86 0 3.34 0 4.49-.15a4.71 4.71 0 0 0 2.87-1.24L20.3 20.3c-.43.42-1 .68-2.01.81-1.03.14-2.38.14-4.29.14v1.5ZM21.25 14c0 1.9 0 3.26-.14 4.29-.13 1-.39 1.58-.81 2l1.06 1.07a4.71 4.71 0 0 0 1.24-2.87c.15-1.15.15-2.63.15-4.49h-1.5Zm-18.5-4c0-1.9 0-3.26.14-4.29.14-1 .39-1.58.81-2L2.64 2.63A4.71 4.71 0 0 0 1.4 5.51c-.15 1.15-.15 2.63-.15 4.49h1.5Zm7.28-8.75c-1.87 0-3.36 0-4.51.15a4.72 4.72 0 0 0-2.88 1.24L3.7 3.7c.42-.42 1-.67 2.02-.81 1.03-.14 2.4-.14 4.31-.14v-1.5Z"/><path stroke="%23d1d5db" stroke-width="1.5" d="M13 2.5V5c0 2.36 0 3.54.73 4.27.73.73 1.91.73 4.27.73h4"/></svg>');
 }
 
 .detailSectionContent {
@@ -1468,7 +1618,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 .alphaPickerButton {
     font-family: monospace;
     margin: .15em;
-    color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, .25);
 }
 
 .alphaPickerButton-selected {
@@ -1487,11 +1637,11 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: var(--highlightOutlineColor);
 }
 
-[dir=ltr] .padded-left.vertical-wrap {
+[dir=ltr] .padded-left.vertical-wrap:not(div:has(.homeLibraryButton)) {
     padding-left: 5% !important;
 }
 
-[dir=ltr] .padded-right.vertical-wrap {
+[dir=ltr] .padded-right.vertical-wrap:not(div:has(.homeLibraryButton)) {
     padding-right: 5% !important;
 }
 
@@ -1507,13 +1657,13 @@ div[data-role=controlgroup] a.ui-btn-active {
     width: 2em;
     height: 2em;
     margin-inline-end: 1em;
-    border: var(--defaultBorder);
+    border: transparent;
 }
 
 .MuiAvatar-circular {
     width: 1.5em;
     height: 1.5em;
-    border: var(--defaultBorder);
+    border: transparent;
 }
 
 .dashboardDocument .content-primary {
@@ -1527,6 +1677,10 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .metadataSidebarIcon {
     color: #6c7bab;
+}
+
+.jstree-default .jstree-wholerow-clicked {
+    background: var(--selectorBackgroundColor) !important;
 }
 
 .sectionTitleTextButton {
@@ -1546,13 +1700,13 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin: 0 0 !important;
 }
 
-.dashboardSection .sectionTitleTextButton>.material-icons,
 .sectionTitleTextButton>.material-icons,
+.dashboardSection .sectionTitleTextButton>.material-icons,
 .dashboardSection .sectionTitleTextButton>.material-icons.material-icons {
     font-size: unset;
 }
 
-.sectionTitleTextButton>.material-icons::before {
+.sectionTitleTextButton>.material-icons:before {
     display: none;
 }
 
@@ -1561,8 +1715,7 @@ div[data-role=controlgroup] a.ui-btn-active {
     height: 1.5rem;
     width: 1.5rem;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23D1D5DB' aria-hidden='true'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
-    background-size: contain;
-    /* Stops miscalculating the size on hover effect */
+    background-size: contain
 }
 
 .toast {
@@ -1574,13 +1727,43 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: var(--textColor);
 }
 
+[dir=ltr] .upNextContainer {
+    margin: 2em;
+    box-sizing: border-box;
+    max-width: 80vw;
+}
+
 .upNextContainer .btnStartNow {
     background-color: var(--btnSubmitColor);
     border-color: var(--btnSubmitBorderColor);
 }
 
+.upNextDialog-title {
+    white-space: wrap;
+    width: unset;
+}
+
+.upNextDialog-buttons {
+    width: unset;
+    flex-wrap: wrap;
+}
+
 .upNextContainer .upNextDialog-countdownText {
     color: white;
+}
+
+.skip-button {
+    background-color: whitesmoke;
+    box-shadow: var(--shadow);
+}
+
+.skip-button:hover {
+    background-color: white;
+}
+
+.skip-button:active {
+    background-color: rgba(245, 245, 245, .7);
+    box-shadow: none;
 }
 
 .toast,
@@ -1592,66 +1775,70 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .activeSession {
     width: 98% !important;
-    max-width: 27rem !important;
 }
 
 .emby-tab-button:hover {
-    color: #c1c1c1;
+    color: whitesmoke;
 }
 
-@media (hover: hover) and (pointer: fine) {
-    .paper-icon-button-light:hover:not(:disabled) {
+@media (hover:hover) and (pointer:fine) {
+    .paper-icon-button-light:hover:not(:disabled, .cardOverlayButton) {
         color: #fff;
-        background-color: rgb(255 255 255 / 5%);
+        background-color: rgb(255 255 255 / 5%) !important;
     }
 
-    .emby-select-withcolor:hover:not(.emby-select[disabled], :focus),
+    .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check[style*="hidden"]):hover {
+        background-color: rgba(255, 255, 255, .125) !important;
+    }
+
     .emby-input:hover:not(:focus),
-    .emby-textarea:hover:not(:focus) {
-        border-color: var(--dimTextColor) !important;
+    .emby-textarea:hover:not(:focus),
+        .emby-select-withcolor:hover:not(.emby-select[disabled], :focus) {
+        border-color: var(--dimTextColor) !important
     }
 
     .checkboxContainer:hover .checkboxOutline:not(.multiSelectCheckboxOutline) {
         border-color: var(--checkboxCheckedBgColor);
-        border-width: calc(2 * var(--borderWidth));
+        border-width: calc(2 * var(--borderWidth))
     }
 
-    .raised:hover,
     .fab:hover,
+    .raised:hover,
     .emby-button:hover {
-        filter: brightness(1.2) !important;
+        filter: brightness(1.2) !important
     }
 
     .button-flat:hover {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, .2);
+        color: white
     }
 
     .alphaPickerButton:hover {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1)
     }
 
     .listItem:hover,
     .navMenuOption:hover {
-        background: rgba(255, 255, 255, 0.125);
+        background: rgba(255, 255, 255, .125)
     }
 
     .searchfields-icon:hover,
     .inputContainer .emby-input-iconbutton:hover {
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, .8)
     }
 
     #scenesContent .cardScalable:hover {
-        border-color: var(--dimTextColor) !important;
+        border-color: var(--dimTextColor) !important
     }
 
     .sectionTitleTextButton:hover {
         background: transparent !important;
-        color: white !important;
+        color: white !important
     }
 
     .button-link:hover {
         color: rgb(243, 243, 243) !important;
-        text-decoration: none;
+        text-decoration: none
     }
 }
 
@@ -1664,10 +1851,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     font-family: consolas;
 }
 
-.emby-select-withcolor,
-.emby-select,
 .emby-input,
-.emby-textarea {
+.emby-select,
+.emby-textarea,
+.emby-select-withcolor {
     background-color: var(--selectorBackgroundColor);
     border: var(--defaultLighterBorder);
     border-radius: var(--smallRadius);
@@ -1680,20 +1867,19 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: #fff;
 }
 
-.emby-select-withcolor:focus,
 .emby-input:focus,
-.emby-textarea:focus {
+.emby-textarea:focus,
+.emby-select-withcolor:focus {
     border-color: var(--highlightOutlineColor) !important;
     outline: none !important;
 }
 
 @supports (display:revert) {
-
-    .emby-select-withcolor:focus,
     .emby-input:focus,
-    .emby-textarea:focus {
+    .emby-textarea:focus,
+    .emby-select-withcolor:focus {
         border-color: var(--highlightOutlineColor) !important;
-        outline: thin solid var(--highlightOutlineColor) !important;
+        outline: thin solid var(--highlightOutlineColor) !important
     }
 }
 
@@ -1703,7 +1889,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .inputContainer .emby-input-iconbutton {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, .5);
     margin-left: -2.5em;
     background-color: transparent !important;
 }
@@ -1718,12 +1904,12 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin-left: -1.75em;
     margin-bottom: 0;
     border-radius: var(--largeRadius);
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, .5);
 }
 
 .searchfields-icon:active,
 .inputContainer .emby-input-iconbutton:active {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, .8);
 }
 
 .searchFields>.searchFieldsInner {
@@ -1743,10 +1929,32 @@ div[data-role=controlgroup] a.ui-btn-active {
     font-size: 1.6em;
 }
 
+.liveTvContainer,
+#liveTvSuggestedPage {
+    background-color: var(--tableBodyColor);
+}
+
 .programCell-active {
     background-color: var(--activeColor) !important;
     border-radius: .5em;
     margin-block: .5em !important;
+}
+
+.guideVerticalScroller {
+    padding: 0;
+}
+
+.programGrid {
+    background-color: var(--lighterGradientPointAlpha);
+}
+
+.channelPrograms>.programCell:nth-child(odd) {
+    background-color: var(--darkerGradientPoint);
+}
+
+.programCell:focus,
+.guide-channelHeaderCell:focus {
+    background-color: var(--highlightOutlineColor) !important;
 }
 
 .emby-select-iconbutton {
@@ -1756,7 +1964,7 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin-inline-start: 1em;
 }
 
-@media (min-width: 62em) {
+@media (min-width:62em) {
     .sectionTabs:not(.layout-tv .sectionTabs) {
         -webkit-align-items: center;
         align-items: center;
@@ -1766,63 +1974,17 @@ div[data-role=controlgroup] a.ui-btn-active {
         justify-content: center;
         margin-top: -4.3em;
         position: relative;
-        width: auto;
+        width: auto
     }
 
     .libraryPage:not(.noSecondaryNavPage):not(.layout-tv .libraryPage) {
-        padding-top: 4.8em !important;
+        padding-top: 4.8em !important
     }
 }
 
 .layout-tv .headerLeft {
     overflow: unset;
     margin: .25em .5em;
-}
-
-.mdl-spinner__circle {
-    border-color: var(--dimTextColor);
-    border-style: inset;
-}
-
-.mdl-slider-container {
-    height: 1em;
-}
-
-.mdl-slider {
-    height: unset;
-}
-
-.mdl-slider-background-flex-container {
-    backdrop-filter: var(--blurSmallest);
-}
-
-.mdl-slider-background-flex {
-    border-radius: var(--smallRadius);
-}
-
-.mdl-slider-background-lower {
-    background-color: var(--btnSubmitBorderColor);
-}
-
-.mdl-slider::-webkit-slider-thumb {
-    background: var(--btnSubmitBorderColor);
-}
-
-.mdl-slider::-webkit-slider-thumb {
-    width: .75em !important;
-    height: .75em !important;
-}
-
-.mdl-slider::-moz-range-thumb {
-    background: var(--btnSubmitBorderColor);
-}
-
-.sliderMarker.watched {
-    background-color: var(--btnSubmitBorderColor);
-}
-
-.iconOsdProgressInner {
-    background: var(--btnSubmitBorderColor);
 }
 
 .subtitleappearance-preview {
@@ -1846,16 +2008,39 @@ fieldset {
     border: var(--defaultBorder);
 }
 
+table:not(.MuiTable-root.MuiTable-stickyHeader) {
+    border-color: var(--borderColor) !important;
+    border-radius: var(--smallRadius);
+    border-spacing: 1px;
+    border: var(--defaultBorder);
+    background: var(--tableBodyColor);
+    border-collapse: separate;
+    overflow: hidden;
+}
+
+.detailTableHeaderCell {
+    vertical-align: middle;
+}
+
 #serverActivityPage .MuiPaper-elevation2 {
     border: var(--defaultBorder) !important;
     box-shadow: unset !important;
+}
+
+#serverActivityPage .MuiPaper-elevation2,
+#serverActivityPage .MuiPaper-elevation2>.MuiBox-root,
+#serverActivityPage .MuiTableRow-root.MuiTableRow-head {
     background-color: var(--tableBodyColor);
 }
 
-#serverActivityPage .MuiPaper-elevation2>.MuiBox-root,
-#serverActivityPage .MuiTableRow-root.MuiTableRow-head,
-#serverActivityPage .MuiTableRow-root {
-    background-color: var(--tableBodyColor) !important;
+.detailTableBodyRow-shaded:nth-child(odd),
+#serverActivityPage .MuiTableBody-root .MuiTableRow-root:nth-child(odd) {
+    background: var(--darkerGradientPointAlpha) !important;
+}
+
+.detailTableBodyRow-shaded:nth-child(even),
+#serverActivityPage .MuiTableBody-root .MuiTableRow-root:nth-child(even) {
+    background: var(--lighterGradientPointAlpha) !important;
 }
 
 .MuiList-root.MuiMenu-list {
@@ -1863,20 +2048,20 @@ fieldset {
 }
 
 ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
-    /* ! Don't change these units. They are rem because that is standard for MUI */
-    gap: 0.5rem;
+    gap: .5rem;
 }
 
-.playerStats,
-.iconOsd {
+.iconOsd,
+.playerStats {
     border-radius: var(--largeRadius);
-    background-color: rgba(69, 69, 69, 0.69);
+    background-color: rgba(69, 69, 69, .69);
     backdrop-filter: var(--blurDefault);
 }
 
 .playerStats-stats {
-    max-height: 58vh;
+    max-height: 50vh;
     flex-wrap: wrap;
+    overflow-x: auto;
     padding: 1em !important;
 }
 
@@ -1885,7 +2070,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 .progressring-spiner {
-    border-color: var(--btnSubmitBorderColor);
+    border-color: var(--uiAccentColor);
 }
 
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.semiTransparent.noHeaderRight {
@@ -1893,74 +2078,48 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 #loginPage {
-    padding-top: 20em !important;
-}
-
-@media (max-height: 890px) {
-    #loginPage {
-        padding-top: 6.5em !important;
-    }
-}
-
-@media (max-height: 1300px) {
-    #loginPage:has(.padded-left.padded-right.padded-bottom-page .visualLoginForm:not(.hide)) {
-        padding-top: 6.5em !important;
-    }
-}
-
-#loginPage .readOnlyContent {
-    margin: .5em auto 0em !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1em;
+    overflow-y: auto;
+    background: linear-gradient(to bottom, var(--darkerGradientPointAlpha), var(--lighterGradientPoint)), var(--loginPageBgUrl);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
 }
 
 #loginPage .padded-left.padded-right.padded-bottom-page {
-    margin: 2em auto 0;
     width: 28em;
-    background: rgba(30, 40, 54, 0.7);
+    background: rgba(30, 40, 54, .7);
     padding: 2em 2em 1em 2em !important;
     border-radius: var(--largerRadius);
     backdrop-filter: var(--blurDefault);
     box-sizing: border-box;
+    transform: translateY(3em);
 }
 
-#loginPage .padded-left.padded-right.padded-bottom-page:has(.visualLoginForm:not(.hide)) {
-    width: 80em;
-}
-
-@media (max-width: 640px) {
-    #loginPage .padded-left.padded-right.padded-bottom-page {
-        width: 100%;
-        margin: 2em;
-    }
-}
-
-@media (max-width: 1300px) {
-    #loginPage .padded-left.padded-right.padded-bottom-page:has(.visualLoginForm:not(.hide)) {
-        width: 100%;
-        margin: 2em;
-    }
-}
-
-#loginPage {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    padding: 2em 0;
-    overflow-y: auto;
-    background:
-        var(--loginPageBgUrl, linear-gradient(to bottom, var(--darkerGradientPointAlpha), var(--lighterGradientPoint)));
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.manualLoginForm .sectionTitle,
-.visualLoginForm>h1 {
+.visualLoginForm>h1,
+.manualLoginForm .sectionTitle {
     display: none;
 }
 
-.manualLoginForm::before,
-.visualLoginForm::before {
+#loginPage .padded-left.padded-right.padded-bottom-page:has(.visualLoginForm:not(.hide)) {
+    width: 40em;
+}
+
+#divUsers .squareCard {
+    width: 30% !important;
+}
+
+.layout-mobile #divUsers .squareCard {
+    width: 45% !important;
+}
+
+.manualLoginForm:before,
+.visualLoginForm:before {
     content: var(--loginPageText);
     position: relative;
     display: block;
@@ -1988,20 +2147,49 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     resize: none;
 }
 
-.startTimeText,
+.runtime,
+.endTimeText,
+.positionTime,
+.startTimeText {
+    width: 4.5em;
+    box-sizing: border-box;
+}
+
+.startTimeText {
+    margin: 0 !important;
+}
+
 .endTimeText {
-    width: 4em;
+    justify-content: right;
+    padding-inline-end: .8em;
+}
+
+.endTimeText,
+.startTimeText {
+    padding-top: .25em;
+}
+
+.positionTime,
+.startTimeText {
+    text-align: start;
+    justify-content: left;
+}
+
+.runtime,
+.endTimeText {
+    text-align: end;
+    justify-content: right;
 }
 
 .filterIndicator {
     background: var(--activeColor);
 }
 
-.card-withuserdata[data-isfolder="true"] .cardPadder-overflowBackdrop {
+#indexPage:not(.hide) .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardPadder-overflowBackdrop {
     padding-bottom: 50%;
 }
 
-.card-withuserdata[data-isfolder="true"] .cardImageContainer.cardContent::before {
+.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardImageContainer.cardContent:before {
     position: absolute;
     font-size: 3.5vh;
     margin-bottom: .175em;
@@ -2011,23 +2199,14 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     text-align: center;
 }
 
-.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText-first,
-.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText.cardTextCentered {
+#indexPage:not(.hide) .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText-first,
+#indexPage:not(.hide) .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText.cardTextCentered {
     display: none;
 }
 
-.padded-right-withalphapicker .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) {
-    margin-bottom: -1.5em;
+.nowPlayingButtonsContainer {
+    margin-top: 1em;
 }
-
-/* input[type="radio"]:checked {
-    background-color: var(--highlightOutlineColor);
-} */
-
-/* .mdl-radio__focus-circle {
-    color: red;
-    background: var(--highlightOutlineColor);
-} */
 
 .nowPlayingPageImageContainerNoAlbum {
     border: var(--defaultBorder);
@@ -2043,9 +2222,9 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     color: var(--borderColor);
 }
 
-@media (orientation: portrait) and (max-width: 43em) {
+@media (orientation:portrait) and (max-width:43em) {
     .nowPlayingPageImageContainerNoAlbum .cardImageContainer .cardImageIcon {
-        font-size: 8em !important;
+        font-size: 8em !important
     }
 }
 
@@ -2071,23 +2250,49 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     border-color: transparent;
 }
 
-@media (orientation: portrait) and (max-width: 43em) {
+.layout-desktop .nowPlayingInfoContainer {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5em;
+    padding: 1em;
+    margin-bottom: 2em;
+    backdrop-filter: var(--blurLargest);
+    border: var(--defaultLighterBorder);
+    z-index: 2;
+    background-color: var(--headerColor);
+    box-shadow: var(--shadow);
+    border-radius: var(--largerRadius);
+    box-sizing: border-box;
+}
+
+.layout-desktop .nowPlayingInfoControls {
+    margin: 0 2em;
+}
+
+.nowPlayingPageImage {
+    box-shadow: var(--shadow);
+    border-radius: var(--smallRadius);
+}
+
+@media (orientation:portrait) and (max-width:43em) {
     .nowPlayingInfoContainer {
-        height: calc(95% - 4.2em);
+        height: calc(95% - 4.2em)
     }
 }
 
-.nowPlayingInfoContainerMedia>div:not(.hide) {
-    margin-bottom: 1em;
-}
-
 .nowPlayingSongName.nowPlayingEpisode {
+    margin-bottom: 1em;
     font-size: 1.25em;
     color: var(--textColor);
 }
 
 .nowPlayingAlbum.nowPlayingSeason {
     color: var(--dimTextColor);
+    margin-bottom: .5em;
+}
+
+.nowPlayingArtist.nowPlayingSerie {
+    margin-bottom: .5em;
 }
 
 .playlistIndexIndicatorImage {
@@ -2101,7 +2306,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 #dialogToc {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, .5);
     max-height: unset;
     max-width: unset;
 }
@@ -2111,5 +2316,37 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     font-weight: 600;
     list-style-type: circle;
     margin-bottom: .5em;
-    font-family: "Math", serif;
+    font-family: 'Math', serif;
+}
+
+.MuiTabs-indicator {
+    display: none;
+}
+
+.MuiTabs-root>.MuiTabs-scroller {
+    align-content: center;
+}
+
+.MuiTabs-flexContainer>.MuiButtonBase-root {
+    border-radius: var(--largeRadius);
+    min-height: 40px;
+    min-width: 72px;
+}
+
+.MuiTabs-flexContainer>.MuiButtonBase-root.Mui-selected {
+    color: white;
+    background-color: transparent !important;
+}
+
+.MuiToggleButtonGroup-grouped.Mui-selected {
+    color: white;
+}
+
+.MuiButtonBase-root.MuiIconButton-root:hover {
+    color: white;
+    background-color: transparent;
+}
+
+#viewPanel .ui-panel-inner {
+    margin-top: 4em;
 }

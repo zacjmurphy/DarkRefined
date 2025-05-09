@@ -1,80 +1,68 @@
-/* ElegantFin Theme for Jellyfin by lscambo13 */
-
-/* Add-ons: Uncomment to enable */
-/* @import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/assets/add-ons/custom-media-covers-latest-min.css"); */
-
-/* Inter Font Family */
+/* Original Theme - ElegantFin Theme v25.05.03 for Jellyfin by lscambo13 - Modified by: Zach J Murphy */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --elegantFinFooterText: "ElegantFin v25.05.03";
+    --darkRefinedFooterText: 'Dark Refined v1.0.0';
     color-scheme: dark;
-    --darkerGradientPoint: #111827;
-    --darkerGradientPointAlpha: rgba(17, 24, 39, 0.85);
-    --lighterGradientPoint: #1d2635;
-    --lighterGradientPointAlpha: rgba(29, 38, 53, 0.85);
-    --borderColor: rgb(71, 80, 92);
-    --lighterBorderColor: rgb(255 255 255 / 20%);
-    --headerColor: rgba(30, 40, 54, 0.8);
-    --drawerColor: rgba(30, 40, 54, 0.9);
-    --selectorBackgroundColor: rgb(55, 65, 81);
-    --selectorBackgroundColorAlpha: rgba(55, 65, 81, 0.5);
+    --darkerGradientPoint: #0e1014;
+    --darkerGradientPointAlpha: rgba(17, 18, 21, 0.85);
+    --lighterGradientPoint: #0e1014;
+    --lighterGradientPointAlpha: rgba(17, 18, 21, 0.85);
+    --borderColor: transparent;
+    --lighterBorderColor: transparent;
+    --headerColor: #0e1014;
+    --drawerColor: #0e1014;
+    --selectorBackgroundColor: rgb(30, 32, 35);
+    --selectorBackgroundColorAlpha: rgb(30, 32, 35);
     --btnDeleteColor: rgb(169, 29, 29);
-    --btnDeleteBorderColor: rgb(217, 84, 84);
-    --btnSubmitColor: rgb(61, 54, 178);
-    --btnSubmitBorderColor: rgb(117 111 226);
-    --checkboxCheckedBgColor: rgb(79, 70, 229);
-    --highlightOutlineColor: rgb(37, 99, 235);
+    --btnDeleteBorderColor: transparent;
+    --btnSubmitColor: rgb(245, 62, 62);
+    --btnSubmitBorderColor: transparent;
+    --checkboxCheckedBgColor: rgb(245, 62, 62);
+    --highlightOutlineColor: rgb(46, 46, 46);
     --textColor: rgb(209, 213, 219);
     --dimTextColor: rgb(156, 163, 175);
-    --activeColorAlpha: rgba(119, 91, 244, 0.9);
-    --activeColor: rgb(119, 91, 244);
-    --tableBodyColor: rgb(31 41 55 / 1);
-    --uiAccentColor: rgb(117 111 226);
-    --btnMiniPlayColor: rgb(41 154 93);
-    --btnPlayBorderColor: color-mix(in srgb, var(--btnMiniPlayColor), rgb(255, 255, 255) 5%);
+    --activeColorAlpha: rgba(245, 62, 62, 0.852);
+    --activeColor: rgb(245, 62, 62);
+    --tableBodyColor: #0e1014;
+    --uiAccentColor: rgba(17, 18, 21, 0.85);
+    --btnMiniPlayColor: rgb(245, 62, 62);
+    --uiIconColor: rgb(245, 62, 62);
+    --btnPlayBorderColor: transparent;
     --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
     --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
-    --hoverGradientA: linear-gradient(130deg, rgb(255 255 255 / 35%) 20%, rgb(255 255 255 / 15%) 40%);
-    --hoverGradientB: radial-gradient(100% 250% at 90% 190%, rgba(255, 255, 255, 0.15) 85%, rgba(255, 255, 255, 0.33) 100%);
-    --shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+    --hoverGradientA: linear-gradient(130deg, rgba(32, 32, 32, 0.35) 20%, rgb(255 255 255 / 15%) 40%);
+    --hoverGradientB: radial-gradient(100% 250% at 90% 190%, rgba(36, 36, 36, 0.15) 85%, rgba(36, 36, 36, 0.33) 100%);
+    --shadow: none;
     --largerRadius: 1.25em;
     --largeRadius: 1em;
     --smallRadius: .5em;
     --smallerRadius: .375em;
-    --borderWidth: 0.075em;
+    --borderWidth: .075em;
     --defaultBorder: var(--borderWidth) solid var(--borderColor);
     --defaultLighterBorder: var(--borderWidth) solid var(--lighterBorderColor);
-
-    /* login page customizations */
-    /* --loginPageBgUrl: url("<YOUR-JELLYFIN-SERVER-ADDRESS>/Branding/Splashscreen?format=webp&foregroundLayer=1&quality=33&width=3840&height=2160&blur=2"); */
-    --loginPageBgUrl: url("");
-    --loginPageText: "Sign in to continue";
-
+    --loginPageBgUrl: url('');
+    --loginPageText: 'Sign in to continue';
     --blurSmallest: blur(2px);
     --blurDefault: blur(5px);
     --blurLarge: blur(10px);
     --blurLargest: blur(20px);
-
-    /* to revert to old icons, use 'Material Icons'*/
     --iconPack: 'Material Icons Round';
 }
 
 html {
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     font-optical-sizing: auto;
     font-weight: 425;
     font-style: normal;
     -webkit-tap-highlight-color: transparent !important;
 }
 
-/* Material Icons Round */
-/* https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200 */
 @font-face {
     font-family: 'Material Icons Round';
     font-style: normal;
     font-weight: 100 700;
-    src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v230/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2) format('woff2');
+    src: url('https://fonts.gstatic.com/s/materialsymbolsrounded/v230/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2') format('woff2');
 }
 
 .material-icons {
@@ -92,11 +80,7 @@ html {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: 'liga';
-    font-variation-settings:
-        'FILL' 1,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
+    font-variation-settings: 'FILL'1, 'wght'400, 'GRAD'0, 'opsz'24
 }
 
 .material-icons.info_outline:before {
@@ -104,12 +88,12 @@ html {
 }
 
 .dashboardFooter {
-    font-family: "Noto Sans", serif;
+    font-family: 'Noto Sans', serif;
     transition: transform 50ms;
 }
 
-.dashboardFooter::after {
-    content: var(--elegantFinFooterText);
+.dashboardFooter:after {
+    content: var(--darkRefinedFooterText);
     font-size: .8em;
     color: #4e4e60;
 }
@@ -127,20 +111,20 @@ html {
 }
 
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
-    border-color: var(--highlightOutlineColor) !important;
+    border-color: rgb(255 255 255 / 5%) !important;
     filter: brightness(1.125);
 }
 
 .emby-button.show-focus:focus,
 .paper-icon-button-light.show-focus:focus {
-    background-color: var(--highlightOutlineColor) !important;
+    background-color: rgb(255 255 255 / 5%) !important;
     color: #fff;
 }
 
 .emby-tabs .emby-button.show-focus:focus {
     outline: none !important;
     color: #fff;
-    background-color: var(--highlightOutlineColor) !important;
+    background-color: rgb(255 255 255 / 5%) !important;
 }
 
 [dir=ltr] .itemsContainer>.card>.cardBox {
@@ -155,7 +139,7 @@ html {
 .countIndicator,
 .fullSyncIndicator,
 .mediaSourceIndicator {
-    background: rgb(31, 80, 189);
+    background: var(--uiIconColor);
     border: var(--defaultLighterBorder);
 }
 
@@ -175,7 +159,7 @@ html {
 }
 
 .card.squareCard[data-type="TvChannel"] .cardImageContainer.cardContent {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .cardImageContainer>.cardDefaultText {
@@ -185,13 +169,13 @@ html {
     white-space: pre;
 }
 
-.cardImageContainer>.cardDefaultText::before {
-    content: "?\A";
+.cardImageContainer>.cardDefaultText:before {
+    content: '?\A';
     color: var(--borderColor);
 }
 
 .card.card-hoverable:hover .cardScalable {
-    border-color: var(--textColor) !important;
+    border-color: var(--uiIconColor) !important;
 }
 
 .card.card-hoverable:hover .cardImageContainer {
@@ -219,15 +203,13 @@ html {
 
 .cardOverlayContainer {
     transition: .25s;
-    background: rgba(255, 255, 255, 0.1);
-    /* Uncomment the code below to get back the old overlay on hovering over cards*/
-    /* background: var(--hoverGradientA); */
+    background: transparent !important;
     background-size: 200%;
     background-position-x: 100%;
 }
 
 .layout-desktop .card.card-hoverable:hover .cardOverlayContainer {
-    background-position-x: 0%;
+    background-position-x: 0;
 }
 
 .cardBox:not(.visualCardBox) .cardPadder {
@@ -243,8 +225,8 @@ html {
     bottom: 1.25em;
 }
 
-.cardOverlayContainer>.cardOverlayFab-primary,
 .listItemImageButton,
+.cardOverlayContainer>.cardOverlayFab-primary,
 .layout-mobile .cardOverlayButton-br>.cardOverlayButtonIcon {
     background-color: var(--btnMiniPlayColor) !important;
     color: white;
@@ -253,8 +235,8 @@ html {
     font-size: 75%;
 }
 
-.cardOverlayContainer>.cardOverlayFab-primary:hover,
-.listItemImageButton:hover {
+.listItemImageButton:hover,
+.cardOverlayContainer>.cardOverlayFab-primary:hover {
     color: white;
 }
 
@@ -285,10 +267,10 @@ html {
     font-size: small;
 }
 
-.smallBackdropCard,
+.bannerCard,
 .squareCard,
 .backdropCard,
-.bannerCard {
+.smallBackdropCard {
     width: 46%;
 }
 
@@ -296,102 +278,85 @@ html {
     min-width: 5em;
 }
 
-/* if the window width is equal to or more than (at minimum) 150em then the code in the query will trigger */
-/* 14 posters, 10 thumbs */
-@media (min-width: 150em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 6.6% !important;
+@media (min-width:150em) {
+    .squareCard,
+    .portraitCard {
+        width: 6.6% !important
     }
 
     .backdropCard {
-        width: 9.5%;
+        width: 9.5%
     }
 }
 
-/* if the window width is equal to or less than (at maximum) 150em then the code in the query will trigger */
-/* 9 posters, 7 thumbs */
-@media (max-width: 150em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 10.4% !important;
+@media (max-width:150em) {
+    .squareCard,
+    .portraitCard {
+        width: 10.4% !important
     }
 
     .backdropCard {
-        width: 13.6%;
+        width: 13.6%
     }
 }
 
-/* 7 posters, 6 thumbs */
-@media (max-width: 120em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 13.5% !important;
+@media (max-width:120em) {
+    .squareCard,
+    .portraitCard {
+        width: 13.5% !important
     }
 
     .backdropCard {
-        width: 15.8%;
+        width: 15.8%
     }
 }
 
-/* 6 posters, 5 thumbs */
-@media (max-width: 100em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 15.2% !important;
+@media (max-width:100em) {
+    .squareCard,
+    .portraitCard {
+        width: 15.2% !important
     }
 
     .backdropCard {
-        width: 18.4%;
+        width: 18.4%
     }
 }
 
-/* 5 posters, 4 thumbs */
-@media (max-width: 62em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 17.9% !important;
+@media (max-width:62em) {
+    .squareCard,
+    .portraitCard {
+        width: 17.9% !important
     }
 
     .backdropCard {
-        width: 23.3%;
-    }
-
-}
-
-/* 4 posters, 3 thumbs */
-@media (max-width: 48.125em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 22.3% !important;
-    }
-
-    .backdropCard {
-        width: 30.7%;
+        width: 23.3%
     }
 }
 
-/* 3 posters, 2 thumbs */
-@media (max-width: 30em) {
-
-    .portraitCard,
-    .squareCard {
-        width: 28.8% !important;
-    }
-
-    .layout-mobile .portraitCard,
-    .layout-mobile .squareCard {
-        width: 29.8% !important;
+@media (max-width:48.125em) {
+    .squareCard,
+    .portraitCard {
+        width: 22.3% !important
     }
 
     .backdropCard {
-        width: 46%;
+        width: 30.7%
+    }
+}
+
+@media (max-width:30em) {
+    .squareCard,
+    .portraitCard {
+        width: 28.8% !important
+    }
+
+    .layout-mobile .squareCard,
+    .layout-mobile .portraitCard {
+        width: 29.8% !important
+    }
+
+    .backdropCard {
+        width: 46%
     }
 }
 
@@ -440,15 +405,13 @@ html {
     background-color: transparent;
 }
 
-/* hides home button from the appbar/header on all layouts */
 .headerHomeButton {
     display: none;
 }
 
-/* hides sync button on home screen on phones only in portrait mode */
-@media (orientation: portrait) {
+@media (orientation:portrait) {
     .layout-mobile .skinHeader.noHomeButtonHeader .headerSyncButton {
-        display: none;
+        display: none
     }
 }
 
@@ -471,7 +434,7 @@ html {
     padding-top: 1.25em !important;
 }
 
-.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+.layout-mobile:not(.sectionTitleContainer-cards)>.sectionTitle-cards {
     text-align: left;
 }
 
@@ -519,8 +482,8 @@ html {
     padding-left: 1.5em;
 }
 
-[dir=ltr] .mediaInfoCriticRating::after {
-    content: "%";
+[dir=ltr] .mediaInfoCriticRating:after {
+    content: '%';
 }
 
 .layout-desktop .detailRibbon {
@@ -537,19 +500,19 @@ html {
     width: 23vw !important;
 }
 
-@media (max-width: 62.5em) {
+@media (max-width:62.5em) {
     .layout-desktop .itemBackdrop {
-        height: 7em !important;
+        height: 7em !important
     }
 
     .layout-desktop .detailPageWrapperContainer {
-        min-height: calc(100vh - 7em);
+        min-height: calc(100vh - 7em)
     }
 }
 
-@media (max-width: 50em) {
+@media (max-width:50em) {
     .homeLibraryButton {
-        width: 45.6% !important;
+        width: 45.6% !important
     }
 }
 
@@ -558,64 +521,62 @@ html {
     min-width: 15%;
 }
 
-@media (orientation: landscape) and (min-width: 40em) {
+@media (orientation:landscape) and (min-width:40em) {
     .layout-mobile .itemBackdrop {
         height: 40vh;
-        opacity: .10;
+        opacity: .10
     }
 
     .layout-mobile .detailPageWrapperContainer {
         padding-top: 35vh;
-        margin-top: -47vh;
+        margin-top: -47vh
     }
 }
 
-@media (orientation: portrait) and (max-width: 40em) {
+@media (orientation:portrait) and (max-width:40em) {
     .layout-mobile .itemBackdrop {
-        height: 40vh;
+        height: 40vh
     }
 
     .layout-mobile .detailPageWrapperContainer {
         padding-top: 35vh;
-        margin-top: -47vh;
+        margin-top: -47vh
     }
 
     [data-type=Movie] .listItemImage,
     [data-type=Series] .listItemImage {
-        display: unset;
+        display: unset
     }
 }
 
-@media (orientation: landscape) and (max-height: 40em) {
-
-    .overflowPortraitCard,
-    .overflowSquareCard {
-        width: 13vw;
+@media (orientation:landscape) and (max-height:40em) {
+    .overflowSquareCard,
+    .overflowPortraitCard {
+        width: 13vw
     }
 
     .overflowBackdropCard,
     .overflowSmallBackdropCard {
-        width: 20vw;
+        width: 20vw
     }
 
     .portraitCard {
         min-width: 2em;
         width: 8.5%;
-        max-width: 6.5em;
+        max-width: 6.5em
     }
 
     .backdropCard {
-        width: 23%;
+        width: 23%
     }
 
     .layout-mobile .detailImageContainer .card {
-        max-width: 15vw;
+        max-width: 15vw
     }
 
     .layout-mobile [dir=ltr] .infoWrapper {
-        padding-left: 25% !important;
+        padding-left: 25% !important
     }
-
 }
 
 .layout-mobile .itemBackdrop {
@@ -644,9 +605,9 @@ h2 {
     color: var(--textColor);
 }
 
+html,
 .nowPlayingPlaylist,
-.nowPlayingContextMenu,
-html {
+.nowPlayingContextMenu {
     background: var(--backgroundGradient)
 }
 
@@ -659,8 +620,8 @@ html {
     background: var(--backgroundGradient)
 }
 
-.skinHeader-blurred:not(.osdHeader),
-.appfooter {
+.appfooter,
+.skinHeader-blurred:not(.osdHeader) {
     background-color: var(--headerColor) !important;
     backdrop-filter: var(--blurDefault) !important;
 }
@@ -711,8 +672,8 @@ html {
 
 .itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
     backdrop-filter: var(--blurLarge);
-    background-color: rgba(169, 169, 169, 0.3) !important;
-    height: 0.35em;
+    background-color: transparent !important;
+    height: .35em;
     overflow: hidden;
     border-radius: var(--largeRadius);
 }
@@ -786,12 +747,17 @@ progress+span {
     border-radius: var(--smallRadius);
 }
 
+.itemProgressBarForeground,
 .mdl-slider-background-lower {
-    background-color: var(--uiAccentColor);
+    background-color: var(--uiIconColor);
+}
+
+.sliderBubble {
+    background: var(--uiIconColor);
 }
 
 .mdl-slider::-webkit-slider-thumb {
-    background: var(--uiAccentColor);
+    background: var(--uiIconColor);
 }
 
 .mdl-slider::-webkit-slider-thumb {
@@ -800,7 +766,7 @@ progress+span {
 }
 
 .mdl-slider::-moz-range-thumb {
-    background: var(--uiAccentColor);
+    background: var(--uiIconColor);
 }
 
 .sliderMarkerContainer {
@@ -846,12 +812,12 @@ progress+span {
     border-radius: var(--smallRadius);
     border: var(--defaultLighterBorder);
     padding: .5em .5em !important;
-    margin: 0.125em !important;
+    margin: .125em !important;
     backdrop-filter: var(--blurSmallest);
 }
 
 .btnPlay.detailButton {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, .05);
     border: var(--defaultLighterBorder);
 }
 
@@ -867,16 +833,15 @@ progress+span {
     justify-content: flex-start;
 }
 
-
-.btnPlay[title="Play"]>.detailButton-content::after {
-    content: "Play";
+.btnPlay[title="Play"]>.detailButton-content:after {
+    content: 'Play';
 }
 
-.btnPlay[title="Resume"]>.detailButton-content::after {
-    content: "Resume";
+.btnPlay[title="Resume"]>.detailButton-content:after {
+    content: 'Resume';
 }
 
-.btnPlay>.detailButton-content::after {
+.btnPlay>.detailButton-content:after {
     padding-left: .25em;
     padding-right: .5em;
     place-content: center;
@@ -895,7 +860,7 @@ progress+span {
 
 .btnHeaderSave.button-flat {
     color: var(--uiAccentColor) !important;
-    gap: 0.3em;
+    gap: .3em;
     border-radius: var(--smallRadius);
 }
 
@@ -905,7 +870,7 @@ progress+span {
 
 .button-flat:active {
     color: unset;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .playstatebutton-icon-played {
@@ -924,7 +889,7 @@ progress+span {
     .itemDetailsGroup {
         outline: var(--defaultBorder);
         outline-offset: calc(-1*var(--borderWidth));
-        border: none;
+        border: none
     }
 }
 
@@ -935,7 +900,7 @@ progress+span {
 .detailsGroupItem {
     margin: 0 !important;
     justify-content: space-between;
-    padding: 0.5em 0.9em;
+    padding: .5em .9em;
     align-items: baseline;
 }
 
@@ -984,38 +949,38 @@ progress+span {
     color: white !important;
 }
 
-.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="themoviedb.org"]:hover,
-.itemExternalLinks.focuscontainer-x>a[href*="themoviedb.org"]:active {
+.itemExternalLinks.focuscontainer-x>a[href*="themoviedb.org"]:active,
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="themoviedb.org"]:hover {
     background-color: rgb(26, 183, 216) !important;
     color: black !important;
 }
 
-.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="imdb.com"]:hover,
-.itemExternalLinks.focuscontainer-x>a[href*="imdb.com"]:active {
+.itemExternalLinks.focuscontainer-x>a[href*="imdb.com"]:active,
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="imdb.com"]:hover {
     background-color: rgb(226, 182, 22) !important;
     color: black !important;
 }
 
-.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="thetvdb.com"]:hover,
-.itemExternalLinks.focuscontainer-x>a[href*="thetvdb.com"]:active {
+.itemExternalLinks.focuscontainer-x>a[href*="thetvdb.com"]:active,
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="thetvdb.com"]:hover {
     background-color: rgb(108, 213, 145) !important;
     color: black !important;
 }
 
-.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="trakt.tv"]:hover,
-.itemExternalLinks.focuscontainer-x>a[href*="trakt.tv"]:active {
+.itemExternalLinks.focuscontainer-x>a[href*="trakt.tv"]:active,
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="trakt.tv"]:hover {
     background-color: rgb(171, 58, 173) !important;
     color: var(--textColor) !important;
 }
 
-.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="theaudiodb.com"]:hover,
-.itemExternalLinks.focuscontainer-x>a[href*="theaudiodb.com"]:active {
+.itemExternalLinks.focuscontainer-x>a[href*="theaudiodb.com"]:active,
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="theaudiodb.com"]:hover {
     background-color: rgb(99, 153, 204) !important;
     color: rgb(15, 22, 28) !important;
 }
 
-.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="musicbrainz.org"]:hover,
-.itemExternalLinks.focuscontainer-x>a[href*="musicbrainz.org"]:active {
+.itemExternalLinks.focuscontainer-x>a[href*="musicbrainz.org"]:active,
+.layout-desktop .itemExternalLinks.focuscontainer-x>a[href*="musicbrainz.org"]:hover {
     background-color: rgb(186, 71, 143) !important;
     color: var(--textColor) !important;
 }
@@ -1040,7 +1005,7 @@ progress+span {
 .chapterThumbTextContainer {
     background: linear-gradient(0deg, #000000e8, transparent);
     font-weight: 500;
-    text-shadow: .1em .1em 0px black;
+    text-shadow: .1em .1em 0 black;
     padding: 5em 2em 1.5em 2em;
     width: auto;
     width: -webkit-fill-available;
@@ -1061,21 +1026,17 @@ progress+span {
     border: var(--defaultBorder);
 }
 
-@media (max-width: 80em),
-(max-height: 45em) {
-
+@media (max-width:80em), (max-height:45em) {
     .dialog.dialog-fixedSize,
     .dialog.dialog-fullscreen-lowres {
         border-radius: unset !important;
-        border: unset;
+        border: unset
     }
 
-    body:has(.dialog.dialog-fixedSize.opened,
-        .dialog.dialog-fullscreen-lowres.opened) {
-        overflow: hidden;
+    body:has(.dialog.dialog-fixedSize.opened, .dialog.dialog-fullscreen-lowres.opened) {
+        overflow: hidden
     }
 }
-
 
 .dialogBackdropOpened {
     opacity: .66;
@@ -1085,15 +1046,15 @@ progress+span {
     top: -1.75em;
 }
 
-.subtitleEditor-dropZone,
-.imageEditor-dropZone {
+.imageEditor-dropZone,
+.subtitleEditor-dropZone {
     border-radius: var(--largeRadius);
 }
 
 .formDialogHeaderTitle {
     margin-inline: 0 !important;
     text-align: center;
-    padding: 0 0.5em !important;
+    padding: 0 .5em !important;
 }
 
 .formDialogFooter:not(.formDialogFooter-clear.formDialogFooter-flex)>.formDialogFooterItem {
@@ -1123,9 +1084,9 @@ progress+span {
 
 .emby-checkbox:checked+span+.checkboxOutline {
     border-radius: var(--smallerRadius) !important;
-    box-shadow: inset 0em 7em 10em 20px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 7em 10em 20px rgba(0, 0, 0, .8);
     background: transparent;
-    border-color: white;
+    border-color: transparent;
     border-style: solid;
     border-width: calc(2 * var(--borderWidth));
     outline: none;
@@ -1133,7 +1094,7 @@ progress+span {
 
 @supports(display:revert) {
     .emby-checkbox:checked+span+.checkboxOutline {
-        outline: solid var(--borderWidth) white;
+        outline: solid var(--borderWidth) transparent;
     }
 }
 
@@ -1143,7 +1104,6 @@ progress+span {
     width: 1.3em;
     border-radius: var(--smallerRadius);
 }
-
 
 .itemSelectionPanel .material-icons.check:before {
     font-size: 4em;
@@ -1156,7 +1116,7 @@ progress+span {
 }
 
 div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer {
-    height: calc(100% - 0em);
+    height: calc(100% - 0);
 }
 
 .checkboxContainer .emby-checkbox:checked+span+.checkboxOutline.multiSelectCheckboxOutline {
@@ -1173,7 +1133,7 @@ div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer
 }
 
 .cardScalable+.itemSelectionPanel>.checkboxContainer {
-    height: calc(100% - 0em);
+    height: calc(100% - 0);
 }
 
 .checkboxOutline.multiSelectCheckboxOutline {
@@ -1212,12 +1172,12 @@ div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer
 @supports(display:revert) {
     .emby-checkbox:focus:not(:checked)+span+.checkboxOutline {
         outline: var(--borderWidth) solid gray;
-        outline-offset: calc(-2.5*var(--borderWidth));
+        outline-offset: calc(-2.5*var(--borderWidth))
     }
 
     .emby-checkbox:focus+span+.checkboxOutline {
         border-color: white !important;
-        outline: var(--borderWidth) solid var(--highlightOutlineColor);
+        outline: var(--borderWidth) solid var(--highlightOutlineColor)
     }
 }
 
@@ -1262,8 +1222,8 @@ div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer
     font-size: .75em;
 }
 
-.videoIndicator:has(.photo_album),
-.videoIndicator:has(.folder) {
+.videoIndicator:has(.folder),
+.videoIndicator:has(.photo_album) {
     background: peru;
 }
 
@@ -1275,35 +1235,35 @@ div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer
     background: indianred;
 }
 
-.defaultCardBackground,
-.cardScalable {
+.cardScalable,
+.defaultCardBackground {
     background: var(--cardBackgroundGradient);
 }
 
 div[data-type="Book"] .play_arrow:before {
-    content: "\f53b";
+    content: '\f53b';
     font-size: 85%;
 }
 
 div[data-type="Photo"] .play_arrow:before {
-    content: "\e5d0";
+    content: '\e5d0';
 }
 
 div[data-type="PhotoAlbum"] .play_arrow:before {
-    content: "\e8eb";
+    content: '\e8eb';
 }
 
 .card-withuserdata[data-isfolder="true"] .cardImageContainer.defaultCardBackground {
-    filter: contrast(0.85);
+    filter: contrast(.85);
     background-size: cover !important;
     background-position: 50% !important;
     background-blend-mode: multiply;
 }
 
-.emby-button.block,
-.button-alt,
 .raised,
+.button-alt,
 #btnDeleteImage,
+.emby-button.block,
 .dashboardActionsContainer>.emby-button {
     color: #fff;
     border-radius: var(--smallRadius);
@@ -1336,8 +1296,8 @@ div[data-type="PhotoAlbum"] .play_arrow:before {
     filter: brightness(1.35);
 }
 
-.raised:active,
 .fab:active,
+.raised:active,
 .emby-button:active {
     filter: brightness(1.2) !important;
 }
@@ -1353,15 +1313,15 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: #fff !important;
 }
 
-.guide-date-tab-button.emby-tab-button-active,
-.guide-date-tab-button:focus {
+.guide-date-tab-button:focus,
+.guide-date-tab-button.emby-tab-button-active {
     color: white;
 }
 
-#btnDeleteImage,
-.button-delete,
 .btnRevoke,
-#btnShutdown {
+#btnShutdown,
+.button-delete,
+#btnDeleteImage {
     background: var(--btnDeleteColor);
     border: solid var(--btnDeleteBorderColor) var(--borderWidth);
 }
@@ -1378,8 +1338,8 @@ div[data-role=controlgroup] a.ui-btn-active {
     backdrop-filter: var(--blurDefault);
 }
 
-.visualCardBox,
-.paperList {
+.paperList,
+.visualCardBox {
     background-color: var(--headerColor) !important;
     border-radius: var(--largeRadius) !important;
     border: var(--defaultBorder) !important;
@@ -1414,10 +1374,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     border: solid var(--btnDeleteBorderColor) var(--borderWidth);
 }
 
-.listItemIcon.notifications:not(.listItemIcon-transparent),
-.listItemIcon.schedule:not(.listItemIcon-transparent),
 .listItemIcon.person:not(.listItemIcon-transparent),
-.listItemIcon.live_tv:not(.listItemIcon-transparent) {
+.listItemIcon.live_tv:not(.listItemIcon-transparent),
+.listItemIcon.schedule:not(.listItemIcon-transparent),
+.listItemIcon.notifications:not(.listItemIcon-transparent) {
     background-color: rgb(41, 49, 83) !important;
     border: var(--defaultBorder);
 }
@@ -1449,7 +1409,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 [dir=ltr] .listItem:not(.actionSheetMenuItem, .childrenItemsContainer .listItem, .activityLogListWidget .listItem) {
-    padding: 0.375em !important;
+    padding: .375em !important;
 }
 
 [dir=ltr] .listItem:not(.actionSheetMenuItem, .childrenItemsContainer .listItem, .activityLogListWidget .listItem):not(:last-child) {
@@ -1493,7 +1453,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 .listItem-bottomoverview,
 [dir="ltr"] .listItem:not(.actionSheetMenuItem)[data-type="Episode"] .listItem-overview p {
     margin-top: .75em;
-    margin-bottom: 0em;
+    margin-bottom: 0;
 }
 
 .listItem,
@@ -1513,7 +1473,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .listItem:active,
 .navMenuOption:active {
-    background: rgba(255, 255, 255, 0.125);
+    background: rgba(255, 255, 255, .125);
 }
 
 .listItem-border {
@@ -1524,8 +1484,8 @@ div[data-role=controlgroup] a.ui-btn-active {
     border-radius: var(--smallRadius);
 }
 
-.MuiListItem-root>a,
 .MuiList-root>a,
+.MuiListItem-root>a,
 .MuiListItem-root>div {
     border: solid transparent var(--borderWidth);
     border-radius: .7em;
@@ -1566,16 +1526,16 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check[style*="hidden"]):active {
-    background-color: rgba(255, 255, 255, 0.125);
+    background-color: rgba(255, 255, 255, .125);
 }
 
 .navMenuOption {
     border-radius: var(--smallRadius) !important;
-    margin: 0em 1em !important;
+    margin: 0 1em !important;
 }
 
 [dir=ltr] .navMenuOption {
-    padding: 0.75em 1em !important;
+    padding: .75em 1em !important;
     margin-bottom: unset;
 }
 
@@ -1610,7 +1570,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .selectArrowContainer {
-    top: 0em;
+    top: 0;
     opacity: .5;
 }
 
@@ -1658,7 +1618,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 .alphaPickerButton {
     font-family: monospace;
     margin: .15em;
-    color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, .25);
 }
 
 .alphaPickerButton-selected {
@@ -1697,13 +1657,13 @@ div[data-role=controlgroup] a.ui-btn-active {
     width: 2em;
     height: 2em;
     margin-inline-end: 1em;
-    border: var(--defaultBorder);
+    border: transparent;
 }
 
 .MuiAvatar-circular {
     width: 1.5em;
     height: 1.5em;
-    border: var(--defaultBorder);
+    border: transparent;
 }
 
 .dashboardDocument .content-primary {
@@ -1740,13 +1700,13 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin: 0 0 !important;
 }
 
-.dashboardSection .sectionTitleTextButton>.material-icons,
 .sectionTitleTextButton>.material-icons,
+.dashboardSection .sectionTitleTextButton>.material-icons,
 .dashboardSection .sectionTitleTextButton>.material-icons.material-icons {
     font-size: unset;
 }
 
-.sectionTitleTextButton>.material-icons::before {
+.sectionTitleTextButton>.material-icons:before {
     display: none;
 }
 
@@ -1755,8 +1715,7 @@ div[data-role=controlgroup] a.ui-btn-active {
     height: 1.5rem;
     width: 1.5rem;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23D1D5DB' aria-hidden='true'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
-    background-size: contain;
-    /* Stops miscalculating the size on hover effect */
+    background-size: contain
 }
 
 .toast {
@@ -1803,7 +1762,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .skip-button:active {
-    background-color: rgba(245, 245, 245, 0.7);
+    background-color: rgba(245, 245, 245, .7);
     box-shadow: none;
 }
 
@@ -1820,67 +1779,66 @@ div[data-role=controlgroup] a.ui-btn-active {
 
 .emby-tab-button:hover {
     color: whitesmoke;
-
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (hover:hover) and (pointer:fine) {
     .paper-icon-button-light:hover:not(:disabled, .cardOverlayButton) {
         color: #fff;
-        background-color: rgb(255 255 255 / 5%);
+        background-color: rgb(255 255 255 / 5%) !important;
     }
 
     .actionSheetMenuItem.emby-button:has(.listItemIcon.material-icons.check[style*="hidden"]):hover {
-        background-color: rgba(255, 255, 255, 0.125);
+        background-color: rgba(255, 255, 255, .125) !important;
     }
 
-    .emby-select-withcolor:hover:not(.emby-select[disabled], :focus),
     .emby-input:hover:not(:focus),
-    .emby-textarea:hover:not(:focus) {
-        border-color: var(--dimTextColor) !important;
+    .emby-textarea:hover:not(:focus),
+        .emby-select-withcolor:hover:not(.emby-select[disabled], :focus) {
+        border-color: var(--dimTextColor) !important
     }
 
     .checkboxContainer:hover .checkboxOutline:not(.multiSelectCheckboxOutline) {
         border-color: var(--checkboxCheckedBgColor);
-        border-width: calc(2 * var(--borderWidth));
+        border-width: calc(2 * var(--borderWidth))
     }
 
-    .raised:hover,
     .fab:hover,
+    .raised:hover,
     .emby-button:hover {
-        filter: brightness(1.2) !important;
+        filter: brightness(1.2) !important
     }
 
     .button-flat:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        color: white;
+        background-color: rgba(255, 255, 255, .2);
+        color: white
     }
 
     .alphaPickerButton:hover {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1)
     }
 
     .listItem:hover,
     .navMenuOption:hover {
-        background: rgba(255, 255, 255, 0.125);
+        background: rgba(255, 255, 255, .125)
     }
 
     .searchfields-icon:hover,
     .inputContainer .emby-input-iconbutton:hover {
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, .8)
     }
 
     #scenesContent .cardScalable:hover {
-        border-color: var(--dimTextColor) !important;
+        border-color: var(--dimTextColor) !important
     }
 
     .sectionTitleTextButton:hover {
         background: transparent !important;
-        color: white !important;
+        color: white !important
     }
 
     .button-link:hover {
         color: rgb(243, 243, 243) !important;
-        text-decoration: none;
+        text-decoration: none
     }
 }
 
@@ -1893,10 +1851,10 @@ div[data-role=controlgroup] a.ui-btn-active {
     font-family: consolas;
 }
 
-.emby-select-withcolor,
-.emby-select,
 .emby-input,
-.emby-textarea {
+.emby-select,
+.emby-textarea,
+.emby-select-withcolor {
     background-color: var(--selectorBackgroundColor);
     border: var(--defaultLighterBorder);
     border-radius: var(--smallRadius);
@@ -1909,20 +1867,19 @@ div[data-role=controlgroup] a.ui-btn-active {
     color: #fff;
 }
 
-.emby-select-withcolor:focus,
 .emby-input:focus,
-.emby-textarea:focus {
+.emby-textarea:focus,
+.emby-select-withcolor:focus {
     border-color: var(--highlightOutlineColor) !important;
     outline: none !important;
 }
 
 @supports (display:revert) {
-
-    .emby-select-withcolor:focus,
     .emby-input:focus,
-    .emby-textarea:focus {
+    .emby-textarea:focus,
+    .emby-select-withcolor:focus {
         border-color: var(--highlightOutlineColor) !important;
-        outline: thin solid var(--highlightOutlineColor) !important;
+        outline: thin solid var(--highlightOutlineColor) !important
     }
 }
 
@@ -1932,7 +1889,7 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .inputContainer .emby-input-iconbutton {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, .5);
     margin-left: -2.5em;
     background-color: transparent !important;
 }
@@ -1947,12 +1904,12 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin-left: -1.75em;
     margin-bottom: 0;
     border-radius: var(--largeRadius);
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, .5);
 }
 
 .searchfields-icon:active,
 .inputContainer .emby-input-iconbutton:active {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, .8);
 }
 
 .searchFields>.searchFieldsInner {
@@ -1972,8 +1929,8 @@ div[data-role=controlgroup] a.ui-btn-active {
     font-size: 1.6em;
 }
 
-#liveTvSuggestedPage,
-.liveTvContainer {
+.liveTvContainer,
+#liveTvSuggestedPage {
     background-color: var(--tableBodyColor);
 }
 
@@ -1995,12 +1952,8 @@ div[data-role=controlgroup] a.ui-btn-active {
     background-color: var(--darkerGradientPoint);
 }
 
-.channelPrograms>.programCell:nth-child(even) {
-    /* background-color: #11182700; */
-}
-
-.guide-channelHeaderCell:focus,
-.programCell:focus {
+.programCell:focus,
+.guide-channelHeaderCell:focus {
     background-color: var(--highlightOutlineColor) !important;
 }
 
@@ -2011,7 +1964,7 @@ div[data-role=controlgroup] a.ui-btn-active {
     margin-inline-start: 1em;
 }
 
-@media (min-width: 62em) {
+@media (min-width:62em) {
     .sectionTabs:not(.layout-tv .sectionTabs) {
         -webkit-align-items: center;
         align-items: center;
@@ -2021,11 +1974,11 @@ div[data-role=controlgroup] a.ui-btn-active {
         justify-content: center;
         margin-top: -4.3em;
         position: relative;
-        width: auto;
+        width: auto
     }
 
     .libraryPage:not(.noSecondaryNavPage):not(.layout-tv .libraryPage) {
-        padding-top: 4.8em !important;
+        padding-top: 4.8em !important
     }
 }
 
@@ -2090,20 +2043,18 @@ table:not(.MuiTable-root.MuiTable-stickyHeader) {
     background: var(--lighterGradientPointAlpha) !important;
 }
 
-
 .MuiList-root.MuiMenu-list {
     background-color: var(--drawerColor);
 }
 
 ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
-    /* ! Don't change these units. They are rem because that is standard for MUI */
-    gap: 0.5rem;
+    gap: .5rem;
 }
 
-.playerStats,
-.iconOsd {
+.iconOsd,
+.playerStats {
     border-radius: var(--largeRadius);
-    background-color: rgba(69, 69, 69, 0.69);
+    background-color: rgba(69, 69, 69, .69);
     backdrop-filter: var(--blurDefault);
 }
 
@@ -2142,7 +2093,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 
 #loginPage .padded-left.padded-right.padded-bottom-page {
     width: 28em;
-    background: rgba(30, 40, 54, 0.7);
+    background: rgba(30, 40, 54, .7);
     padding: 2em 2em 1em 2em !important;
     border-radius: var(--largerRadius);
     backdrop-filter: var(--blurDefault);
@@ -2150,8 +2101,8 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     transform: translateY(3em);
 }
 
-.manualLoginForm .sectionTitle,
-.visualLoginForm>h1 {
+.visualLoginForm>h1,
+.manualLoginForm .sectionTitle {
     display: none;
 }
 
@@ -2167,8 +2118,8 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     width: 45% !important;
 }
 
-.manualLoginForm::before,
-.visualLoginForm::before {
+.manualLoginForm:before,
+.visualLoginForm:before {
     content: var(--loginPageText);
     position: relative;
     display: block;
@@ -2196,10 +2147,10 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     resize: none;
 }
 
-.startTimeText,
+.runtime,
 .endTimeText,
 .positionTime,
-.runtime {
+.startTimeText {
     width: 4.5em;
     box-sizing: border-box;
 }
@@ -2213,19 +2164,19 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     padding-inline-end: .8em;
 }
 
-.startTimeText,
-.endTimeText {
+.endTimeText,
+.startTimeText {
     padding-top: .25em;
 }
 
-.startTimeText,
-.positionTime {
+.positionTime,
+.startTimeText {
     text-align: start;
     justify-content: left;
 }
 
-.endTimeText,
-.runtime {
+.runtime,
+.endTimeText {
     text-align: end;
     justify-content: right;
 }
@@ -2238,7 +2189,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     padding-bottom: 50%;
 }
 
-.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardImageContainer.cardContent::before {
+.card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardImageContainer.cardContent:before {
     position: absolute;
     font-size: 3.5vh;
     margin-bottom: .175em;
@@ -2252,15 +2203,6 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 #indexPage:not(.hide) .card-withuserdata[data-isfolder="true"]:not([data-type="PhotoAlbum"], [data-type="Series"], [data-type="Folder"], [data-type="Season"], [data-type="Playlist"]) .cardText.cardTextCentered {
     display: none;
 }
-
-/* input[type="radio"]:checked {
-    background-color: var(--highlightOutlineColor);
-} */
-
-/* .mdl-radio__focus-circle {
-    color: red;
-    background: var(--highlightOutlineColor);
-} */
 
 .nowPlayingButtonsContainer {
     margin-top: 1em;
@@ -2280,9 +2222,9 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     color: var(--borderColor);
 }
 
-@media (orientation: portrait) and (max-width: 43em) {
+@media (orientation:portrait) and (max-width:43em) {
     .nowPlayingPageImageContainerNoAlbum .cardImageContainer .cardImageIcon {
-        font-size: 8em !important;
+        font-size: 8em !important
     }
 }
 
@@ -2324,7 +2266,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 .layout-desktop .nowPlayingInfoControls {
-    margin: 0em 2em;
+    margin: 0 2em;
 }
 
 .nowPlayingPageImage {
@@ -2332,9 +2274,9 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     border-radius: var(--smallRadius);
 }
 
-@media (orientation: portrait) and (max-width: 43em) {
+@media (orientation:portrait) and (max-width:43em) {
     .nowPlayingInfoContainer {
-        height: calc(95% - 4.2em);
+        height: calc(95% - 4.2em)
     }
 }
 
@@ -2364,7 +2306,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 }
 
 #dialogToc {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, .5);
     max-height: unset;
     max-width: unset;
 }
@@ -2374,7 +2316,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
     font-weight: 600;
     list-style-type: circle;
     margin-bottom: .5em;
-    font-family: "Math", serif;
+    font-family: 'Math', serif;
 }
 
 .MuiTabs-indicator {

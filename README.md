@@ -1,54 +1,45 @@
-# ElegantFin Theme
-This is a Jellyfin theme inspired from JellySeerr to improve the overall look and experience with various fixes to the UI and behaviour.
+# Dark Refined Theme
+This is a Jellyfin theme inspired from JellySeerr & ElegantFin to improve the overall look and experience with various fixes to the UI and behaviour.
 
+#### **Original Author:** [lscambo13](https://github.com/lscambo13)
 
-#### **Author:** [lscambo13](https://github.com/lscambo13)
+#### **Modifed By:** [Zach J Murphy](https://github.com/zacjmurphy)
 
-<hr>
-
-### ✨ Key Features  
-- modern layouts and colors
-- new animations on some elements
-- reduced clutter by hiding unimportant buttons and elements
-- overall rounded design
-- stylish borders, hover effects and shadows
-- various fixes to the user experience
-
-<hr>
-
-### ▶️ Demo
-
-https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
-
-<hr>
+### ✨ Key Features
+- Modern layouts and colors
+- New animations on some elements
+- Reduced clutter by hiding unimportant buttons and elements
+- Overall rounded design
+- Stylish borders, hover effects and shadows
+- Various fixes to the user experience
 
 ### 🖼️ Previews
 
 <details>
-  <summary><i>Click here to reveal (last updated: 2025-01-19)</i></summary>
-  
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/1.%20Homepage.png" style="width:360px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/2.%20Movies%20Library.png" style="width:360px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/3.%20Sidebar.png" style="width:360px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/4.%20Movie%20Page.png" style="width:360px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/5.%20Extra%20Dialog.png" style="width:360px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/6.%20Settings%20Page.png" style="width:360px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/7.%20Metadata%20Menu.png" style="width:360px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/8.%20Dashboard%20Settings.png" style="width:360px;height:auto;"></img>
-<img src="https://github.com/lscambo13/ElegantFin/blob/main/Previews/9.%20Web%20Player.png" style="width:360px;height:auto;"></img>
+  <summary><i>Click here to reveal (last updated: 2025-05-09)</i></summary>
+
+<img src="https://github.com/zacjmurphy/DarkRefined/blob/main/Previews/1.%20Homepage.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/zacjmurphy/DarkRefined/blob/main/Previews/2.%20Movies%20Library.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/zacjmurphy/DarkRefined/blob/main/Previews/3.%20Sidebar.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/zacjmurphy/DarkRefined/blob/main/Previews/4.%20Movie%20Page.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/zacjmurphy/DarkRefined/blob/main/Previews/5.%20Extra%20Dialog.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/zacjmurphy/DarkRefined/blob/main/Previews/6.%20Settings%20Page.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/zacjmurphy/DarkRefined/blob/main/Previews/7.%20Metadata%20Menu.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/zacjmurphy/DarkRefined/blob/main/Previews/8.%20Dashboard%20Settings.png" style="width:360px;height:auto;"></img>
+<img src="https://github.com/zacjmurphy/DarkRefined/blob/main/Previews/9.%20Web%20Player.png" style="width:360px;height:auto;"></img>
 
 </details>
 
-<hr>
-
-### 👇 How to install/setup this theme? 
+### 👇 How to install/setup this theme?
 
 <b>Paste the following in Custom CSS code box:</b>
 
-	@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/ElegantFin-jellyfin-theme-build-latest-minified.css");
+```
+@import url('https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/DarkRefined-jellyfin-theme-build-latest-minified.css');
+```
 
 <details>
-  <summary><i>Detailed steps for server-side implementation</i></summary>
+<summary><i>Detailed steps for server-side implementation</i></summary>
 
 1. Open Dashboard from Administration tab in Settings.
 2. Select General tab from the side bar.
@@ -58,7 +49,7 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 </details>
 
 <details>
-  <summary><i>Detailed steps for client-side implementation</i></summary>
+<summary><i>Detailed steps for client-side implementation</i></summary>
 
 1. Open Display tab in Settings.
 2. Scroll down to find Custom CSS code box.
@@ -66,104 +57,112 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 4. Click save.
 </details>
 
-
-<hr>
-
-### 🧩 How to customise this theme? 
+### 🧩 How to customise this theme?
 
 <details>
-  <summary><i>1. Custom media covers for user media libraries</i></summary>
+<summary><i>1. Custom media covers for user media libraries</i></summary>
 
-- [Previews](https://github.com/lscambo13/ElegantFin/blob/main/custom-media-covers.md#%EF%B8%8F-presets-modify-these-styles-according-to-your-own-liking)
-- Read more about this experimental add-on [here](https://github.com/lscambo13/ElegantFin/blob/main/custom-media-covers.md)
+- [Previews](https://github.com/zacjmurphy/DarkRefined/blob/main/custom-media-covers.md#%EF%B8%8F-presets-modify-these-styles-according-to-your-own-liking)
+
+- Read more about this experimental add-on [here](https://github.com/zacjmurphy/DarkRefined/blob/main/custom-media-covers.md)
 
 </details>
 
 <details>
-  <summary><i>2. Custom background image for the login page</i></summary>
+<summary><i>2. Custom background image for the login page</i></summary>
 
 - [Preview](https://user-images.githubusercontent.com/16425113/129554147-6ac7ba51-43e7-4c8e-ba77-e646a3ef6b12.jpg)
+
 - To enable the background wallpaper on the login screen, first tick the 'Enable the splash screen' option in your Jellyfin Dashboard below the Custom CSS Box.
+
 - Second, copy and paste the following code at the end in Custom CSS box but don't save yet.
+
   ```
-  :root{
-    --loginPageBgUrl: url("<YOUR-JELLYFIN-SERVER-ADDRESS>/Branding/Splashscreen?format=webp&foregroundLayer=1&quality=33&width=3840&height=2160&blur=2");
+  :root {
+    --loginPageBgUrl: url('<YOUR-JELLYFIN-SERVER-ADDRESS>/Branding/Splashscreen?format=webp&foregroundLayer=1&quality=33&width=3840&height=2160&blur=2');
   }
   ```
+
 - Third, replace `<YOUR-JELLYFIN-SERVER-ADDRESS>` with your Jellyfin server address, for example, `http://192.168.0.1:8097`.
+
 - Don't forget the correct http or https in your domain.
+
 - You can also modify the parameters, for example blur size or the resolution, according to your liking.
+
 - Once done, save and refresh your apps and webpages.
 </details>
 
 <details>
-  <summary><i>3. Bring back the home button in the app header</i></summary>
+<summary><i>3. Bring back the home button in the app header</i></summary>
 
-- Read more about steps [here](https://github.com/lscambo13/ElegantFin/issues/51)
+- Read more about steps [here](https://github.com/zacjmurphy/DarkRefined/issues/51)
 
 </details>
 
-<hr>
-
-### 🆗 Tested on 
-- Jellyfin Server v10.10.6
+### 🆗 Tested on
+- Jellyfin Server v10.10.7
 - Jellyfin Android App v2.6.2
+- Jellyfin Windows App v10.10.7
 
-<hr>
-
-### 🛠️ Troubleshooting 
+### 🛠️ Troubleshooting
 <details>
-  <summary>1️⃣ - <i>How do I check if I am using the latest version on ElegantFin?</i></summary>
+<summary>1️⃣ - <i>How do I check if I am using the latest version on Dark Refined?</i></summary>
 
-- To make sure that you are using the latest version of ElegantFin, check the version number at the bottom in the Dashboard screen. 
-- It should be something like ElegantFin v25.03.XX
+- To make sure that you are using the latest version of Dark Refined, check the version number at the bottom in the Dashboard screen.
+
+- It should be something like Dark Refined v25.03.XX
 </details>
 
 <details>
-  <summary>2️⃣ - <i>I see that a newer version is available, but I have not received it yet. Why?</i></summary>
+<summary>2️⃣ - <i>I see that a newer version is available, but I have not received it yet. Why?</i></summary>
 
 - If Dashboard footer shows an old version, it means that your app is still using an old cache.
-- Once that cache is updated, the new version will be loaded. 
+
+- Once that cache is updated, the new version will be loaded.
+
 - To get the latest version, you will need to clear cache. There are multiple ways to do it.
+
 - On web version, force a hard refresh of the page using CTRL + F5.
+
 - On apps, try signing out and back in again. OR in case of Jellyfin Media Player on windows, you might need to delete the cache folder. That should definitely pull the latest version.
 </details>
 
 <details>
-  <summary>3️⃣ - <i>Why do I notice visual bugs and inconsistencies on Jellyfin Media Player?</i></summary>
+<summary>3️⃣ - <i>Why do I notice visual bugs and inconsistencies on Jellyfin Media Player?</i></summary>
 
 - Currently JMP uses Qt 5.x which uses an outdated web engine, so many new CSS features do not work. Once they release a new version based on Qt 6.x, most issues should automatically be resolved. Until then, I advise using the web app instead.
 </details>
 
 <details>
-  <summary>4️⃣ - <i>All the icons on my LG TV seem to be broken. How to fix them?</i></summary>
+<summary>4️⃣ - <i>All the icons on my LG TV seem to be broken. How to fix them?</i></summary>
 
-- It seems that modern Material Icons which this theme uses are [not compatible on some WebOS TVs](https://github.com/lscambo13/ElegantFin/issues/39). There is a [huge similar thread](https://www.reddit.com/r/youtubetv/comments/e27go3/chinese_symbols_instead_of_icons_on_lg_tv/) about this.
+- It seems that modern Material Icons which this theme uses are [not compatible on some WebOS TVs](https://github.com/zacjmurphy/DarkRefined/issues/39). There is a [huge similar thread](https://www.reddit.com/r/youtubetv/comments/e27go3/chinese_symbols_instead_of_icons_on_lg_tv/) about this.
+
 - This bug can be fixed by using the older icons, so I have implemented the following workaround to bring back older, supported icons.
+
 - Simply add the following code at the end in Custom CSS box and save, then refresh your apps and webpages:
-  
+
   ```
-  :root{
+  :root {
     --iconPack: 'Material Icons';
   }
   ```
+
 </details>
 
 <details>
-  <summary>5️⃣ - <i>How do I report bugs/issues?</i></summary>
+<summary>5️⃣ - <i>How do I report bugs/issues?</i></summary>
 
-- First check [here](https://github.com/lscambo13/ElegantFin/issues?q=) whether a similar issue has been reported already. If it exists, upvote and comment there to let me know. 
-- Alternatively, create a new issue [here](https://github.com/lscambo13/ElegantFin/issues/new/choose).
+- First check [here](https://github.com/zacjmurphy/DarkRefined/issues?q=) whether a similar issue has been reported already. If it exists, upvote and comment there to let me know.
+
+- Alternatively, create a new issue [here](https://github.com/zacjmurphy/DarkRefined/issues/new/choose).
 
 
 </details>
 <details>
-  <summary>6️⃣ - <i>When can I expect another update?</i></summary>
+<summary>6️⃣ - <i>When can I expect another update?</i></summary>
 
 - 🤷
 </details>
 
-<hr>
-
-
-## 🙏 FEEDBACK APPRECIATED
+### 🙏 FEEDBACK APPRECIATED
