@@ -35,7 +35,7 @@ This is a Jellyfin theme inspired from JellySeerr & ElegantFin to improve the ov
 <b>Paste the following in Custom CSS code box:</b>
 
 ```
-@import url('https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/DarkRefined-jellyfin-theme-build-latest-minified.css');
+@import url('https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@latest/Theme/DarkRefined-jellyfin-theme-build-latest-minified.css');
 ```
 
 <details>

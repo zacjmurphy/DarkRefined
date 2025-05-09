@@ -1,6 +1,6 @@
 /* Original Theme - ElegantFin Theme v25.05.03 for Jellyfin by lscambo13 - Modified by: Zach J Murphy */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@main/Theme/assets/add-ons/custom-media-covers-latest-min.css');
+@import url('https://cdn.jsdelivr.net/gh/zacjmurphy/DarkRefined@latest/Theme/assets/add-ons/custom-media-covers-latest-min.css');
 
 :root {
     --darkRefinedFooterText: 'Dark Refined v1.0.1';
